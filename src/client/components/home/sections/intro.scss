@@ -5,10 +5,12 @@ p {
 }
 
 .parentDiv {
+    width: 1000px;
+    margin: 0 auto;
     text-align: center;
 
-    img,
-    .icons {
+    img {
+        width: 100%;
         margin-bottom: 2rem;
     }
 }

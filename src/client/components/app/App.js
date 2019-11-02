@@ -1,7 +1,7 @@
 import React from 'react'
 import WebFont from 'webfontloader'
 import Home from '../home/Home'
-import Navbar from '../navbar/Navbar'
+import Nav from '../navbar/Nav'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import './app.scss'
@@ -15,7 +15,7 @@ WebFont.load({
 const App = () => {
     return (
         <div className="root">
-            <Navbar />
+            <Nav />
             <Header />
             <Home />
             <Footer />

@@ -1,9 +1,11 @@
 import React from 'react'
+import CarouselElm from '../elements/CarouselElm'
+import getCarouselImages from '../_componentsUtils'
 
 const Header = () => {
     return (
         <div>
-            <p>Header</p>
+            <CarouselElm items={getCarouselImages()} />
         </div>
     )
 }

@@ -1,0 +1,39 @@
+// Components (or modules): holds all of your styles for buttons, carousels, sliders, and similar page components (think widgets). 
+// Your project will typically contain a lot of component files — as the whole site/app should be mostly composed of small modules.
+
+// Buttons
+// Carousel
+// Slider
+// etc.
+
+// Buttons
+.iltlc-btn {
+    color: $primary-color;
+    width: auto;
+    font-size: 1rem;
+    border-radius: 0;
+    border: 1px solid white;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    &:hover {
+        color: white;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+
+    @media (min-width: 768px) {
+        width: 200px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+// Menus
+.iltlc-menu-horizontal {
+    border-bottom: none !important;
+}
+
+.iltlc-menu-inline {
+    border-right: none !important;
+}

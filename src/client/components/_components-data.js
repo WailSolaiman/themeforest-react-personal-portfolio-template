@@ -5,6 +5,8 @@ import CarouselImgSecondDesktop from '../assets/carousel/carousel-2-desktop.jpg'
 import CarouselImgSecondMobile from '../assets/carousel/carousel-2-mobile.jpg'
 import CarouselImgThirdDesktop from '../assets/carousel/carousel-3-desktop.jpg'
 import CarouselImgThirdMobile from '../assets/carousel/carousel-3-mobile.jpg'
+import HeroImageDesktop from '../assets/heroimage/heroimage-desktop.jpg'
+import HeroImageMobile from '../assets/heroimage/heroimage-mobile.jpg'
 
 const carouselElements = [
     {
@@ -33,8 +35,21 @@ const carouselElements = [
     },
 ]
 
+const heroImage = {
+    id: uuidv4(),
+    desktopImage: HeroImageDesktop,
+    mobileImage: HeroImageMobile,
+    subheader: 'Digital design studio',
+    header: 'More than just a web design.',
+    btnText: 'Explore Now',
+}
+
 const getCarouselImages = () => {
     return carouselElements
 }
 
-export { getCarouselImages as default }
+const getHeroImage = () => {
+    return heroImage
+}
+
+export { getHeroImage, getCarouselImages }

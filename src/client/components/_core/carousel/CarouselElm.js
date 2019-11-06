@@ -1,12 +1,12 @@
 import React from 'react'
 import { Carousel, Button } from 'antd'
-import useWindowWidth from './_elementsUtils'
+import useWindowWidth from '../_core-utils'
 import './carouselElm.scss'
 
 const CarouselElm = ({ items = [] }) => {
     const windowWidth = useWindowWidth()
     return (
-        <Carousel effect="fade">
+        <Carousel effect="fade" autoplay>
             {items &&
                 items.map(item => {
                     const imageUrl =

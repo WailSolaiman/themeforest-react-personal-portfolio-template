@@ -12,20 +12,30 @@
     width: auto;
     font-size: 1rem;
     border-radius: 0;
-    border: 1px solid white;
+    border: 1px solid $primary-color;
     font-weight: 400;
     text-transform: capitalize;
 
     &:hover {
         color: white;
         background-color: $primary-color;
-        border: 1px solid $primary-color;
     }
 
     @media (min-width: 768px) {
         width: 200px;
         height: 50px;
         font-size: 1.5rem;
+    }
+}
+
+.btn-secondary {
+    @extend .iltlc-btn;
+    color: white;
+    background-color: $primary-color;
+
+    &:hover {
+        color: $primary-color;
+        background-color: white;
     }
 }
 
@@ -36,4 +46,15 @@
 
 .iltlc-menu-inline {
     border-right: none !important;
+}
+
+// Row
+.row-with-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: 768px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }

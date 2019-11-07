@@ -11,11 +11,11 @@ const AboutMe = ({
     image = '',
 }) => {
     return (
-        <Row className="row-with-padding text-img-elm">
+        <Row className="row-with-padding about-me">
             <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                 <Row gutter={16}>
                     <Col xs={24} md={12}>
-                        <div className="text-img-elm__text">
+                        <div className="about-me__text">
                             <h6>{subtitle}</h6>
                             <h2>{title}</h2>
                             <p>{firstParagraph}</p>
@@ -24,7 +24,7 @@ const AboutMe = ({
                         </div>
                     </Col>
                     <Col xs={24} md={12}>
-                        <div className="text-img-elm__img">
+                        <div className="about-me__img">
                             <img src={image} alt="intro-img" />
                         </div>
                     </Col>

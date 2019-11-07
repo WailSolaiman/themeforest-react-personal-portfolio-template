@@ -44,6 +44,99 @@ const heroImage = {
     btnText: 'Explore Now',
 }
 
+const aboutMeData = {
+    subtitle: 'About Me',
+    title: 'Lorem ipsum Dolor',
+    firstParagraph: `Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Voluptatibus sapiente alias
+                minus saepe laborum corporis earum quaerat
+                deserunt unde quidem. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit.`,
+    secondParagraph: `Lias minus saepe laborum corporis earum quaerat
+                deserunt unde quidem. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit.`,
+    btnText: 'Learn More',
+    image: HeroImageMobile,
+}
+
+const myServicesData = [
+    {
+        id: uuidv4(),
+        name: 'Service A',
+        img: HeroImageMobile,
+        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Service B',
+        img: HeroImageMobile,
+        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Service C',
+        img: HeroImageMobile,
+        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Service D',
+        img: HeroImageMobile,
+        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+]
+
+const projects = [
+    {
+        id: uuidv4(),
+        name: 'Project A',
+        img: HeroImageMobile,
+        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project B',
+        img: HeroImageMobile,
+        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project C',
+        img: HeroImageMobile,
+        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project D',
+        img: HeroImageMobile,
+        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project E',
+        img: HeroImageMobile,
+        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project F',
+        img: HeroImageMobile,
+        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project G',
+        img: HeroImageMobile,
+        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Project H',
+        img: HeroImageMobile,
+        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+]
+
 const getCarouselImages = () => {
     return carouselElements
 }
@@ -52,4 +145,22 @@ const getHeroImage = () => {
     return heroImage
 }
 
-export { getHeroImage, getCarouselImages }
+const getAboutMeData = () => {
+    return aboutMeData
+}
+
+const getMyServicesData = () => {
+    return myServicesData
+}
+
+const getProjects = () => {
+    return projects
+}
+
+export {
+    getHeroImage,
+    getCarouselImages,
+    getAboutMeData,
+    getMyServicesData,
+    getProjects,
+}

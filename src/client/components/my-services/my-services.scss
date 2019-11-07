@@ -1,0 +1,30 @@
+@import "../../sass/variables";
+
+.my-services {
+    background-color: $background-div-color;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__content {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+        @media (min-width: 992px) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

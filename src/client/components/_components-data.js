@@ -137,6 +137,31 @@ const projects = [
     },
 ]
 
+const testimonials = [
+    {
+        id: uuidv4(),
+        title: 'Lorem ipsum 1',
+        avatar:
+            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        description: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, 
+            voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+    {
+        id: uuidv4(),
+        title: 'Lorem ipsum 2',
+        avatar:
+            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        description: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+    {
+        id: uuidv4(),
+        title: 'Lorem ipsum 3',
+        avatar:
+            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        description: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Temporibus distinctio sit, ipsum ex nam praesentium.`,
+    },
+]
+
 const getCarouselImages = () => {
     return carouselElements
 }
@@ -157,10 +182,15 @@ const getProjects = () => {
     return projects
 }
 
+const getTestimonials = () => {
+    return testimonials
+}
+
 export {
     getHeroImage,
     getCarouselImages,
     getAboutMeData,
     getMyServicesData,
     getProjects,
+    getTestimonials,
 }

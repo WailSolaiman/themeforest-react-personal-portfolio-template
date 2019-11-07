@@ -2,16 +2,19 @@ import React from 'react'
 import AboutMe from '../../components/about-me/About-Me'
 import MyServices from '../../components/my-services/My-Services'
 import Projects from '../../components/projects/Projects'
+import Testimonials from '../../components/testimonials/Testimonials'
 import {
     getAboutMeData,
     getMyServicesData,
     getProjects,
+    getTestimonials,
 } from '../../components/_components-data'
 
 const Home = () => {
     const aboutMeData = getAboutMeData()
     const myServicesData = getMyServicesData()
     const projectsData = getProjects()
+    const testimonials = getTestimonials()
     return (
         <div className="home">
             <AboutMe
@@ -24,6 +27,7 @@ const Home = () => {
             />
             <MyServices services={myServicesData} />
             <Projects projects={projectsData} />
+            <Testimonials testimonials={testimonials} />
         </div>
     )
 }

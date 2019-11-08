@@ -162,6 +162,11 @@ const testimonials = [
     },
 ]
 
+const parallax = {
+    img: CarouselImgFirstDesktop,
+    header: 'Lorem ipsum Dolor',
+}
+
 const getCarouselImages = () => {
     return carouselElements
 }
@@ -186,6 +191,10 @@ const getTestimonials = () => {
     return testimonials
 }
 
+const getParallax = () => {
+    return parallax
+}
+
 export {
     getHeroImage,
     getCarouselImages,
@@ -193,4 +202,5 @@ export {
     getMyServicesData,
     getProjects,
     getTestimonials,
+    getParallax,
 }

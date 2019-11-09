@@ -1,15 +1,15 @@
 import React from 'react'
-// import CarouselElm from '../carousel/CarouselElm'
+import CarouselElm from '../carousel/CarouselElm'
 import HeroImage from '../heroimage/HeroImageElm'
-import { getHeroImage } from '../../_components-data'
 
-const Header = () => {
+const Header = ({ heroImage, carousel, selected }) => {
     return (
         <div>
-            {
-                // <CarouselElm items={getCarouselImages()} />
-            }
-            <HeroImage item={getHeroImage()} />
+            {selected === 'heroImage' ? (
+                <HeroImage item={heroImage} />
+            ) : (
+                <CarouselElm items={carousel} />
+            )}
         </div>
     )
 }

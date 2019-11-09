@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Menu } from 'antd'
 import useWindowWidth from './_navbarUtils'
 
@@ -10,7 +11,7 @@ const MenuLeft = () => {
     return (
         <Menu mode={mode}>
             <Menu.Item key="mail">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
             </Menu.Item>
             <SubMenu title={<span>Blogs</span>}>
                 <MenuItemGroup title="Item 1">
@@ -23,7 +24,7 @@ const MenuLeft = () => {
                 </MenuItemGroup>
             </SubMenu>
             <Menu.Item key="alipay">
-                <a href="/contact">Contact Us</a>
+                <Link to="/contact">Contact</Link>
             </Menu.Item>
         </Menu>
     )

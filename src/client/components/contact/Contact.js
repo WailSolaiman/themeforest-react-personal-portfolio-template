@@ -3,8 +3,8 @@ import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
 import './contact.scss'
 
 class Contact extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             values: {
                 name: '',
@@ -52,101 +52,96 @@ class Contact extends Component {
         const emailError = isFieldTouched('email') && getFieldError('email')
 
         return (
-            <Row className="row-with-padding contact">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <h2 className="contact__header">Contact Me</h2>
-                    <h6 className="contact__subheader">
-                        I’m always open to discussing product design work or
-                        partnerships.
-                    </h6>
-                </Col>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <Form onSubmit={e => this.handleSubmit(e)}>
-                        <Form.Item
-                            label="Name"
-                            validateStatus={nameError ? 'error' : ''}
+            <div className="row-with-padding contact">
+                <h2 className="contact__header">Contact Me</h2>
+                <h6 className="contact__subheader">
+                    I’m always open to discussing product design work or
+                    partnerships.
+                </h6>
+                <Form onSubmit={e => this.handleSubmit(e)}>
+                    <Form.Item
+                        label="Name"
+                        validateStatus={nameError ? 'error' : ''}
+                    >
+                        {getFieldDecorator('name', {
+                            rules: [
+                                {
+                                    required: true,
+                                    message: 'Please enter your name!',
+                                },
+                            ],
+                        })(<Input size="large" />)}
+                    </Form.Item>
+                    <Form.Item
+                        label="E-mail"
+                        validateStatus={emailError ? 'error' : ''}
+                    >
+                        {getFieldDecorator('email', {
+                            rules: [
+                                {
+                                    type: 'email',
+                                    message: 'The input is not valid E-mail!',
+                                },
+                                {
+                                    required: true,
+                                    message: 'Please enter your E-mail!',
+                                },
+                            ],
+                        })(<Input size="large" />)}
+                    </Form.Item>
+                    <Form.Item
+                        label="Message"
+                        validateStatus={messageError ? 'error' : ''}
+                    >
+                        {getFieldDecorator('message', {
+                            rules: [
+                                {
+                                    required: true,
+                                    message: 'Please enter your Message!',
+                                },
+                            ],
+                        })(
+                            <TextArea
+                                rows={4}
+                                size="large"
+                                autoSize={{ minRows: 3, maxRows: 6 }}
+                            />
+                        )}
+                    </Form.Item>
+                    <Form.Item>
+                        {getFieldDecorator('agreement', {
+                            valuePropName: 'checked',
+                        })(
+                            <Checkbox>
+                                I have read the <a href="/">agreement</a>
+                            </Checkbox>
+                        )}
+                    </Form.Item>
+                    <Form.Item className="contact__submit">
+                        <Button
+                            className="btn-secondary"
+                            type="primary"
+                            htmlType="submit"
+                            disabled={
+                                this.hasErrors(getFieldsError()) ||
+                                !getFieldValue('agreement')
+                            }
                         >
-                            {getFieldDecorator('name', {
-                                rules: [
-                                    {
-                                        required: true,
-                                        message: 'Please enter your name!',
-                                    },
-                                ],
-                            })(<Input size="large" />)}
-                        </Form.Item>
-                        <Form.Item
-                            label="E-mail"
-                            validateStatus={emailError ? 'error' : ''}
-                        >
-                            {getFieldDecorator('email', {
-                                rules: [
-                                    {
-                                        type: 'email',
-                                        message:
-                                            'The input is not valid E-mail!',
-                                    },
-                                    {
-                                        required: true,
-                                        message: 'Please enter your E-mail!',
-                                    },
-                                ],
-                            })(<Input size="large" />)}
-                        </Form.Item>
-                        <Form.Item
-                            label="Message"
-                            validateStatus={messageError ? 'error' : ''}
-                        >
-                            {getFieldDecorator('message', {
-                                rules: [
-                                    {
-                                        required: true,
-                                        message: 'Please enter your Message!',
-                                    },
-                                ],
-                            })(
-                                <TextArea
-                                    rows={4}
-                                    size="large"
-                                    autoSize={{ minRows: 3, maxRows: 6 }}
-                                />
-                            )}
-                        </Form.Item>
-                        <Form.Item>
-                            {getFieldDecorator('agreement', {
-                                valuePropName: 'checked',
-                            })(
-                                <Checkbox>
-                                    I have read the <a href="/">agreement</a>
-                                </Checkbox>
-                            )}
-                        </Form.Item>
-                        <Form.Item className="contact__submit">
-                            <Button
-                                className="btn-secondary"
-                                type="primary"
-                                htmlType="submit"
-                                disabled={
-                                    this.hasErrors(getFieldsError()) ||
-                                    !getFieldValue('agreement')
-                                }
-                            >
-                                Submit
-                            </Button>
-                        </Form.Item>
-                        <Form.Item wrapperCol={{ span: 12, offset: 5 }}>
-                            {name !== '' && message !== '' ? (
-                                <p>
-                                    Name: {name} - Email: {email} | Message:{' '}
-                                    {message}
-                                </p>
-                            ) : (
-                                ''
-                            )}
-                        </Form.Item>
-                    </Form>
-                </Col>
-            </Row>
+                            Submit
+                        </Button>
+                    </Form.Item>
+                    <Form.Item wrapperCol={{ span: 12, offset: 5 }}>
+                        {name !== '' && message !== '' ? (
+                            <p>
+                                Name: {name} - Email: {email} | Message:{' '}
+                                {message}
+                            </p>
+                        ) : (
+                            ''
+                        )}
+                    </Form.Item>
+                </Form>
+            </div>
         )
     }
 }

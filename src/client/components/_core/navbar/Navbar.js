@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col, Drawer, Button } from 'antd'
 import MenuLeft from './MenuLeft'
 import MenuRight from './MenuRight'
@@ -13,7 +14,7 @@ const Navbar = () => {
             <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                 <nav className="menu-bar">
                     <div className="logo">
-                        <a href="/">ILTLC</a>
+                        <Link to="/">ILTLC</Link>
                     </div>
                     <div className="menu-content">
                         <div className="menu-content__left-menu">

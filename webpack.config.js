@@ -13,6 +13,7 @@ module.exports = {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, outputDirectory),
+        publicPath: '/',
     },
     optimization: {
         minimizer: [
@@ -72,6 +73,7 @@ module.exports = {
         proxy: {
             '/api': 'http://localhost:8080',
         },
+        historyApiFallback: true,
     },
     performance: {
         hints: false,

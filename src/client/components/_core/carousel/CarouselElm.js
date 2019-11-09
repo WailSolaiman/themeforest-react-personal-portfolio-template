@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel, Button } from 'antd'
-import useWindowWidth from '../_core-utils'
+import useWindowWidth from '../_coreUtils'
 import './carouselElm.scss'
 
 const CarouselElm = ({ items = [] }) => {

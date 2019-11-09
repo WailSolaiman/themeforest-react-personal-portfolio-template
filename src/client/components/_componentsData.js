@@ -35,10 +35,19 @@ const carouselElements = [
     },
 ]
 
-const heroImage = {
+const homeHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
+    subheader: 'Digital design studio',
+    header: 'More than just a web design.',
+    btnText: 'Explore Now',
+}
+
+const contactHeroImage = {
+    id: uuidv4(),
+    desktopImage: CarouselImgThirdDesktop,
+    mobileImage: CarouselImgThirdMobile,
     subheader: 'Digital design studio',
     header: 'More than just a web design.',
     btnText: 'Explore Now',
@@ -171,8 +180,12 @@ const getCarouselImages = () => {
     return carouselElements
 }
 
-const getHeroImage = () => {
-    return heroImage
+const getHomeHeroImage = () => {
+    return homeHeroImage
+}
+
+const getContactHeroImage = () => {
+    return contactHeroImage
 }
 
 const getAboutMeData = () => {
@@ -196,7 +209,8 @@ const getParallax = () => {
 }
 
 export {
-    getHeroImage,
+    getHomeHeroImage,
+    getContactHeroImage,
     getCarouselImages,
     getAboutMeData,
     getMyServicesData,

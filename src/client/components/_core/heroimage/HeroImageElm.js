@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'antd'
-import useWindowWidth from '../_core-utils'
+import useWindowWidth from '../_coreUtils'
 import './heroImageElm.scss'
 
-const HeroImageElm = ({ item = [] }) => {
+const HeroImageElm = ({ item = {} }) => {
     const imageUrl =
         useWindowWidth() >= 576 ? item.desktopImage : item.mobileImage
     return (

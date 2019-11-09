@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
+import { Form, Input, Button, Checkbox } from 'antd'
 import './contact.scss'
 
 class Contact extends Component {

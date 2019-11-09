@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, List, Avatar } from 'antd'
+import { List, Avatar } from 'antd'
 import './personal-data-list.scss'
 
 const data = [

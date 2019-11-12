@@ -11,7 +11,7 @@ const marks = {
         style: {
             color: '#f50',
         },
-        label: <strong>100°C</strong>,
+        label: <strong>100%</strong>,
     },
 }
 
@@ -24,7 +24,7 @@ const Skills = ({ skills = [] }) => {
     return (
         <div className="skills">
             <Title level={1}>Skills</Title>
-            <Row gutter={24}>
+            <Row gutter={{ xs: 0, xl: 24 }}>
                 {skills &&
                     skills.map(skill => {
                         return (

@@ -179,7 +179,7 @@ const personalData = {
     birthdate: '21 june 1990',
     nationality: 'U.S.A',
     experience: '7 years',
-    address: 'Germany. Street Name, 12345 City.',
+    address: 'Germany. Street Name, 12345 City',
     freelance: 'Available',
     langages: 'English, Germany',
     phone: '+34 21 18 40 10',
@@ -256,6 +256,11 @@ const parallax = {
 
 const contactData = [
     {
+        contactTitle: 'Address',
+        contactIcon: 'home',
+        contactContent: 'Germany. Street Name, 12345 City',
+    },
+    {
         contactTitle: 'Phone',
         contactIcon: 'phone',
         contactContent: '+49 176 77027455',
@@ -265,15 +270,23 @@ const contactData = [
         contactIcon: 'mail',
         contactContent: 'iltlc@hotmail.com',
     },
+]
+
+const socialMedia = [
     {
-        contactTitle: 'Facebook',
-        contactIcon: 'facebook',
-        contactContent: 'iltlc-2020',
+        id: uuidv4(),
+        icon: 'facebook',
+        link: '/',
     },
     {
-        contactTitle: 'Twitter',
-        contactIcon: 'twitter',
-        contactContent: '@iltlc',
+        id: uuidv4(),
+        icon: 'twitter',
+        link: '/',
+    },
+    {
+        id: uuidv4(),
+        icon: 'youtube',
+        link: '/',
     },
 ]
 
@@ -333,6 +346,10 @@ const getContactData = () => {
     return contactData
 }
 
+const getSocialMedia = () => {
+    return socialMedia
+}
+
 export {
     getHomeHeroImage,
     getContactHeroImage,
@@ -348,4 +365,5 @@ export {
     getEducations,
     getSkills,
     getContactData,
+    getSocialMedia,
 }

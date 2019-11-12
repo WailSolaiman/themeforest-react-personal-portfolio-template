@@ -33,7 +33,7 @@ const Home = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <Row>
+            <Row className="row-with-margin-bottom">
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <AboutMe
                         subtitle={aboutMeData.subtitle}
@@ -45,27 +45,27 @@ const Home = () => {
                     />
                 </Col>
             </Row>
-            <Row className="row-with-padding bg-color">
+            <Row className="row-with-margin-bottom bg-color">
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <MyServices services={myServicesData} />
                 </Col>
             </Row>
-            <Row className="row-with-padding">
+            <Row className="row-with-margin-bottom">
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <Projects projects={projectsData} />
                 </Col>
             </Row>
-            <Row className="row-with-padding">
+            <Row className="row-with-margin-bottom">
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <Testimonials testimonials={testimonials} />
                 </Col>
             </Row>
-            <Row className="row-with-padding">
+            <Row className="row-with-margin-bottom">
                 <Col xs={{ span: 24, offset: 0 }} xl={{ span: 12, offset: 6 }}>
                     <Parallax parallax={parallax} />
                 </Col>
             </Row>
-            <Row className="row-with-padding">
+            <Row>
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <WrappedContact />
                 </Col>

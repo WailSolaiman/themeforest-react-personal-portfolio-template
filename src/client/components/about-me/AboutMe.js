@@ -11,7 +11,7 @@ const AboutMe = ({
     image = '',
 }) => {
     return (
-        <Row gutter={24} className="row-with-padding about-me">
+        <Row gutter={{ xs: 0, xl: 24 }} className="row-with-padding about-me">
             <Col xs={24} md={12}>
                 <div className="about-me__text">
                     <h6>{subtitle}</h6>

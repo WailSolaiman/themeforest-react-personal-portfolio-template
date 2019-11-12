@@ -49,13 +49,11 @@
 }
 
 // Row
-.row-with-padding {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.row-with-margin-bottom {
+    margin-bottom: 3rem;
 
     @media (min-width: 768px) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 
     &.bg-color {

@@ -32,11 +32,15 @@ const AboutPage = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <PageTitle
-                title="About Me"
-                subtitle="I design and code beautiful things, and I love what I do."
-            />
-            <Row gutter={24}>
+            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
+                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
+                    <PageTitle
+                        title="About Me"
+                        subtitle="I design and code beautiful things, and I love what I do."
+                    />
+                </Col>
+            </Row>
+            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 4, offset: 6 }}>
                     <ProfileImage profileImage={profileImage} />
                 </Col>
@@ -44,7 +48,7 @@ const AboutPage = () => {
                     <PersonalData personalData={personalData} />
                 </Col>
             </Row>
-            <Row gutter={24} className="row-with-padding">
+            <Row gutter={{ xs: 0, xl: 24 }}>
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 6, offset: 6 }}>
                     <Experience experiences={experiences} />
                 </Col>

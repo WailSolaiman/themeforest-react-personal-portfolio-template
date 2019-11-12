@@ -1,10 +1,11 @@
 import React from 'react'
 import CarouselElm from '../carousel/CarouselElm'
 import HeroImage from '../heroimage/HeroImageElm'
+import './header.scss'
 
 const Header = ({ heroImage, carousel, selected }) => {
     return (
-        <div>
+        <div className="header">
             {selected === 'heroImage' ? (
                 <HeroImage item={heroImage} />
             ) : (

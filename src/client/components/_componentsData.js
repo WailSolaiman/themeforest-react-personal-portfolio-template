@@ -8,6 +8,15 @@ import CarouselImgThirdMobile from '../assets/carousel/carousel-3-mobile.jpg'
 import HeroImageDesktop from '../assets/heroimage/heroimage-desktop.jpg'
 import HeroImageMobile from '../assets/heroimage/heroimage-mobile.jpg'
 
+const navbarStyle = [
+    {
+        navbar: 'one-menu',
+    },
+    {
+        navbar: 'two-menues',
+    },
+]
+
 const carouselElements = [
     {
         id: uuidv4(),
@@ -290,6 +299,10 @@ const socialMedia = [
     },
 ]
 
+const getNavbarStyle = () => {
+    return navbarStyle
+}
+
 const getCarouselImages = () => {
     return carouselElements
 }
@@ -351,6 +364,7 @@ const getSocialMedia = () => {
 }
 
 export {
+    getNavbarStyle,
     getHomeHeroImage,
     getContactHeroImage,
     getCarouselImages,

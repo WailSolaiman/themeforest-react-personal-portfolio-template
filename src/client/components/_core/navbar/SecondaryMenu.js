@@ -1,9 +1,9 @@
 import React from 'react'
 import { Menu } from 'antd'
-import useWindowWidth from './_navbarUtils'
+import { UseWindowWidth } from './_navbarUtils'
 
-const MenuRight = () => {
-    const mode = useWindowWidth() >= 576 ? 'horizontal' : 'inline'
+const SecondaryMenu = () => {
+    const mode = UseWindowWidth() >= 576 ? 'horizontal' : 'inline'
     return (
         <Menu mode={mode}>
             <Menu.Item key="mail">
@@ -16,4 +16,4 @@ const MenuRight = () => {
     )
 }
 
-export default MenuRight
+export default SecondaryMenu

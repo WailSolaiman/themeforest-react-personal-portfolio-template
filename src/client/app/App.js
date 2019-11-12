@@ -6,6 +6,7 @@ import ContactPage from '../pages/contact/ContactPage'
 import AboutPage from '../pages/about/AboutPage'
 import Navbar from '../components/_core/navbar/Navbar'
 import Footer from '../components/_core/footer/Footer'
+import { getNavbarStyle } from '../components/_componentsData'
 import './app.scss'
 
 WebFont.load({
@@ -18,7 +19,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="iltlc-root">
-                <Navbar />
+                <Navbar navbarStyle={getNavbarStyle()} selected="one-menu" />
                 <Switch>
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/about" component={AboutPage} />

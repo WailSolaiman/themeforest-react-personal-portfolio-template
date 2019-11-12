@@ -35,16 +35,14 @@
             font-weight: 700;
         }
 
-        &__left-menu {
-            float: left;
+        &__main-menu {
 
             @media(max-width: 767px) {
                 display: none;
             }
         }
 
-        &__right-menu {
-            float: right;
+        &__secondary-menu {
 
             @media(max-width: 767px) {
                 display: none;

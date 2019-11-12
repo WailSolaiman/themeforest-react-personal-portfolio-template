@@ -29,36 +29,40 @@ const ContactPage = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <Row className="row-with-margin-bottom">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <PageTitle
-                        title="Contact"
-                        subtitle="I’m always open to discussing product design work or partnerships."
-                    />
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 4, offset: 6 }}>
-                    <ContactData contactData={contactData} />
-                    <SocialProfile socialMedia={socialMedia} />
-                </Col>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 0 }}>
-                    <Map
-                        containerElement={<div style={{ height: `400px` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
-                    />
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
-                <Col xs={{ span: 24, offset: 0 }} xl={{ span: 12, offset: 6 }}>
-                    <Parallax parallax={parallax} />
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <WrappedContact />
-                </Col>
-            </Row>
+            <div className="container">
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <PageTitle
+                            title="Contact"
+                            subtitle="I’m always open to discussing product design work or partnerships."
+                        />
+                    </Col>
+                </Row>
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24} xl={8}>
+                        <ContactData contactData={contactData} />
+                        <SocialProfile socialMedia={socialMedia} />
+                    </Col>
+                    <Col xs={24} xl={16}>
+                        <Map
+                            containerElement={
+                                <div style={{ height: `400px` }} />
+                            }
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
+                    </Col>
+                </Row>
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <Parallax parallax={parallax} />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={24}>
+                        <WrappedContact />
+                    </Col>
+                </Row>
+            </div>
         </div>
     )
 }

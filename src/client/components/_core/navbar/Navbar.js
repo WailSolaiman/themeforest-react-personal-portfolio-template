@@ -1,50 +1,62 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Drawer, Button } from 'antd'
-import MenuLeft from './MenuLeft'
-import MenuRight from './MenuRight'
-import useWindowWidth from './_navbarUtils'
+import MainMenu from './MainMenu'
+import SecondaryMenu from './SecondaryMenu'
+import { UseWindowWidth, GetNavbarStyle } from './_navbarUtils'
 import './navbar.scss'
 
-const Navbar = () => {
-    const windowWidth = useWindowWidth() >= 576 ? 'none' : 'block'
+const Navbar = ({ navbarStyle = [], selected }) => {
+    const windowWidth = UseWindowWidth() >= 576 ? 'none' : 'block'
     const [visible, setVisibility] = useState(false)
+    const navStyle = GetNavbarStyle(navbarStyle, selected)
+
     return (
-        <Row>
-            <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                <nav className="menu-bar">
-                    <div className="logo">
-                        <Link to="/">ILTLC</Link>
-                    </div>
-                    <div className="menu-content">
-                        <div className="menu-content__left-menu">
-                            <MenuLeft />
+        <div className="container">
+            <Row>
+                <Col xs={24}>
+                    <nav className="menu-bar">
+                        <div className="logo">
+                            <Link to="/">ILTLC</Link>
                         </div>
-                        <div className="menu-content__right-menu">
-                            <MenuRight />
+                        <div className="menu-content">
+                            <div
+                                className="menu-content__main-menu"
+                                style={{
+                                    display: `${navStyle.mainMenu}`,
+                                    float: `${navStyle.mainMenuFloat}`,
+                                }}>
+                                <MainMenu />
+                            </div>
+                            <div
+                                className="menu-content__secondary-menu"
+                                style={{
+                                    display: `${navStyle.secondaryMenu}`,
+                                    float: `${navStyle.secondaryMenuFloat}`,
+                                }}>
+                                <SecondaryMenu />
+                            </div>
+                            <Button
+                                className="bars-menu"
+                                onClick={() => setVisibility(true)}
+                                style={{ display: `${windowWidth}` }}>
+                                <span className="bars-btn" />
+                            </Button>
+                            <Drawer
+                                className="menu-content__drawer"
+                                title="Basic Drawer"
+                                placement="right"
+                                closable={false}
+                                onClose={() => setVisibility(false)}
+                                visible={visible}>
+                                <MainMenu />
+                                <SecondaryMenu />
+                            </Drawer>
                         </div>
-                        <Button
-                            className="bars-menu"
-                            onClick={() => setVisibility(true)}
-                            style={{ display: `${windowWidth}` }}
-                        >
-                            <span className="bars-btn" />
-                        </Button>
-                        <Drawer
-                            className="menu-content__drawer"
-                            title="Basic Drawer"
-                            placement="right"
-                            closable={false}
-                            onClose={() => setVisibility(false)}
-                            visible={visible}
-                        >
-                            <MenuLeft />
-                            <MenuRight />
-                        </Drawer>
-                    </div>
-                </nav>
-            </Col>
-        </Row>
+                    </nav>
+                </Col>
+            </Row>
+        </div>
     )
 }
 

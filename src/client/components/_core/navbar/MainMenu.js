@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd'
-import useWindowWidth from './_navbarUtils'
+import { UseWindowWidth } from './_navbarUtils'
 
-const MenuLeft = () => {
-    const mode = useWindowWidth() >= 576 ? 'horizontal' : 'inline'
+const MainMenu = () => {
+    const mode = UseWindowWidth() >= 576 ? 'horizontal' : 'inline'
     const { SubMenu } = Menu
     const MenuItemGroup = Menu.ItemGroup
 
@@ -33,4 +33,4 @@ const MenuLeft = () => {
     )
 }
 
-export default MenuLeft
+export default MainMenu

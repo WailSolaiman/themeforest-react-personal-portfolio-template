@@ -52,7 +52,7 @@ class Contact extends Component {
         const emailError = isFieldTouched('email') && getFieldError('email')
 
         return (
-            <div className="row-with-padding contact">
+            <div className="contact">
                 <h2 className="contact__header">Contact Me</h2>
                 <h6 className="contact__subheader">
                     I’m always open to discussing product design work or

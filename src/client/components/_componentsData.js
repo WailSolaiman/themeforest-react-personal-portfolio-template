@@ -171,10 +171,111 @@ const testimonials = [
     },
 ]
 
+const profileImage = CarouselImgThirdMobile
+
+const personalData = {
+    firstname: 'lorem',
+    lastname: 'Ipsum',
+    birthdate: '21 june 1990',
+    nationality: 'U.S.A',
+    experience: '7 years',
+    address: 'Germany. Street Name, 12345 City.',
+    freelance: 'Available',
+    langages: 'English, Germany',
+    phone: '+34 21 18 40 10',
+    email: 'you@you.com',
+    skype: 'iltlc-0123',
+    facebook: 'iltlc-f',
+}
+
+const experiences = [
+    {
+        id: uuidv4(),
+        from: '2017',
+        to: '2019',
+        career: 'Web Developer',
+        company: 'Company GmbH',
+        description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy`,
+    },
+    {
+        id: uuidv4(),
+        from: '2017',
+        to: '2019',
+        career: 'Web Developer',
+        company: 'Company GmbH',
+        description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy`,
+    },
+]
+
+const educations = [
+    {
+        id: uuidv4(),
+        from: '2017',
+        to: '2019',
+        academy: 'Master Degree, University',
+        description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy`,
+    },
+    {
+        id: uuidv4(),
+        from: '2017',
+        to: '2019',
+        academy: 'Bachelor Degree, University',
+        description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy`,
+    },
+    {
+        id: uuidv4(),
+        from: '2017',
+        to: '2019',
+        academy: 'High School',
+        description: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy`,
+    },
+]
+
+const skills = [
+    {
+        id: uuidv4(),
+        name: 'HTML5',
+        value: 90,
+    },
+    {
+        id: uuidv4(),
+        name: 'CSS3',
+        value: 80,
+    },
+    {
+        id: uuidv4(),
+        name: 'JavaScript',
+        value: 60,
+    },
+]
+
 const parallax = {
     img: CarouselImgFirstDesktop,
     header: 'Lorem ipsum Dolor',
 }
+
+const contactData = [
+    {
+        contactTitle: 'Phone',
+        contactIcon: 'phone',
+        contactContent: '+49 176 77027455',
+    },
+    {
+        contactTitle: 'Email',
+        contactIcon: 'mail',
+        contactContent: 'iltlc@hotmail.com',
+    },
+    {
+        contactTitle: 'Facebook',
+        contactIcon: 'facebook',
+        contactContent: 'iltlc-2020',
+    },
+    {
+        contactTitle: 'Twitter',
+        contactIcon: 'twitter',
+        contactContent: '@iltlc',
+    },
+]
 
 const getCarouselImages = () => {
     return carouselElements
@@ -208,6 +309,30 @@ const getParallax = () => {
     return parallax
 }
 
+const getprofileImage = () => {
+    return profileImage
+}
+
+const getPersonalData = () => {
+    return personalData
+}
+
+const getExperiences = () => {
+    return experiences
+}
+
+const getEducations = () => {
+    return educations
+}
+
+const getSkills = () => {
+    return skills
+}
+
+const getContactData = () => {
+    return contactData
+}
+
 export {
     getHomeHeroImage,
     getContactHeroImage,
@@ -217,4 +342,10 @@ export {
     getProjects,
     getTestimonials,
     getParallax,
+    getprofileImage,
+    getPersonalData,
+    getExperiences,
+    getEducations,
+    getSkills,
+    getContactData,
 }

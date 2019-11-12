@@ -33,19 +33,39 @@ const Home = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <AboutMe
-                subtitle={aboutMeData.subtitle}
-                title={aboutMeData.title}
-                firstParagraph={aboutMeData.firstParagraph}
-                secondParagraph={aboutMeData.secondParagraph}
-                btnText={aboutMeData.btnText}
-                image={aboutMeData.image}
-            />
-            <MyServices services={myServicesData} />
-            <Projects projects={projectsData} />
-            <Testimonials testimonials={testimonials} />
-            <Parallax parallax={parallax} />
             <Row>
+                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
+                    <AboutMe
+                        subtitle={aboutMeData.subtitle}
+                        title={aboutMeData.title}
+                        firstParagraph={aboutMeData.firstParagraph}
+                        secondParagraph={aboutMeData.secondParagraph}
+                        btnText={aboutMeData.btnText}
+                        image={aboutMeData.image}
+                    />
+                </Col>
+            </Row>
+            <Row className="row-with-padding bg-color">
+                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
+                    <MyServices services={myServicesData} />
+                </Col>
+            </Row>
+            <Row className="row-with-padding">
+                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
+                    <Projects projects={projectsData} />
+                </Col>
+            </Row>
+            <Row className="row-with-padding">
+                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
+                    <Testimonials testimonials={testimonials} />
+                </Col>
+            </Row>
+            <Row className="row-with-padding">
+                <Col xs={{ span: 24, offset: 0 }} xl={{ span: 12, offset: 6 }}>
+                    <Parallax parallax={parallax} />
+                </Col>
+            </Row>
+            <Row className="row-with-padding">
                 <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
                     <WrappedContact />
                 </Col>

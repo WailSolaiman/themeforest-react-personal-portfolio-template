@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+
+.contact-data {
+
+    &__item {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+
+    &__title {
+        font-size: 1.2rem !important;
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        margin-bottom: 0 !important;
+    }
+
+    &__icon {
+        color: $primary-color !important;
+        margin-right: 15px;
+    }
+}

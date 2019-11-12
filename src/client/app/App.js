@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import WebFont from 'webfontloader'
 import Home from '../pages/home/Home'
 import ContactPage from '../pages/contact/ContactPage'
+import AboutPage from '../pages/about/AboutPage'
 import Navbar from '../components/_core/navbar/Navbar'
 import Footer from '../components/_core/footer/Footer'
 import './app.scss'
@@ -20,6 +21,7 @@ const App = () => {
                 <Navbar />
                 <Switch>
                     <Route path="/contact" component={ContactPage} />
+                    <Route path="/about" component={AboutPage} />
                     <Route path="/" component={Home} />
                 </Switch>
                 <Footer />

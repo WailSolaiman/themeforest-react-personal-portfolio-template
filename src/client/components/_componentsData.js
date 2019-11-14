@@ -299,6 +299,29 @@ const socialMedia = [
     },
 ]
 
+const articles = [
+    {
+        id: 'fsdfds',
+        blogFigure: CarouselImgFirstDesktop,
+        blogTitle: 'Lorem ipsum',
+        blogExcerpt:
+            'Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad text dfsa the froogno.',
+        blogBody:
+            'Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad text dfsa the froogno. Lorem ipsum dolor informad text dfsa the froogno.',
+        publishDate: '15.12.2020',
+    },
+    {
+        id: 'fsddds',
+        blogFigure: CarouselImgFirstDesktop,
+        blogTitle: 'Lorem ipsum 2',
+        blogExcerpt:
+            'Froogno Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad text dfsa the.',
+        blogBody:
+            'Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad text dfsa the froogno. Lorem ipsum dolor informad text dfsa the froogno.',
+        publishDate: '15.12.2020',
+    },
+]
+
 const getNavbarStyle = () => {
     return navbarStyle
 }
@@ -363,6 +386,10 @@ const getSocialMedia = () => {
     return socialMedia
 }
 
+const getArticles = () => {
+    return articles
+}
+
 export {
     getNavbarStyle,
     getHomeHeroImage,
@@ -380,4 +407,5 @@ export {
     getSkills,
     getContactData,
     getSocialMedia,
+    getArticles,
 }

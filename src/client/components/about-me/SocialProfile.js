@@ -11,7 +11,7 @@ const SocialProfile = ({ socialMedia = [] }) => {
                 {socialMedia &&
                     socialMedia.map(social => {
                         return (
-                            <Col key={social.id} xs={{ span: 6, offset: 0 }}>
+                            <Col key={social.id} xs={6}>
                                 <a href={social.link}>
                                     <Icon
                                         className="social-profiles__icon"

@@ -32,33 +32,37 @@ const AboutPage = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <PageTitle
-                        title="About Me"
-                        subtitle="I design and code beautiful things, and I love what I do."
-                    />
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom" gutter={{ xs: 0, xl: 24 }}>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 4, offset: 6 }}>
-                    <ProfileImage profileImage={profileImage} />
-                </Col>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 8, offset: 0 }}>
-                    <PersonalData personalData={personalData} />
-                </Col>
-            </Row>
-            <Row gutter={{ xs: 0, xl: 24 }}>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 6, offset: 6 }}>
-                    <Experience experiences={experiences} />
-                </Col>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 6, offset: 0 }}>
-                    <Education educations={educations} />
-                </Col>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <Skills skills={skills} />
-                </Col>
-            </Row>
+            <div className="container">
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <PageTitle
+                            title="About Me"
+                            subtitle="I design and code beautiful things, and I love what I do."
+                        />
+                    </Col>
+                </Row>
+                <Row
+                    className="row-with-margin-bottom"
+                    gutter={{ xs: 0, xl: 24 }}>
+                    <Col xs={24} xl={8}>
+                        <ProfileImage profileImage={profileImage} />
+                    </Col>
+                    <Col xs={24} xl={16}>
+                        <PersonalData personalData={personalData} />
+                    </Col>
+                </Row>
+                <Row gutter={{ xs: 0, xl: 24 }}>
+                    <Col xs={24} xl={12}>
+                        <Experience experiences={experiences} />
+                    </Col>
+                    <Col xs={24} xl={12}>
+                        <Education educations={educations} />
+                    </Col>
+                    <Col xs={24}>
+                        <Skills skills={skills} />
+                    </Col>
+                </Row>
+            </div>
         </div>
     )
 }

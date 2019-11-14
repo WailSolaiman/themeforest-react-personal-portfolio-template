@@ -28,11 +28,7 @@ const Skills = ({ skills = [] }) => {
                 {skills &&
                     skills.map(skill => {
                         return (
-                            <Col
-                                key={skill.id}
-                                xs={{ span: 24, offset: 0 }}
-                                xl={{ span: 12, offset: 0 }}
-                            >
+                            <Col key={skill.id} xs={24} xl={12}>
                                 <h6 className="skills__subtitle">
                                     {skill.name}
                                 </h6>

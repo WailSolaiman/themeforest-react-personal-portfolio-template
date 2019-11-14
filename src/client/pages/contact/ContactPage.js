@@ -5,7 +5,7 @@ import PageTitle from '../../components/_core/page-title/PageTitle'
 import Contact from '../../components/contact/Contact'
 import SocialProfile from '../../components/about-me/SocialProfile'
 import ContactData from '../../components/about-me/ContactData'
-import Map from '../../components/_core/map/Map'
+import GoogleMap from '../../components/_core/map/Map'
 import Parallax from '../../components/_core/parallax/Parallax'
 import {
     getContactHeroImage,
@@ -44,7 +44,7 @@ const ContactPage = () => {
                         <SocialProfile socialMedia={socialMedia} />
                     </Col>
                     <Col xs={24} xl={16}>
-                        <Map
+                        <GoogleMap
                             containerElement={
                                 <div style={{ height: `400px` }} />
                             }

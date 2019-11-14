@@ -33,43 +33,49 @@ const Home = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <Row className="row-with-margin-bottom">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <AboutMe
-                        subtitle={aboutMeData.subtitle}
-                        title={aboutMeData.title}
-                        firstParagraph={aboutMeData.firstParagraph}
-                        secondParagraph={aboutMeData.secondParagraph}
-                        btnText={aboutMeData.btnText}
-                        image={aboutMeData.image}
-                    />
-                </Col>
-            </Row>
+            <div className="container">
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <AboutMe
+                            subtitle={aboutMeData.subtitle}
+                            title={aboutMeData.title}
+                            firstParagraph={aboutMeData.firstParagraph}
+                            secondParagraph={aboutMeData.secondParagraph}
+                            btnText={aboutMeData.btnText}
+                            image={aboutMeData.image}
+                        />
+                    </Col>
+                </Row>
+            </div>
             <Row className="row-with-margin-bottom bg-color">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <MyServices services={myServicesData} />
+                <Col xs={24}>
+                    <div className="container">
+                        <MyServices services={myServicesData} />
+                    </div>
                 </Col>
             </Row>
-            <Row className="row-with-margin-bottom">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <Projects projects={projectsData} />
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom">
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <Testimonials testimonials={testimonials} />
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom">
-                <Col xs={{ span: 24, offset: 0 }} xl={{ span: 12, offset: 6 }}>
-                    <Parallax parallax={parallax} />
-                </Col>
-            </Row>
-            <Row>
-                <Col xs={{ span: 20, offset: 2 }} xl={{ span: 12, offset: 6 }}>
-                    <WrappedContact />
-                </Col>
-            </Row>
+            <div className="container">
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <Projects projects={projectsData} />
+                    </Col>
+                </Row>
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <Testimonials testimonials={testimonials} />
+                    </Col>
+                </Row>
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <Parallax parallax={parallax} />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={24}>
+                        <WrappedContact />
+                    </Col>
+                </Row>
+            </div>
         </div>
     )
 }

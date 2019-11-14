@@ -17,7 +17,7 @@ const Navbar = ({ navbarStyle = [], selected }) => {
                 <Col xs={24}>
                     <nav className="menu-bar">
                         <div className="logo">
-                            <Link to="/">ILTLC</Link>
+                            <p>ILTLC</p>
                         </div>
                         <div className="menu-content">
                             <div

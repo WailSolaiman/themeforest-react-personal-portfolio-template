@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import GoogleMapReact from 'google-map-react'
 import './map.scss'
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
 const Map = () => {
-    useEffect(() => {
-        window.addEventListener('wheel', () => {}, {
-            capture: true,
-            passive: true,
-        })
-        // return () => window.removeEventListener('resize', handleWindowResize)
-    }, [])
-
     return (
         <div style={{ height: 400, width: '100%' }}>
             <GoogleMapReact

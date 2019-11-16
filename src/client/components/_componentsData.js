@@ -68,89 +68,65 @@ const aboutMeData = {
     firstParagraph: `Lorem ipsum dolor sit, amet consectetur
                 adipisicing elit. Voluptatibus sapiente alias
                 minus saepe laborum corporis earum quaerat
-                deserunt unde quidem. Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.`,
+                deserunt unde quidem.`,
     secondParagraph: `Lias minus saepe laborum corporis earum quaerat
-                deserunt unde quidem. Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.`,
+                deserunt unde quidem. Smet consectetur
+                adipisicing elit. Voluptatibus sapiente alias
+                minus saepe laborum corporis earum quaerat
+                deserunt unde quidem.`,
+    thirdParagraph: ``,
     btnText: 'Learn More',
-    image: HeroImageMobile,
+    image: HeroImageDesktop,
 }
 
 const myServicesData = [
     {
         id: uuidv4(),
-        name: 'Service A',
+        name: 'Web Design',
         img: HeroImageMobile,
-        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit sit, ipsum ex nam.`,
     },
     {
         id: uuidv4(),
-        name: 'Service B',
+        name: 'Web Development',
         img: HeroImageMobile,
-        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
+        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus tempore accusamus.`,
     },
     {
         id: uuidv4(),
-        name: 'Service C',
+        name: 'Management',
         img: HeroImageMobile,
-        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
-    },
-    {
-        id: uuidv4(),
-        name: 'Service D',
-        img: HeroImageMobile,
-        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere nobis ad dignissimos.`,
     },
 ]
 
 const projects = [
     {
         id: uuidv4(),
-        name: 'Project A',
-        img: HeroImageMobile,
-        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+        name: 'Javascript',
+        img: HeroImageDesktop,
+        title: 'Dolor sit Amet',
+        paragraph: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
     },
     {
         id: uuidv4(),
-        name: 'Project B',
-        img: HeroImageMobile,
-        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
+        name: 'PHP',
+        img: HeroImageDesktop,
+        title: 'Dignissimos',
+        paragraph: `Voluptas nobis tempore accu samus ad dignissimos necessitatibus.`,
     },
     {
         id: uuidv4(),
-        name: 'Project C',
-        img: HeroImageMobile,
+        name: 'Wordpress',
+        img: HeroImageDesktop,
+        title: 'Distinctio Sfwit',
         paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
     },
     {
         id: uuidv4(),
-        name: 'Project D',
-        img: HeroImageMobile,
-        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
-    },
-    {
-        id: uuidv4(),
-        name: 'Project E',
-        img: HeroImageMobile,
-        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-    },
-    {
-        id: uuidv4(),
-        name: 'Project F',
-        img: HeroImageMobile,
-        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus.`,
-    },
-    {
-        id: uuidv4(),
-        name: 'Project G',
-        img: HeroImageMobile,
-        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
-    },
-    {
-        id: uuidv4(),
-        name: 'Project H',
-        img: HeroImageMobile,
+        name: 'HTML5 & CSS3',
+        img: HeroImageDesktop,
+        title: 'Earum nihid',
         paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
     },
 ]
@@ -159,24 +135,66 @@ const testimonials = [
     {
         id: uuidv4(),
         title: 'Lorem ipsum 1',
-        avatar:
-            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        avatar: HeroImageMobile,
         description: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, 
             voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
     },
     {
         id: uuidv4(),
         title: 'Lorem ipsum 2',
-        avatar:
-            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        avatar: HeroImageMobile,
         description: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
     },
     {
         id: uuidv4(),
         title: 'Lorem ipsum 3',
-        avatar:
-            'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        avatar: HeroImageMobile,
         description: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Temporibus distinctio sit, ipsum ex nam praesentium.`,
+    },
+]
+const portfoliosText = `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut 
+porro delectus, voluptatem Earum voluptatem.`
+
+const portfolios = [
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Web Development',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Web Design',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Logo',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Development Tools',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Photoshop',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Web Development',
+        src: HeroImageDesktop,
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
     },
 ]
 
@@ -390,6 +408,14 @@ const getArticles = () => {
     return articles
 }
 
+const getPortfolios = () => {
+    return portfolios
+}
+
+const getPortfoliosText = () => {
+    return portfoliosText
+}
+
 export {
     getNavbarStyle,
     getHomeHeroImage,
@@ -408,4 +434,6 @@ export {
     getContactData,
     getSocialMedia,
     getArticles,
+    getPortfolios,
+    getPortfoliosText,
 }

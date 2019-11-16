@@ -6,8 +6,14 @@
 
     &__content {
 
+        .iltlc-card-head-title,
+        .iltlc-card-meta-description,
+        .iltlc-card-extra {
+            font-size: 1rem;
+        }
+
         .iltlc-card-body {
-            height: 100px;
+            height: 150px;
             overflow: auto;
         }
     }

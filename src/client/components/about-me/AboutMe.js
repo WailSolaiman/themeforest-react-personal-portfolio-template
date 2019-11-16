@@ -7,21 +7,23 @@ const AboutMe = ({
     title = '',
     firstParagraph = '',
     secondParagraph = '',
+    thirdParagraph = '',
     btnText = '',
     image = '',
 }) => {
     return (
         <Row gutter={{ xs: 0, xl: 24 }} className="row-with-padding about-me">
-            <Col xs={24} md={12}>
+            <Col xs={24} xl={14}>
                 <div className="about-me__text">
                     <h6>{subtitle}</h6>
                     <h2>{title}</h2>
                     <p>{firstParagraph}</p>
                     <p>{secondParagraph}</p>
+                    <p>{thirdParagraph}</p>
                     <Button className="btn-secondary">{btnText}</Button>
                 </div>
             </Col>
-            <Col xs={24} md={12}>
+            <Col xs={24} xl={10}>
                 <div className="about-me__img">
                     <img src={image} alt="intro-img" />
                 </div>

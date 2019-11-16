@@ -9,6 +9,7 @@
 // Container
 
 .container {
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -34,7 +35,7 @@
     font-size: 1rem;
     border-radius: 0;
     border: 1px solid $primary-color;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: capitalize;
 
     &:hover {
@@ -63,10 +64,21 @@
 // Menus
 .iltlc-menu-horizontal {
     border-bottom: none !important;
+
+    // .iltlc-menu-item-selected,
+    // .iltlc-menu-item-active {
+    //     border-bottom: none !important;
+    // }
 }
 
 .iltlc-menu-inline {
     border-right: none !important;
+}
+
+// Border
+
+.iltlc-card-bordered {
+    border: 1px dotted $primary-color;
 }
 
 // Row
@@ -74,10 +86,44 @@
     margin-bottom: 3rem;
 
     @media (min-width: 768px) {
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.row-no-margin {
+    margin: 0;
+}
+
+// Background Color
+
+.bg-color {
+    background-color: $background-div-color;
+}
+
+.bg-color-black {
+    background-color: black;
+}
+
+// Card
+.iltlc-card {
+    .iltlc-card-head {
+        border-bottom: 0;
     }
 
-    &.bg-color {
-        background-color: $background-div-color;
+    .iltlc-card-head-title {
+        color: $tertiary-color;
+        font-weight: 700;
+    }
+
+    .iltlc-card-cover img {
+        border-radius: 0;
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    .iltlc-card-meta-title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $primary-color;
     }
 }

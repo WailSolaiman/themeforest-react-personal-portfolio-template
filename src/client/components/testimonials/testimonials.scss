@@ -1,6 +1,9 @@
 @import "../../sass/variables";
 
 .testimonials {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
     h2 {
         text-align: center;
     }
@@ -14,19 +17,20 @@
         .iltlc-card-body {
             width: 100%;
             margin: 0 auto;
-
-            @media (min-width: 992px) {
-                width: 700px;
-            }
+            background-color: $background-div-color;
         }
 
         .iltlc-avatar {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .iltlc-card-meta {
+            margin-bottom: 2rem;
         }
 
         .iltlc-card-meta-description {
-            font-size: 1rem;
+            color: $tertiary-color;
         }
     }
 
@@ -39,10 +43,6 @@
             &.slick-active button {
                 background: $primary-color !important;
             }
-        }
-
-        &.slick-dots-bottom {
-            bottom: -16px !important;
         }
     }
 }

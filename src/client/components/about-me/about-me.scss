@@ -7,8 +7,13 @@
             text-align: initial;
         }
 
-        h6 {
+        h2 {
             margin-bottom: 1rem;
+        }
+
+        h6 {
+            margin-bottom: 0;
+            font-size: 1.6rem;
             text-transform: capitalize;
             text-decoration: underline;
         }
@@ -19,6 +24,10 @@
 
         button {
             margin-bottom: 2rem;
+
+            @media (min-width: 1200px) {
+                margin-bottom: 0;
+            }
         }
     }
 

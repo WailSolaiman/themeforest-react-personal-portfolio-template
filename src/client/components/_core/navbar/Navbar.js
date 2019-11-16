@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Row, Col, Drawer, Button } from 'antd'
 import MainMenu from './MainMenu'
 import SecondaryMenu from './SecondaryMenu'
@@ -7,7 +6,7 @@ import { UseWindowWidth, GetNavbarStyle } from './_navbarUtils'
 import './navbar.scss'
 
 const Navbar = ({ navbarStyle = [], selected }) => {
-    const windowWidth = UseWindowWidth() >= 576 ? 'none' : 'block'
+    const windowWidth = UseWindowWidth() >= 767 ? 'none' : 'block'
     const [visible, setVisibility] = useState(false)
     const navStyle = GetNavbarStyle(navbarStyle, selected)
 

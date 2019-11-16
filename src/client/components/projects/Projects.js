@@ -2,11 +2,11 @@ import React from 'react'
 import { Row, Col, Card } from 'antd'
 import './projects.scss'
 
-const Projects = ({ projects = [] }) => {
+const Projects = ({ title = '', projects = [] }) => {
     const { Meta } = Card
     return (
         <Row gutter={24} className="projects">
-            <h2>Projects</h2>
+            <h2>{title}</h2>
             {projects &&
                 projects.map(project => {
                     return (
@@ -21,10 +21,9 @@ const Projects = ({ projects = [] }) => {
                                             alt={project.name}
                                             src={project.img}
                                         />
-                                    }
-                                >
+                                    }>
                                     <Meta
-                                        title={project.name}
+                                        title={project.title}
                                         description={project.paragraph}
                                     />
                                 </Card>

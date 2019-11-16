@@ -2,12 +2,12 @@ import React from 'react'
 import { Carousel, Card, Avatar } from 'antd'
 import './testimonials.scss'
 
-const Testimonials = ({ testimonials = [] }) => {
+const Testimonials = ({ title = '', testimonials = [] }) => {
     const { Meta } = Card
     return (
         <div className="testimonials">
-            <h2>Testimonials</h2>
-            <Carousel>
+            <h2>{title}</h2>
+            <Carousel autoplay>
                 {testimonials &&
                     testimonials.map(testimonial => {
                         return (

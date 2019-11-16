@@ -1,0 +1,15 @@
+@import '../../../sass/variables';
+
+.fixed-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px dotted $primary-color;
+    box-shadow: 0 8px 11px 0px $background-nav-color;
+}

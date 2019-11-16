@@ -1,0 +1,79 @@
+@import '../../sass/variables';
+
+.portfolio {
+    text-align: center;
+
+    &__text {
+        width: 900px;
+        margin: 0 auto;
+
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__socials {
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $primary-color;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scaleX(1.5) scaleY(1.5);
+            transform-origin: 50% 50% 0px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        margin-bottom: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            .portfolio__image {
+                opacity: 0 !important;
+            }
+
+            .portfolio__header-container {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    &__image {
+        opacity: 1;
+        width: 100%;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &__header-container {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity .3s ease-in-out;
+    }
+
+    &__header {
+        margin-bottom: 0 !important;
+        color: $tertiary-color !important;
+        font-weight: 900;
+        text-transform: uppercase;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+    }
+}

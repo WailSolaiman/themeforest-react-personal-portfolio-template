@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from 'antd'
 import SocialMedia from '../_core/social-media/SocialMedia'
-import './social-profiles.scss'
+import './scss/social-profiles.scss'
 
 const SocialProfile = ({ title = 'Social Media' }) => {
     const { Title } = Typography

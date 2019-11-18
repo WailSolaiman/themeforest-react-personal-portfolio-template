@@ -1,6 +1,6 @@
 import React from 'react'
 import { List, Typography, Icon } from 'antd'
-import './contact-data.scss'
+import './scss/contact-data.scss'
 
 const ContactData = ({ title = 'Contact Infos.', contactData = [] }) => {
     const { Title, Paragraph } = Typography

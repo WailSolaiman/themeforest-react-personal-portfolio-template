@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typography, Icon } from 'antd'
-import './article.scss'
+import './scss/article.scss'
 
 const Article = ({ article }) => {
     const { Title, Paragraph } = Typography

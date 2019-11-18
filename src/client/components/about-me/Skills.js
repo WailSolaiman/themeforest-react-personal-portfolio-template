@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Slider, Typography } from 'antd'
-import './skills.scss'
+import './scss/skills.scss'
 
 const marks = {
     0: '0',

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Timeline, Icon, Typography } from 'antd'
-import './experience.scss'
+import './scss/experience.scss'
 
 const Experience = ({ title = 'Experience', experiences = [] }) => {
     const { Title, Paragraph } = Typography

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import './fixed-navbar.scss'
+import './scss/fixed-navbar.scss'
 
 const FixedNavbar = ({ navbarStyle, selected }) => {
     return (

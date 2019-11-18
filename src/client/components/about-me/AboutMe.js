@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Button, Typography } from 'antd'
-import './about-me.scss'
+import './scss/about-me.scss'
 
 const AboutMe = ({
     subtitle = '',

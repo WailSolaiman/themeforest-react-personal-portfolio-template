@@ -1,6 +1,6 @@
 import React from 'react'
 import { Descriptions } from 'antd'
-import './personal-data.scss'
+import './scss/personal-data.scss'
 
 const PersonalData = ({ personalData = [] }) => {
     return (

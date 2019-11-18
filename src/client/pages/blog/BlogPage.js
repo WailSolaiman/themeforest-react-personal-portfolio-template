@@ -4,13 +4,15 @@ import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
 import Articles from './Articles'
 import {
-    getContactHeroImage,
+    getBlogHeroImage,
     getCarouselImages,
+    getArticles,
 } from '../../components/_componentsData'
 
 const BlogPage = () => {
-    const heroImage = getContactHeroImage()
+    const heroImage = getBlogHeroImage()
     const carousel = getCarouselImages()
+    const articles = getArticles()
     return (
         <div className="blog-page">
             <Header
@@ -29,7 +31,7 @@ const BlogPage = () => {
                 </Row>
                 <Row>
                     <Col xs={24}>
-                        <Articles />
+                        <Articles articles={articles} />
                     </Col>
                 </Row>
             </div>

@@ -6,7 +6,7 @@ const PageTitle = ({ title, subtitle }) => {
     const { Title } = Typography
     return (
         <div className="page-title">
-            <Title className="page-title__header">{title}</Title>
+            <Title>{title}</Title>
             <Title className="page-title__subheader" level={4}>
                 {subtitle}
             </Title>

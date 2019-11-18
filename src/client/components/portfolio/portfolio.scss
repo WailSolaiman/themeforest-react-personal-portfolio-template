@@ -12,26 +12,6 @@
         }
     }
 
-    &__socials {
-        width: 300px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-    }
-
-    &__icon {
-        font-size: 2rem;
-        color: $primary-color;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-
-        &:hover {
-            transform: scaleX(1.5) scaleY(1.5);
-            transform-origin: 50% 50% 0px;
-        }
-    }
-
     &__content {
         position: relative;
         margin-bottom: 1rem;

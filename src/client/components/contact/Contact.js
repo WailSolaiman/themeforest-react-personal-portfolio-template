@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Input, Button, Checkbox } from 'antd'
+import { Form, Input, Button, Checkbox, Typography } from 'antd'
 import './contact.scss'
 
 class Contact extends Component {
@@ -46,6 +46,7 @@ class Contact extends Component {
             getFieldError,
         } = form
         const { TextArea } = Input
+        const { Title } = Typography
         const messageError =
             isFieldTouched('message') && getFieldError('message')
         const nameError = isFieldTouched('name') && getFieldError('name')
@@ -53,16 +54,11 @@ class Contact extends Component {
 
         return (
             <div className="contact">
-                <h2 className="contact__header">Contact Me</h2>
-                <h6 className="contact__subheader">
-                    I’m always open to discussing product design work or
-                    partnerships.
-                </h6>
+                <Title level={3}>Get in Touch</Title>
                 <Form onSubmit={e => this.handleSubmit(e)}>
                     <Form.Item
                         label="Name"
-                        validateStatus={nameError ? 'error' : ''}
-                    >
+                        validateStatus={nameError ? 'error' : ''}>
                         {getFieldDecorator('name', {
                             rules: [
                                 {
@@ -74,8 +70,7 @@ class Contact extends Component {
                     </Form.Item>
                     <Form.Item
                         label="E-mail"
-                        validateStatus={emailError ? 'error' : ''}
-                    >
+                        validateStatus={emailError ? 'error' : ''}>
                         {getFieldDecorator('email', {
                             rules: [
                                 {
@@ -91,8 +86,7 @@ class Contact extends Component {
                     </Form.Item>
                     <Form.Item
                         label="Message"
-                        validateStatus={messageError ? 'error' : ''}
-                    >
+                        validateStatus={messageError ? 'error' : ''}>
                         {getFieldDecorator('message', {
                             rules: [
                                 {
@@ -125,8 +119,7 @@ class Contact extends Component {
                             disabled={
                                 this.hasErrors(getFieldsError()) ||
                                 !getFieldValue('agreement')
-                            }
-                        >
+                            }>
                             Submit
                         </Button>
                     </Form.Item>

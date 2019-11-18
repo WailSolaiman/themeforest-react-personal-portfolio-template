@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Col, Icon, Typography } from 'antd'
+import { Row, Col, Typography } from 'antd'
+import SocialMedia from '../_core/social-media/SocialMedia'
 import './portfolio.scss'
 
 const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
@@ -8,12 +9,7 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
         <div className="portfolio">
             <Title level={2}>{title}</Title>
             <Paragraph className="portfolio__text">{text}</Paragraph>
-            <div className="portfolio__socials">
-                <Icon className="portfolio__icon" type="facebook" />
-                <Icon className="portfolio__icon" type="twitter" />
-                <Icon className="portfolio__icon" type="youtube" />
-                <Icon className="portfolio__icon" type="instagram" />
-            </div>
+            <SocialMedia />
             <Row gutter={24}>
                 {portfolios &&
                     portfolios.map(portfolio => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Row, Col } from 'antd'
+import { Row, Col } from 'antd'
 import Header from '../../components/_core/header/Header'
 import AboutMe from '../../components/about-me/AboutMe'
 import MyServices from '../../components/my-services/MyServices'
@@ -8,7 +8,8 @@ import Quote from '../../components/quote/Quote'
 import Testimonials from '../../components/testimonials/Testimonials'
 import Parallax from '../../components/_core/parallax/Parallax'
 import Portfolio from '../../components/portfolio/Portfolio'
-// import Contact from '../../components/contact/Contact'
+import Clients from '../../components/clients/Clients'
+import PreFooter from '../../components/_core/pre-footer/PreFooter'
 import {
     getHomeHeroImage,
     getCarouselImages,
@@ -19,6 +20,7 @@ import {
     getParallax,
     getPortfolios,
     getPortfoliosText,
+    getClients,
 } from '../../components/_componentsData'
 
 const Home = () => {
@@ -31,7 +33,7 @@ const Home = () => {
     const parallax = getParallax()
     const portfolios = getPortfolios()
     const portfoliosText = getPortfoliosText()
-    // const WrappedContact = Form.create()(Contact)
+    const clients = getClients()
     return (
         <div className="home">
             <Header
@@ -54,7 +56,6 @@ const Home = () => {
                     </Col>
                 </Row>
             </div>
-
             <Row className="row-with-margin-bottom bg-color">
                 <Col xs={24}>
                     <div className="container">
@@ -65,7 +66,6 @@ const Home = () => {
                     </div>
                 </Col>
             </Row>
-
             <div className="container">
                 <Row className="row-with-margin-bottom">
                     <Col xs={24}>
@@ -73,7 +73,6 @@ const Home = () => {
                     </Col>
                 </Row>
             </div>
-
             <Row className="row-no-margin bg-color-black">
                 <Col xs={24}>
                     <div className="container">
@@ -84,7 +83,6 @@ const Home = () => {
                     </div>
                 </Col>
             </Row>
-
             <Row className="row-with-margin-bottom bg-color">
                 <Col xs={24}>
                     <div className="container">
@@ -95,19 +93,37 @@ const Home = () => {
                     </div>
                 </Col>
             </Row>
-
             <div className="container">
                 <Row className="row-with-margin-bottom">
                     <Col xs={24}>
                         <Parallax parallax={parallax} />
                     </Col>
                 </Row>
-                <Row>
+                <Row className="row-with-margin-bottom">
                     <Col xs={24}>
                         <Portfolio
                             title="Portfolio"
                             text={portfoliosText}
                             portfolios={portfolios}
+                        />
+                    </Col>
+                </Row>
+            </div>
+            <Row className="row-with-margin-bottom bg-color">
+                <Col xs={24}>
+                    <div className="container">
+                        <Clients title="" clients={clients} />
+                    </div>
+                </Col>
+            </Row>
+            <div className="container">
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24}>
+                        <PreFooter
+                            title="Do you have any questions left?"
+                            text="Don't hesitate to contact us regarding Trakken, the products & services."
+                            btnText="Contact"
+                            btnLink="/contact"
                         />
                     </Col>
                 </Row>

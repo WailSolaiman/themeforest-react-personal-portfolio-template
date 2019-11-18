@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'antd'
+import { Row, Col, Typography } from 'antd'
 import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
 import ProfileImage from '../../components/about-me/ProfileImage'
@@ -18,6 +18,7 @@ import {
 } from '../../components/_componentsData'
 
 const AboutPage = () => {
+    const { Title } = Typography
     const heroImage = getContactHeroImage()
     const carousel = getCarouselImages()
     const experiences = getExperiences()
@@ -44,10 +45,13 @@ const AboutPage = () => {
                 <Row
                     className="row-with-margin-bottom"
                     gutter={{ xs: 0, xl: 24 }}>
-                    <Col xs={24} xl={8}>
+                    <Col xs={24}>
+                        <Title level={2}>Personal Infos.</Title>
+                    </Col>
+                    <Col xs={24} xl={6}>
                         <ProfileImage profileImage={profileImage} />
                     </Col>
-                    <Col xs={24} xl={16}>
+                    <Col xs={24} xl={18}>
                         <PersonalData personalData={personalData} />
                     </Col>
                 </Row>

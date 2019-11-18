@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Button } from 'antd'
+import { Row, Col, Button, Typography } from 'antd'
 import './about-me.scss'
 
 const AboutMe = ({
@@ -11,16 +11,29 @@ const AboutMe = ({
     btnText = '',
     image = '',
 }) => {
+    const { Title, Paragraph } = Typography
     return (
         <Row gutter={{ xs: 0, xl: 24 }} className="row-with-padding about-me">
             <Col xs={24} xl={14}>
-                <div className="about-me__text">
-                    <h6>{subtitle}</h6>
-                    <h2>{title}</h2>
-                    <p>{firstParagraph}</p>
-                    <p>{secondParagraph}</p>
-                    <p>{thirdParagraph}</p>
-                    <Button className="btn-secondary">{btnText}</Button>
+                <div className="about-me__content">
+                    <Title className="about-me__header" level={4}>
+                        {subtitle}
+                    </Title>
+                    <Title className="about-me__subheader" level={2}>
+                        {title}
+                    </Title>
+                    <Paragraph className="about-me__first-text">
+                        {firstParagraph}
+                    </Paragraph>
+                    <Paragraph className="about-me__second-text">
+                        {secondParagraph}
+                    </Paragraph>
+                    <Paragraph className="about-me__third-text">
+                        {thirdParagraph}
+                    </Paragraph>
+                    <Button className="about-me__button btn-secondary">
+                        {btnText}
+                    </Button>
                 </div>
             </Col>
             <Col xs={24} xl={10}>

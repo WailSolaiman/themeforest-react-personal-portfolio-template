@@ -1,10 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import Article from './Article'
-import { getArticles } from '../../components/_componentsData'
 
-const Articles = () => {
-    const articles = getArticles()
+const Articles = ({ articles = [] }) => {
     return (
         <Row gutter={{ xs: 0, xl: 24 }}>
             {articles &&

@@ -1,3 +1,11 @@
+@import '../../../sass/variables';
+
 .page-title {
     text-align: center;
+
+    &__subheader {
+        color: $tertiary-color !important;
+        margin-top: 1rem !important;
+        text-transform: capitalize;
+    }
 }

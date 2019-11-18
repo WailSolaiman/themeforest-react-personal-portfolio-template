@@ -4,17 +4,17 @@
     text-align: center;
 
     &__subtitle {
-        color: white;
-        font-weight: 100;
-        font-size: 3rem;
-        margin-bottom: .5rem;
-        text-transform: uppercase;
+        color: white !important;
+        font-weight: 100 !important;
+        font-size: 3rem !important;
+        margin-bottom: .5rem !important;
+        text-transform: uppercase !important;
     }
 
     &__title {
-        color: white;
-        font-size: 4rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        color: white !important;
+        font-size: 4rem !important;
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
     }
 }

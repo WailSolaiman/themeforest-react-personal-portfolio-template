@@ -1,11 +1,15 @@
 import React from 'react'
+import { Typography } from 'antd'
 import './quote.scss'
 
 const Quote = ({ subtitle = '', title = '' }) => {
+    const { Title } = Typography
     return (
         <div className="quote">
-            <h5 className="quote__subtitle">{subtitle}</h5>
-            <h1 className="quote__title">{title}</h1>
+            <Title className="quote__subtitle" level={4}>
+                {subtitle}
+            </Title>
+            <Title className="quote__title">{title}</Title>
         </div>
     )
 }

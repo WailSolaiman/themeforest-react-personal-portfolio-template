@@ -1,12 +1,15 @@
 import React from 'react'
-import { Row, Col, Card } from 'antd'
+import { Row, Col, Card, Typography } from 'antd'
 import './projects.scss'
 
 const Projects = ({ title = '', projects = [] }) => {
     const { Meta } = Card
+    const { Title } = Typography
     return (
         <Row gutter={24} className="projects">
-            <h2>{title}</h2>
+            <Title className="projects__header" level={2}>
+                {title}
+            </Title>
             {projects &&
                 projects.map(project => {
                     return (

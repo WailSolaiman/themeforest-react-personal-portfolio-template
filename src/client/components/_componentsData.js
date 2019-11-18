@@ -7,6 +7,18 @@ import CarouselImgThirdDesktop from '../assets/carousel/carousel-3-desktop.jpg'
 import CarouselImgThirdMobile from '../assets/carousel/carousel-3-mobile.jpg'
 import HeroImageDesktop from '../assets/heroimage/heroimage-desktop.jpg'
 import HeroImageMobile from '../assets/heroimage/heroimage-mobile.jpg'
+import Aida from '../assets/clients/aida.png'
+import AirBerlin from '../assets/clients/airberlin.png'
+import Akad from '../assets/clients/akad.png'
+import FoodPanda from '../assets/clients/foodpanda.png'
+import Gamigo from '../assets/clients/gamigo.png'
+import Gj from '../assets/clients/gj.png'
+import Jimdo from '../assets/clients/jimdo.png'
+import Mobil from '../assets/clients/mobil.png'
+import Otto from '../assets/clients/otto.png'
+import TOnline from '../assets/clients/t-online.png'
+import Travel from '../assets/clients/travel.png'
+import Zalando from '../assets/clients/zalando.png'
 
 const navbarStyle = [
     {
@@ -55,8 +67,17 @@ const homeHeroImage = {
 
 const contactHeroImage = {
     id: uuidv4(),
-    desktopImage: CarouselImgThirdDesktop,
-    mobileImage: CarouselImgThirdMobile,
+    desktopImage: HeroImageDesktop,
+    mobileImage: HeroImageMobile,
+    subheader: 'Digital design studio',
+    header: 'More than just a web design.',
+    btnText: 'Explore Now',
+}
+
+const blogHeroImage = {
+    id: uuidv4(),
+    desktopImage: HeroImageDesktop,
+    mobileImage: HeroImageMobile,
     subheader: 'Digital design studio',
     header: 'More than just a web design.',
     btnText: 'Explore Now',
@@ -64,7 +85,7 @@ const contactHeroImage = {
 
 const aboutMeData = {
     subtitle: 'About Me',
-    title: 'Lorem ipsum Dolor',
+    title: 'Lorem ipsum dolor',
     firstParagraph: `Lorem ipsum dolor sit, amet consectetur
                 adipisicing elit. Voluptatibus sapiente alias
                 minus saepe laborum corporis earum quaerat
@@ -75,7 +96,7 @@ const aboutMeData = {
                 minus saepe laborum corporis earum quaerat
                 deserunt unde quidem.`,
     thirdParagraph: ``,
-    btnText: 'Learn More',
+    btnText: 'Read More',
     image: HeroImageDesktop,
 }
 
@@ -198,22 +219,70 @@ const portfolios = [
     },
 ]
 
-const profileImage = CarouselImgThirdMobile
+const profileImage = HeroImageMobile
 
-const personalData = {
-    firstname: 'lorem',
-    lastname: 'Ipsum',
-    birthdate: '21 june 1990',
-    nationality: 'U.S.A',
-    experience: '7 years',
-    address: 'Germany. Street Name, 12345 City',
-    freelance: 'Available',
-    langages: 'English, Germany',
-    phone: '+34 21 18 40 10',
-    email: 'you@you.com',
-    skype: 'iltlc-0123',
-    facebook: 'iltlc-f',
-}
+const personalData = [
+    {
+        id: uuidv4(),
+        label: 'First Name',
+        value: 'John',
+    },
+    {
+        id: uuidv4(),
+        label: 'Last Name',
+        value: 'Doe',
+    },
+    {
+        id: uuidv4(),
+        label: 'Birthdate',
+        value: '21 june 1990',
+    },
+    {
+        id: uuidv4(),
+        label: 'Phone',
+        value: '+34 21 18 40 10',
+    },
+    {
+        id: uuidv4(),
+        label: 'Email',
+        value: 'you@you.com',
+    },
+    {
+        id: uuidv4(),
+        label: 'Nationality',
+        value: 'U.S.A',
+    },
+    {
+        id: uuidv4(),
+        label: 'Address',
+        value: 'Germany. Street Name, 12345 City',
+    },
+    {
+        id: uuidv4(),
+        label: 'Experience',
+        value: '7 years',
+    },
+    {
+        id: uuidv4(),
+        label: 'Freelance',
+        value: 'Available',
+    },
+    {
+        id: uuidv4(),
+        label: 'Langages',
+        value: 'English, Germany',
+    },
+    {
+        id: uuidv4(),
+        label: 'Skype',
+        value: 'iltlc-0123',
+    },
+    {
+        id: uuidv4(),
+        label: 'Facebook',
+        value: 'iltlc-f',
+    },
+]
 
 const experiences = [
     {
@@ -274,52 +343,41 @@ const skills = [
         name: 'JavaScript',
         value: 60,
     },
+    {
+        id: uuidv4(),
+        name: 'PHP',
+        value: 80,
+    },
+    {
+        id: uuidv4(),
+        name: 'Node.js',
+        value: 75,
+    },
 ]
 
 const parallax = {
     img: CarouselImgFirstDesktop,
-    header: 'Lorem ipsum Dolor',
+    header: 'i love templates, layouts and components',
 }
 
 const contactData = [
     {
-        contactTitle: 'Address',
         contactIcon: 'home',
         contactContent: 'Germany. Street Name, 12345 City',
     },
     {
-        contactTitle: 'Phone',
         contactIcon: 'phone',
         contactContent: '+49 176 77027455',
     },
     {
-        contactTitle: 'Email',
         contactIcon: 'mail',
         contactContent: 'iltlc@hotmail.com',
     },
 ]
 
-const socialMedia = [
-    {
-        id: uuidv4(),
-        icon: 'facebook',
-        link: '/',
-    },
-    {
-        id: uuidv4(),
-        icon: 'twitter',
-        link: '/',
-    },
-    {
-        id: uuidv4(),
-        icon: 'youtube',
-        link: '/',
-    },
-]
-
 const articles = [
     {
-        id: 'fsdfds',
+        id: uuidv4(),
         blogFigure: CarouselImgFirstDesktop,
         blogTitle: 'Lorem ipsum',
         blogExcerpt:
@@ -329,7 +387,7 @@ const articles = [
         publishDate: '15.12.2020',
     },
     {
-        id: 'fsddds',
+        id: uuidv4(),
         blogFigure: CarouselImgFirstDesktop,
         blogTitle: 'Lorem ipsum 2',
         blogExcerpt:
@@ -337,6 +395,69 @@ const articles = [
         blogBody:
             'Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad text dfsa the froogno. Lorem ipsum dolor informad text dfsa the froogno.',
         publishDate: '15.12.2020',
+    },
+]
+
+const clients = [
+    {
+        id: uuidv4(),
+        src: Aida,
+        name: 'Aida',
+    },
+    {
+        id: uuidv4(),
+        src: AirBerlin,
+        name: 'Air-Berlin',
+    },
+    {
+        id: uuidv4(),
+        src: Akad,
+        name: 'Akad',
+    },
+    {
+        id: uuidv4(),
+        src: FoodPanda,
+        name: 'Food-Panda',
+    },
+    {
+        id: uuidv4(),
+        src: Gamigo,
+        name: 'Gamigo',
+    },
+    {
+        id: uuidv4(),
+        src: Gj,
+        name: 'GJ',
+    },
+    {
+        id: uuidv4(),
+        src: Jimdo,
+        name: 'Jimdo',
+    },
+    {
+        id: uuidv4(),
+        src: Mobil,
+        name: 'Mobil',
+    },
+    {
+        id: uuidv4(),
+        src: Otto,
+        name: 'Otto',
+    },
+    {
+        id: uuidv4(),
+        src: TOnline,
+        name: 'T-Online',
+    },
+    {
+        id: uuidv4(),
+        src: Travel,
+        name: 'Travel',
+    },
+    {
+        id: uuidv4(),
+        src: Zalando,
+        name: 'Zalando',
     },
 ]
 
@@ -354,6 +475,10 @@ const getHomeHeroImage = () => {
 
 const getContactHeroImage = () => {
     return contactHeroImage
+}
+
+const getBlogHeroImage = () => {
+    return blogHeroImage
 }
 
 const getAboutMeData = () => {
@@ -400,10 +525,6 @@ const getContactData = () => {
     return contactData
 }
 
-const getSocialMedia = () => {
-    return socialMedia
-}
-
 const getArticles = () => {
     return articles
 }
@@ -416,10 +537,15 @@ const getPortfoliosText = () => {
     return portfoliosText
 }
 
+const getClients = () => {
+    return clients
+}
+
 export {
     getNavbarStyle,
     getHomeHeroImage,
     getContactHeroImage,
+    getBlogHeroImage,
     getCarouselImages,
     getAboutMeData,
     getMyServicesData,
@@ -432,8 +558,8 @@ export {
     getEducations,
     getSkills,
     getContactData,
-    getSocialMedia,
     getArticles,
     getPortfolios,
     getPortfoliosText,
+    getClients,
 }

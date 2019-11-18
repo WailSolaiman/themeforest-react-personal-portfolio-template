@@ -4,7 +4,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 
-    h2 {
+    &__header {
         text-align: center;
     }
 
@@ -28,20 +28,21 @@
             margin-bottom: 0;
             width: 320px;
         }
+    }
 
-        h5 {
-            color: $tertiary-color;
-        }
+    &__title {
+        font-size: 1.5rem !important;
+        color: $tertiary-color !important;
+    }
 
-        img {
-            width: 150px;
-            height: 150px;
-            margin-bottom: 1rem;
-            border-radius: 50%;
-        }
+    &__image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+    }
 
-        p {
-            font-size: 1rem;
-        }
+    &__text {
+        font-size: 1rem;
     }
 }

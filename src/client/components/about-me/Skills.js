@@ -19,11 +19,11 @@ const formatter = value => {
     return `${value}%`
 }
 
-const Skills = ({ skills = [] }) => {
+const Skills = ({ title = 'Skills', skills = [] }) => {
     const { Title } = Typography
     return (
         <div className="skills">
-            <Title level={1}>Skills</Title>
+            <Title level={2}>{title}</Title>
             <Row gutter={{ xs: 0, xl: 24 }}>
                 {skills &&
                     skills.map(skill => {

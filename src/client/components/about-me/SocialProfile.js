@@ -1,27 +1,20 @@
 import React from 'react'
-import { Row, Col, Typography, Icon } from 'antd'
+import { Typography } from 'antd'
+import SocialMedia from '../_core/social-media/SocialMedia'
 import './social-profiles.scss'
 
-const SocialProfile = ({ socialMedia = [] }) => {
+const SocialProfile = ({ title = 'Social Media' }) => {
     const { Title } = Typography
     return (
         <div className="social-profiles">
-            <Title level={3}>Social Media</Title>
-            <Row>
-                {socialMedia &&
-                    socialMedia.map(social => {
-                        return (
-                            <Col key={social.id} xs={6}>
-                                <a href={social.link}>
-                                    <Icon
-                                        className="social-profiles__icon"
-                                        type={social.icon}
-                                    />
-                                </a>
-                            </Col>
-                        )
-                    })}
-            </Row>
+            <Title level={3}>{title}</Title>
+            <SocialMedia
+                containerWidth="200px"
+                containerMargin="unset"
+                containerJustifyContent="center"
+                IconMarginRight="15px"
+                IconColor="#343434"
+            />
         </div>
     )
 }

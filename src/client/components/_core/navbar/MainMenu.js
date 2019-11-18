@@ -12,7 +12,7 @@ const MainMenu = () => {
                 <Link to="/">Home</Link>
             </Menu.Item>
             <Menu.Item key="blog">
-                <Link to="/blog">Blogs</Link>
+                <Link to="/blog">Blog</Link>
             </Menu.Item>
             <Menu.Item key="about">
                 <Link to="/about">About</Link>

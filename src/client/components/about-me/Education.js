@@ -2,11 +2,11 @@ import React from 'react'
 import { Timeline, Icon, Typography } from 'antd'
 import './education.scss'
 
-const Education = ({ educations = [] }) => {
+const Education = ({ title = 'Education', educations = [] }) => {
     const { Title, Paragraph } = Typography
     return (
         <div className="education">
-            <Title level={1}>Education</Title>
+            <Title level={2}>{title}</Title>
             <Timeline className="experience__timeline">
                 {educations &&
                     educations.map(education => {
@@ -19,8 +19,7 @@ const Education = ({ educations = [] }) => {
                                         type="clock-circle-o"
                                         style={{ fontSize: '16px' }}
                                     />
-                                }
-                            >
+                                }>
                                 <Paragraph className="experience__calendar">
                                     <Icon type="calendar" /> {education.from} -{' '}
                                     {education.to}
@@ -28,11 +27,12 @@ const Education = ({ educations = [] }) => {
                                 <Title
                                     className="experience__title"
                                     type="secondary"
-                                    level={4}
-                                >
+                                    level={4}>
                                     {education.academy}
                                 </Title>
-                                <Paragraph>{education.description}</Paragraph>
+                                <Paragraph className="experience__text">
+                                    {education.description}
+                                </Paragraph>
                             </Timeline.Item>
                         )
                     })}

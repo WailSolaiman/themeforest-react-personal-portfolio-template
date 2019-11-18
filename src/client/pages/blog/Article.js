@@ -12,7 +12,7 @@ const Article = ({ article }) => {
                 src={article.blogFigure}
                 alt={article.blogTitle}
             />
-            <Title className="article__title" level={2}>
+            <Title className="article__title" level={4}>
                 {article.blogTitle}
             </Title>
             <Paragraph className="article__calendar">

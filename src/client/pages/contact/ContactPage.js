@@ -6,22 +6,17 @@ import Contact from '../../components/contact/Contact'
 import SocialProfile from '../../components/about-me/SocialProfile'
 import ContactData from '../../components/about-me/ContactData'
 import GoogleMap from '../../components/_core/map/Map'
-import Parallax from '../../components/_core/parallax/Parallax'
 import {
     getContactHeroImage,
     getCarouselImages,
-    getParallax,
     getContactData,
-    getSocialMedia,
 } from '../../components/_componentsData'
 
 const ContactPage = () => {
     const heroImage = getContactHeroImage()
     const carousel = getCarouselImages()
-    const WrappedContact = Form.create()(Contact)
-    const parallax = getParallax()
     const contactData = getContactData()
-    const socialMedia = getSocialMedia()
+    const WrappedContact = Form.create()(Contact)
     return (
         <div className="contact-page">
             <Header
@@ -41,7 +36,7 @@ const ContactPage = () => {
                 <Row className="row-with-margin-bottom">
                     <Col xs={24} xl={8}>
                         <ContactData contactData={contactData} />
-                        <SocialProfile socialMedia={socialMedia} />
+                        <SocialProfile />
                     </Col>
                     <Col xs={24} xl={16}>
                         <GoogleMap
@@ -50,11 +45,6 @@ const ContactPage = () => {
                             }
                             mapElement={<div style={{ height: `100%` }} />}
                         />
-                    </Col>
-                </Row>
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <Parallax parallax={parallax} />
                     </Col>
                 </Row>
                 <Row>

@@ -18,8 +18,9 @@
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
         "react-router-dom": "^5.1.2",
-        "uuid": "^3.3.3",
-        "webfontloader": "^1.6.28"
+        "typeface-roboto": "0.0.75",
+        "typeface-teko": "0.0.72",
+        "uuid": "^3.3.3"
     },
     "devDependencies": {
         "@babel/core": "^7.7.2",

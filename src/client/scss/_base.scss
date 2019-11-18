@@ -1,5 +1,6 @@
 body {
-    font-family: $font-stack-secondary;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 h1,
@@ -8,8 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-stack-primary;
-    font-weight: 900;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
     color: $primary-color;
 }
 

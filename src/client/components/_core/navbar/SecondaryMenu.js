@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Menu } from 'antd'
 import { UseWindowWidth } from './_navbarUtils'
 
@@ -7,10 +8,14 @@ const SecondaryMenu = () => {
     return (
         <Menu mode={mode}>
             <Menu.Item key="mail">
-                <a href="/signin">Signin</a>
+                <NavLink to="/signin" activeClassName="active">
+                    Signin
+                </NavLink>
             </Menu.Item>
             <Menu.Item key="app">
-                <a href="/signup">Signup</a>
+                <NavLink to="/signup" activeClassName="active">
+                    Signup
+                </NavLink>
             </Menu.Item>
         </Menu>
     )

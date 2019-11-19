@@ -1,16 +1,25 @@
 import React from 'react'
-import { Typography, Button } from 'antd'
+import { Link } from 'react-router-dom'
+import { Typography } from 'antd'
 import './pre-footer.scss'
 
-const PreFooter = ({ title = '', text = '', btnText = '', btnLink = '' }) => {
+const PreFooter = ({
+    title = '',
+    text = '',
+    btnText = '',
+    btnLink = '/contact',
+}) => {
     const { Title, Paragraph } = Typography
     return (
         <div className="pre-footer">
             <Title level={4}>{title}</Title>
             <Paragraph className="portfolio__text">{text}</Paragraph>
-            <Button className="btn-secondary" href={btnLink}>
+            <Link
+                className="iltlc-btn btn-secondary"
+                to={btnLink}
+                style={{ margin: '0 auto' }}>
                 {btnText}
-            </Button>
+            </Link>
         </div>
     )
 }

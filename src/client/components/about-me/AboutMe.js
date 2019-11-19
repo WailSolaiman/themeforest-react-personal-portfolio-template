@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Col, Button, Typography } from 'antd'
+import { Link } from 'react-router-dom'
+import { Row, Col, Typography } from 'antd'
 import './scss/about-me.scss'
 
 const AboutMe = ({
@@ -16,7 +17,7 @@ const AboutMe = ({
         <Row gutter={{ xs: 0, xl: 24 }} className="row-with-padding about-me">
             <Col xs={24} xl={14}>
                 <div className="about-me__content">
-                    <Title className="about-me__header" level={4}>
+                    <Title className="about-me__header" level={3}>
                         {subtitle}
                     </Title>
                     <Title className="about-me__subheader" level={2}>
@@ -31,9 +32,11 @@ const AboutMe = ({
                     <Paragraph className="about-me__third-text">
                         {thirdParagraph}
                     </Paragraph>
-                    <Button className="about-me__button btn-secondary">
+                    <Link
+                        className="about-me__button iltlc-btn btn-secondary"
+                        to="/about">
                         {btnText}
-                    </Button>
+                    </Link>
                 </div>
             </Col>
             <Col xs={24} xl={10}>

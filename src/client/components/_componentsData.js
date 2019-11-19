@@ -63,6 +63,7 @@ const homeHeroImage = {
     subheader: 'Digital design studio',
     header: 'More than just a web design.',
     btnText: 'Explore Now',
+    btnLink: '/contact',
 }
 
 const contactHeroImage = {
@@ -72,6 +73,7 @@ const contactHeroImage = {
     subheader: 'Digital design studio',
     header: 'More than just a web design.',
     btnText: 'Explore Now',
+    btnLink: '/',
 }
 
 const blogHeroImage = {
@@ -81,6 +83,7 @@ const blogHeroImage = {
     subheader: 'Digital design studio',
     header: 'More than just a web design.',
     btnText: 'Explore Now',
+    btnLink: '/contact',
 }
 
 const aboutMeData = {
@@ -97,7 +100,7 @@ const aboutMeData = {
                 deserunt unde quidem.`,
     thirdParagraph: ``,
     btnText: 'Read More',
-    image: HeroImageDesktop,
+    image: HeroImageMobile,
 }
 
 const myServicesData = [
@@ -149,6 +152,20 @@ const projects = [
         img: HeroImageDesktop,
         title: 'Earum nihid',
         paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Contao',
+        img: HeroImageDesktop,
+        title: 'Dolor sit Amet',
+        paragraph: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+    },
+    {
+        id: uuidv4(),
+        name: 'Node.js',
+        img: HeroImageDesktop,
+        title: 'Dignissimos',
+        paragraph: `Voluptas nobis tempore accu samus ad dignissimos necessitatibus.`,
     },
 ]
 

@@ -10,7 +10,7 @@ const Testimonials = ({ title = '', testimonials = [] }) => {
             <Title className="testimonials__header" level={2}>
                 {title}
             </Title>
-            <Carousel autoplay>
+            <Carousel>
                 {testimonials &&
                     testimonials.map(testimonial => {
                         return (

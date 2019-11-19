@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { Menu } from 'antd'
 import { UseWindowWidth } from './_navbarUtils'
 
@@ -9,16 +9,24 @@ const MainMenu = () => {
     return (
         <Menu mode={mode}>
             <Menu.Item key="home">
-                <Link to="/">Home</Link>
+                <NavLink to="/" activeClassName="active" exact>
+                    Home
+                </NavLink>
             </Menu.Item>
             <Menu.Item key="blog">
-                <Link to="/blog">Blog</Link>
+                <NavLink to="/blog" activeClassName="active">
+                    Blog
+                </NavLink>
             </Menu.Item>
             <Menu.Item key="about">
-                <Link to="/about">About</Link>
+                <NavLink to="/about" activeClassName="active">
+                    About
+                </NavLink>
             </Menu.Item>
             <Menu.Item key="contact">
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/contact" activeClassName="active">
+                    Contact
+                </NavLink>
             </Menu.Item>
         </Menu>
     )

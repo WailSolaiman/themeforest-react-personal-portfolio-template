@@ -30,6 +30,9 @@
 
 // Buttons
 .iltlc-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $primary-color;
     width: auto;
     font-size: 1rem;
@@ -65,10 +68,24 @@
 .iltlc-menu-horizontal {
     border-bottom: none !important;
 
-    // .iltlc-menu-item-selected,
-    // .iltlc-menu-item-active {
-    //     border-bottom: none !important;
-    // }
+    .iltlc-menu-item-selected {
+        color: $paragraph-color !important;
+        border-color: transparent !important;
+
+        a {
+            color: $paragraph-color !important;
+        }
+    }
+
+    .iltlc-menu-item-active {
+        border-color: transparent !important;
+    }
+
+    .iltlc-menu-item {
+        a.active {
+            color: $primary-color !important;
+        }
+    }
 }
 
 .iltlc-menu-inline {
@@ -117,7 +134,7 @@
 
     .iltlc-card-cover img {
         border-radius: 0;
-        width: 82%;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -144,4 +161,9 @@ a.iltlc-btn {
     .iltlc-slider-mark-text {
         font-size: 1rem !important;
     }
+}
+
+// Slider
+.iltlc-slider-disabled .iltlc-slider-track {
+    background-color: $slider-track-color !important;
 }

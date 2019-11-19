@@ -21,7 +21,9 @@ const Article = ({ article }) => {
             <Paragraph className="article__excerpt">
                 {article.blogExcerpt}
             </Paragraph>
-            <Link to="/fullarticle">Read More</Link>
+            <Link className="iltlc-btn btn-secondary" to="/fullarticle">
+                Read More
+            </Link>
         </div>
     )
 }

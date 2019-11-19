@@ -9,19 +9,13 @@
     }
 
     &__header {
-        margin-bottom: 1rem;
+        margin-bottom: 0 !important;
     }
 
     &__subheader {
         margin-top: 0 !important;
         text-transform: uppercase;
         text-decoration: underline;
-    }
-
-    &__first-text,
-    &__second-text,
-    &__third-text {
-        font-size: 1rem;
     }
 
     &__button {

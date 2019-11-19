@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { Row, Col, Drawer, Button } from 'antd'
 import MainMenu from './MainMenu'
 import SecondaryMenu from './SecondaryMenu'
@@ -16,7 +17,13 @@ const Navbar = ({ navbarStyle = [], selected }) => {
                 <Col xs={24}>
                     <nav className="menu-bar">
                         <div className="logo">
-                            <p>ILTLC</p>
+                            <NavLink
+                                className="logo__iltlc"
+                                to="/"
+                                activeClassName="active"
+                                exact>
+                                ILTLC
+                            </NavLink>
                         </div>
                         <div className="menu-content">
                             <div

@@ -16,12 +16,25 @@
 
         &--second {
             margin-bottom: 0 !important;
+            transition: color .2s ease-in-out;
+
+            a:hover {
+                color: white !important;
+            }
         }
     }
 
     &__list {
         padding: 0;
         margin-bottom: 1rem;
+    }
+
+    &__list-item {
+        transition: color .2s ease-in-out;
+
+        a:hover {
+            color: white;
+        }
     }
 
     &__copyright {

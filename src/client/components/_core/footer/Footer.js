@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
 import SocialMedia from '../social-media/SocialMedia'
 import './footer.scss'
@@ -48,23 +49,23 @@ const Footer = () => {
                         <div className="footer__third-section">
                             <Title level={4}>Menu</Title>
                             <ul className="footer__list">
-                                <li>
-                                    <a href="/">Home</a>
+                                <li className="footer__list-item">
+                                    <Link to="/">Home</Link>
                                 </li>
-                                <li>
-                                    <a href="/blog">Blog</a>
+                                <li className="footer__list-item">
+                                    <Link to="/blog">Blog</Link>
                                 </li>
-                                <li>
-                                    <a href="/about">About</a>
+                                <li className="footer__list-item">
+                                    <Link to="/about">About</Link>
                                 </li>
-                                <li>
-                                    <a href="/contact">Contact</a>
+                                <li className="footer__list-item">
+                                    <Link to="/contact">Contact</Link>
                                 </li>
-                                <li>
-                                    <a href="/">imprint</a>
+                                <li className="footer__list-item">
+                                    <Link to="/">imprint</Link>
                                 </li>
-                                <li>
-                                    <a href="/">Data Privacy</a>
+                                <li className="footer__list-item">
+                                    <Link to="/">Data Privacy</Link>
                                 </li>
                             </ul>
                         </div>

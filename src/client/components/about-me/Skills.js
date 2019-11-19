@@ -9,7 +9,7 @@ const marks = {
     75: '75%',
     100: {
         style: {
-            color: '#f50',
+            color: '#bc01b0',
         },
         label: <strong>100%</strong>,
     },

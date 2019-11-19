@@ -1,5 +1,6 @@
 import React from 'react'
-import { MemoryRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 import Home from '../pages/home/Home'
 import ContactPage from '../pages/contact/ContactPage'
 import AboutPage from '../pages/about/AboutPage'
@@ -12,22 +13,22 @@ import './app.scss'
 
 const App = () => {
     return (
-        <MemoryRouter>
-            <div className="iltlc-root">
-                <FixedNavbar
-                    navbarStyle={getNavbarStyle()}
-                    selected="one-menu"
-                />
+        <Router>
+            <FixedNavbar navbarStyle={getNavbarStyle()} selected="one-menu" />
+            <ScrollToTop>
                 <Switch>
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/blog" component={BlogPage} />
                     <Route path="/fullarticle" component={FullArticle} />
                     <Route path="/" component={Home} />
+                    {
+                        // <Route component={Notfound} />
+                    }
                 </Switch>
-                <Footer />
-            </div>
-        </MemoryRouter>
+            </ScrollToTop>
+            <Footer />
+        </Router>
     )
 }
 

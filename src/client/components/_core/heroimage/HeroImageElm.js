@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'antd'
+import { Link } from 'react-router-dom'
 import useWindowWidth from '../_coreUtils'
 import './heroImageElm.scss'
 
@@ -17,7 +17,12 @@ const HeroImageElm = ({ item = {} }) => {
                     {item.subheader}
                 </h3>
                 <h1 className="hero-content-absolute__header">{item.header}</h1>
-                <Button>{item.btnText}</Button>
+                <Link
+                    className="iltlc-btn"
+                    to={item.btnLink}
+                    style={{ margin: '0 auto' }}>
+                    {item.btnText}
+                </Link>
             </div>
         </div>
     )

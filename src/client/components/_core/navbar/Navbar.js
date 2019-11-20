@@ -10,6 +10,7 @@ const Navbar = ({ navbarStyle = [], selected }) => {
     const windowWidth = UseWindowWidth() >= 767 ? 'none' : 'block'
     const [visible, setVisibility] = useState(false)
     const navStyle = GetNavbarStyle(navbarStyle, selected)
+    const clickedLink = () => setVisibility(false)
 
     return (
         <div className="container">
@@ -50,13 +51,23 @@ const Navbar = ({ navbarStyle = [], selected }) => {
                             </Button>
                             <Drawer
                                 className="menu-content__drawer"
-                                title="Basic Drawer"
+                                title="I.L.T.L.C."
                                 placement="right"
-                                closable={false}
+                                closable
                                 onClose={() => setVisibility(false)}
                                 visible={visible}>
-                                <MainMenu />
-                                <SecondaryMenu />
+                                <div
+                                    style={{
+                                        display: `${navStyle.mainMenu}`,
+                                    }}>
+                                    <MainMenu clickedLink={clickedLink} />
+                                </div>
+                                <div
+                                    style={{
+                                        display: `${navStyle.secondaryMenu}`,
+                                    }}>
+                                    <SecondaryMenu clickedLink={clickedLink} />
+                                </div>
                             </Drawer>
                         </div>
                     </nav>

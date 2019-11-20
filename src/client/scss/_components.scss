@@ -49,6 +49,25 @@
     }
 }
 
+// Background Color
+
+.bg-color {
+    background-color: $background-div-color;
+}
+
+.bg-color-black {
+    background-color: black;
+}
+
+// Row
+.row-with-margin-bottom {
+    margin-bottom: 3rem;
+}
+
+.row-no-margin {
+    margin: 0;
+}
+
 // Buttons
 .iltlc-btn {
     display: flex;
@@ -89,53 +108,61 @@
 .iltlc-menu-horizontal {
     border-bottom: none !important;
 
-    .iltlc-menu-item-selected {
-        color: $paragraph-color !important;
-        border-color: transparent !important;
-
-        a {
-            color: $paragraph-color !important;
-        }
-    }
-
+    .iltlc-menu-item-selected,
     .iltlc-menu-item-active {
         border-color: transparent !important;
     }
 
     .iltlc-menu-item {
-        a.active {
-            color: $primary-color !important;
+        a {
+            color: $tertiary-color;
+
+            &.active {
+                color: $primary-color !important;
+            }
         }
     }
 }
 
 .iltlc-menu-inline {
     border-right: none !important;
+
+    .iltlc-menu-item {
+        padding: 0 !important;
+
+        a {
+            padding: 0 24px !important;
+        }
+    }
+
+    .iltlc-menu-item-selected {
+        padding: 0 !important;
+        background-color: unset !important;
+
+        &::after {
+            border-right: none;
+        }
+    }
+
+    .iltlc-menu-item {
+        a {
+            color: $tertiary-color;
+            border-right: 3px solid transparent !important;
+
+            &.active {
+                color: $primary-color !important;
+                background-color: #fce3f7 !important;
+                padding: 0 24px !important;
+                border-right: 3px solid #bc01b0 !important;
+            }
+        }
+    }
 }
 
 // Border
 
 .iltlc-card-bordered {
     border: 1px dotted $primary-color;
-}
-
-// Row
-.row-with-margin-bottom {
-    margin-bottom: 3rem;
-}
-
-.row-no-margin {
-    margin: 0;
-}
-
-// Background Color
-
-.bg-color {
-    background-color: $background-div-color;
-}
-
-.bg-color-black {
-    background-color: black;
 }
 
 // Card

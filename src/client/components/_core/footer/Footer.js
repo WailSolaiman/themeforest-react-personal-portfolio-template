@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer">
             <div className="container">
                 <Row gutter={24}>
-                    <Col xs={24} md={10}>
+                    <Col xs={24} md={10} xl={10}>
                         <div className="footer__first-section">
                             <Title level={2}>ILTLC</Title>
                             <Paragraph className="footer__paragraph">
@@ -20,9 +20,11 @@ const Footer = () => {
                             </Paragraph>
                         </div>
                     </Col>
-                    <Col xs={24} md={7}>
+                    <Col xs={24} md={7} xl={7}>
                         <div className="footer__second-section">
-                            <Title level={4}>Get in Touch</Title>
+                            <Title className="footer__title" level={4}>
+                                Get in Touch
+                            </Title>
                             <Paragraph className="footer__paragraph footer__paragraph--second">
                                 E-Mail:{' '}
                                 <a href="mailto: info@iltlc.com">
@@ -35,7 +37,9 @@ const Footer = () => {
                             <Paragraph className="footer__paragraph footer__paragraph--second">
                                 Fax: +49 00 - 554 53 - 6799
                             </Paragraph>
-                            <Title level={4}>Social Media</Title>
+                            <Title className="footer__title" level={4}>
+                                Social Media
+                            </Title>
                             <SocialMedia
                                 containerWidth="200px"
                                 containerMargin="unset"
@@ -45,9 +49,11 @@ const Footer = () => {
                             />
                         </div>
                     </Col>
-                    <Col xs={24} md={7}>
+                    <Col xs={24} md={7} xl={7}>
                         <div className="footer__third-section">
-                            <Title level={4}>Menu</Title>
+                            <Title className="footer__title" level={4}>
+                                Menu
+                            </Title>
                             <ul className="footer__list">
                                 <li className="footer__list-item">
                                     <Link to="/">Home</Link>

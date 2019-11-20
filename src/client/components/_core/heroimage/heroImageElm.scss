@@ -7,18 +7,14 @@
         background-repeat: no-repeat;
         background-position: center;
 
-        @media (min-width: 768px) {
-            height: 600px;
-        }
-
         @media (min-width: 1200px) {
-            height: 700px;
+            height: 600px;
         }
     }
 
     .hero-content-absolute {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         width: 100%;
         text-align: center;
@@ -35,16 +31,13 @@
 
         &__subheader {
             color: white;
-            margin: 0;
             text-transform: uppercase;
             text-decoration: underline;
-            text-shadow: 1px 1px 1px black;
         }
 
         &__header {
             color: white;
             text-transform: capitalize;
-            text-shadow: 1px 1px 1px black;
         }
     }
 }

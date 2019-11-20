@@ -25,15 +25,13 @@
             box-shadow: 0 0 20px 2px $tertiary-color;
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             margin-bottom: 0;
             width: 320px;
-            height: 420px;
         }
     }
 
     &__title {
-        //font-size: 1.5rem !important;
         color: $tertiary-color !important;
     }
 
@@ -46,6 +44,5 @@
 
     &__text {
         margin-bottom: 0 !important;
-        //font-size: 1rem;
     }
 }

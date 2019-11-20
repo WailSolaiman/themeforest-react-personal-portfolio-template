@@ -1,9 +1,5 @@
 .full-article {
-    margin-top: 3rem;
-
-    @media (min-width: 768px) {
-        margin-top: 5rem;
-    }
+    margin-top: 5rem;
 
     &__image {
         width: 100%;

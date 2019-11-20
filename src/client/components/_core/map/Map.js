@@ -6,7 +6,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>
 
 const Map = () => {
     return (
-        <div style={{ height: 400, width: '100%' }}>
+        <div className="map">
             <GoogleMapReact
                 bootstrapURLKeys={{
                     key: 'AIzaSyAPYMLlgMo3B3KpI9c85ePXJNEyUJTlCFI=',

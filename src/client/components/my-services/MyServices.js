@@ -12,7 +12,7 @@ const MyServices = ({ title = '', services = [] }) => {
             {services &&
                 services.map(service => {
                     return (
-                        <Col xs={24} lg={8} key={service.id}>
+                        <Col xs={24} md={8} lg={12} xl={8} key={service.id}>
                             <div className="my-services__content">
                                 <Title className="my-services__title" level={4}>
                                     {service.name}

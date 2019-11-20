@@ -22,9 +22,11 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
                                         alt={portfolio.header}
                                     />
                                     <div className="portfolio__header-container">
-                                        <Paragraph className="portfolio__header">
+                                        <Title
+                                            className="portfolio__header"
+                                            level={4}>
                                             {portfolio.header}
-                                        </Paragraph>
+                                        </Title>
                                     </div>
                                 </div>
                             </Col>

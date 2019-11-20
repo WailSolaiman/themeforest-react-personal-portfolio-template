@@ -7,11 +7,11 @@ const Clients = ({ title = '', clients = [] }) => {
     return (
         <div className="clients">
             <Title level={2}>{title}</Title>
-            <Row gutter={24}>
+            <Row>
                 {clients &&
                     clients.map(client => {
                         return (
-                            <Col xs={24} sm={12} md={8} lg={4} key={client.id}>
+                            <Col xs={12} md={4} lg={4} key={client.id}>
                                 <div className="clients__content">
                                     <img
                                         className="clients__image"

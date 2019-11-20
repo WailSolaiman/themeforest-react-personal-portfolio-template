@@ -8,7 +8,19 @@
     }
 
     &__first-section {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__second-section {
+        margin-bottom: 2rem !important;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0 !important;
     }
 
     &__paragraph {
@@ -27,10 +39,24 @@
     &__list {
         padding: 0;
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media (min-width: 768px) {
+            display: block;
+            flex-direction: unset;
+            flex-wrap: unset;
+        }
     }
 
     &__list-item {
+        margin-right: 15px;
         transition: color .2s ease-in-out;
+
+        @media (min-width: 768px) {
+            margin-right: 0;
+        }
 
         a:hover {
             color: white;
@@ -41,7 +67,7 @@
         color: white !important;
         text-align: center;
         margin: 0 !important;
-        padding-top: 3rem;
+        padding-top: 1rem;
         border-top: 1px dashed white;
     }
 }

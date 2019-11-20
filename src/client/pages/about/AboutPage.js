@@ -44,22 +44,22 @@ const AboutPage = () => {
                 </Row>
                 <Row
                     className="row-with-margin-bottom"
-                    gutter={{ xs: 0, xl: 24 }}>
+                    gutter={{ xs: 0, md: 24 }}>
                     <Col xs={24}>
                         <Title level={2}>Personal Infos.</Title>
                     </Col>
-                    <Col xs={24} xl={6}>
+                    <Col xs={24} md={9} lg={6} xl={5}>
                         <ProfileImage profileImage={profileImage} />
                     </Col>
-                    <Col xs={24} xl={18}>
+                    <Col xs={24} md={15} lg={18} xl={19}>
                         <PersonalData personalData={personalData} />
                     </Col>
                 </Row>
-                <Row gutter={{ xs: 0, xl: 24 }}>
-                    <Col xs={24} xl={12}>
+                <Row gutter={{ xs: 0, lg: 24 }}>
+                    <Col xs={24} lg={12}>
                         <Experience experiences={experiences} />
                     </Col>
-                    <Col xs={24} xl={12}>
+                    <Col xs={24} lg={12}>
                         <Education educations={educations} />
                     </Col>
                     <Col xs={24}>

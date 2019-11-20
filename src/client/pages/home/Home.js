@@ -112,7 +112,7 @@ const Home = () => {
             <Row className="row-with-margin-bottom bg-color">
                 <Col xs={24}>
                     <div className="container">
-                        <Clients title="" clients={clients} />
+                        <Clients title="Our Clients" clients={clients} />
                     </div>
                 </Col>
             </Row>

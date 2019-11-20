@@ -13,8 +13,12 @@
 
     &__title {
         color: white !important;
-        font-size: 4rem !important;
         margin-top: .5rem !important;
         margin-bottom: .5rem !important;
+        text-transform: uppercase;
+
+        @media (min-width: 992px) {
+            font-size: 4rem !important;
+        }
     }
 }

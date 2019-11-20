@@ -108,7 +108,7 @@ const myServicesData = [
         id: uuidv4(),
         name: 'Web Design',
         img: HeroImageMobile,
-        paragraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit sit, ipsum ex nam.`,
+        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere nobis ad dignissimos.`,
     },
     {
         id: uuidv4(),

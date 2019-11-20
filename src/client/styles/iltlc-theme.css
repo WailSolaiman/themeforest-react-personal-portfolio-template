@@ -50,7 +50,7 @@ section {
 body {
     margin: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-variant: tabular-nums;
     line-height: 1.5;
@@ -1495,7 +1495,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -1516,13 +1516,13 @@ html {
 
 .iltlc-alert-icon {
     position: absolute;
-    top: 13.5px;
+    top: 12px;
     left: 16px;
 }
 
 .iltlc-alert-description {
     display: none;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -1616,7 +1616,7 @@ html {
     position: absolute;
     top: 16px;
     right: 16px;
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -1624,7 +1624,7 @@ html {
     display: block;
     margin-bottom: 4px;
     color: #bc01b0;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-alert-message {
@@ -1688,7 +1688,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -1776,7 +1776,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -1869,7 +1869,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -1952,7 +1952,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -2006,7 +2006,7 @@ html {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -2164,7 +2164,7 @@ html {
 .iltlc-badge-status-text {
     margin-left: 8px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-badge-zoom-appear,
@@ -2254,11 +2254,11 @@ html {
     list-style: none;
     font-feature-settings: 'tnum';
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-breadcrumb .iltlc-icon {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-breadcrumb a {
@@ -2311,7 +2311,7 @@ html {
     touch-action: manipulation;
     height: 32px;
     padding: 0 15px;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 0;
     color: rgba(0, 0, 0, 0.45);
     background-color: #fff;
@@ -2350,14 +2350,14 @@ html {
 .iltlc-btn-lg {
     height: 40px;
     padding: 0 15px;
-    font-size: 24px;
+    font-size: 1.5em;
     border-radius: 0;
 }
 
 .iltlc-btn-sm {
     height: 24px;
     padding: 0 7px;
-    font-size: 22px;
+    font-size: 1.2em;
     border-radius: 0;
 }
 
@@ -3257,7 +3257,7 @@ html {
     width: 32px;
     height: 32px;
     padding: 0;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 0;
 }
 
@@ -3265,7 +3265,7 @@ html {
     width: 40px;
     height: 40px;
     padding: 0;
-    font-size: 26px;
+    font-size: 3.5em;
     border-radius: 0;
 }
 
@@ -3273,28 +3273,28 @@ html {
     width: 24px;
     height: 24px;
     padding: 0;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 0;
 }
 
 .iltlc-btn-round {
     height: 32px;
     padding: 0 16px;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 32px;
 }
 
 .iltlc-btn-round.iltlc-btn-lg {
     height: 40px;
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 1.5em;
     border-radius: 40px;
 }
 
 .iltlc-btn-round.iltlc-btn-sm {
     height: 24px;
     padding: 0 12px;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 24px;
 }
 
@@ -3400,14 +3400,14 @@ html {
 }
 
 .iltlc-btn-group>.iltlc-btn-icon-only {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-btn-group-lg>.iltlc-btn,
 .iltlc-btn-group-lg>span>.iltlc-btn {
     height: 40px;
     padding: 0 15px;
-    font-size: 24px;
+    font-size: 1.5em;
     border-radius: 0;
     line-height: 38px;
 }
@@ -3423,14 +3423,14 @@ html {
 .iltlc-btn-group-sm>span>.iltlc-btn {
     height: 24px;
     padding: 0 7px;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 0;
     line-height: 22px;
 }
 
 .iltlc-btn-group-sm>.iltlc-btn>.iltlc-icon,
 .iltlc-btn-group-sm>span>.iltlc-btn>.iltlc-icon {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-btn-group-sm>.iltlc-btn.iltlc-btn-icon-only {
@@ -3968,7 +3968,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -4245,7 +4245,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -4275,7 +4275,7 @@ a.iltlc-btn-sm {
     padding: 0 24px;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     background: transparent;
     border-bottom: 1px solid #e8e8e8;
     border-radius: 0 0 0 0;
@@ -4321,7 +4321,7 @@ a.iltlc-btn-sm {
     margin-bottom: -17px;
     color: rgba(0, 0, 0, 0.45);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-card-head .iltlc-tabs-bar {
@@ -4334,7 +4334,7 @@ a.iltlc-btn-sm {
     padding: 16px 0;
     color: rgba(0, 0, 0, 0.45);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-card-body {
@@ -4452,7 +4452,7 @@ a.iltlc-btn-sm {
 }
 
 .iltlc-card-actions>li>span a:not(.iltlc-btn),
-.iltlc-card-actions>li>span>.iltlc-icon {
+.iltlc-card-actions>li>span>.anticon {
     display: inline-block;
     width: 100%;
     color: rgba(0, 0, 0, 0.45);
@@ -4461,11 +4461,11 @@ a.iltlc-btn-sm {
 }
 
 .iltlc-card-actions>li>span a:not(.iltlc-btn):hover,
-.iltlc-card-actions>li>span>.iltlc-icon:hover {
+.iltlc-card-actions>li>span>.anticon:hover {
     color: #bc01b0;
 }
 
-.iltlc-card-actions>li>span>.iltlc-icon {
+.iltlc-card-actions>li>span>.anticon {
     font-size: 16px;
     line-height: 22px;
 }
@@ -4481,7 +4481,7 @@ a.iltlc-btn-sm {
 
 .iltlc-card-type-inner .iltlc-card-head-title {
     padding: 12px 0;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-card-type-inner .iltlc-card-body {
@@ -4534,7 +4534,7 @@ a.iltlc-btn-sm {
     overflow: hidden;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -4579,7 +4579,7 @@ a.iltlc-btn-sm {
 .iltlc-card-small>.iltlc-card-head {
     min-height: 36px;
     padding: 0 12px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-card-small>.iltlc-card-head>.iltlc-card-head-wrapper>.iltlc-card-head-title {
@@ -4588,7 +4588,7 @@ a.iltlc-btn-sm {
 
 .iltlc-card-small>.iltlc-card-head>.iltlc-card-head-wrapper>.iltlc-card-extra {
     padding: 8px 0;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-card-small>.iltlc-card-body {
@@ -4600,7 +4600,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -4859,7 +4859,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -4883,7 +4883,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -4992,7 +4992,7 @@ a.iltlc-btn-sm {
 .iltlc-cascader-menus {
     position: absolute;
     z-index: 1050;
-    font-size: 22px;
+    font-size: 16px;
     white-space: nowrap;
     background: #fff;
     border-radius: 0;
@@ -5125,7 +5125,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5264,7 +5264,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5292,7 +5292,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5340,7 +5340,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5508,7 +5508,7 @@ a.iltlc-btn-sm {
     position: relative;
     flex: 1 1 auto;
     min-width: 1px;
-    font-size: 22px;
+    font-size: 16px;
     word-wrap: break-word;
 }
 
@@ -5517,7 +5517,7 @@ a.iltlc-btn-sm {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 4px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-comment-content-author>a,
@@ -5529,7 +5529,7 @@ a.iltlc-btn-sm {
 
 .iltlc-comment-content-author-name {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     transition: color 0.3s;
 }
 
@@ -5583,7 +5583,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5622,7 +5622,7 @@ a.iltlc-btn-sm {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -5676,7 +5676,7 @@ a.iltlc-btn-sm {
 .iltlc-calendar-picker-clear {
     z-index: 2;
     color: rgba(0, 0, 0, 0.25);
-    font-size: 22px;
+    font-size: 16px;
     background: #fff;
     cursor: pointer;
     opacity: 0;
@@ -5695,7 +5695,7 @@ a.iltlc-btn-sm {
 .iltlc-calendar-picker-icon {
     display: inline-block;
     color: rgba(0, 0, 0, 0.25);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1;
 }
 
@@ -5707,7 +5707,7 @@ a.iltlc-btn-sm {
 .iltlc-calendar {
     position: relative;
     width: 280px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: left;
     list-style: none;
@@ -6187,7 +6187,7 @@ a.iltlc-btn-sm {
     display: inline-block;
     width: 20px;
     color: rgba(0, 0, 0, 0.25);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1;
     text-indent: 43px;
     transition: color 0.3s ease;
@@ -6219,7 +6219,7 @@ a.iltlc-btn-sm {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
     height: 24px;
     padding: 0 7px;
-    font-size: 22px;
+    font-size: 16px;
     border-radius: 0;
     line-height: 22px;
 }
@@ -6256,14 +6256,14 @@ a.iltlc-btn-sm {
 .iltlc-calendar .iltlc-calendar-ok-btn-lg {
     height: 40px;
     padding: 0 15px;
-    font-size: 24px;
+    font-size: 1.5em;
     border-radius: 0;
 }
 
 .iltlc-calendar .iltlc-calendar-ok-btn-sm {
     height: 24px;
     padding: 0 7px;
-    font-size: 22px;
+    font-size: 1.2em;
     border-radius: 0;
 }
 
@@ -6588,7 +6588,7 @@ a.iltlc-btn-sm {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -6680,7 +6680,7 @@ textarea.iltlc-calendar-range .iltlc-calendar-time-picker-input {
 .iltlc-calendar-range .iltlc-calendar-time-picker-input-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-calendar-range .iltlc-calendar-input-sm,
@@ -6840,7 +6840,7 @@ div.iltlc-calendar-range-quick-selector>a {
     display: inline-block;
     width: 100%;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: left;
     list-style: none;
@@ -6879,7 +6879,7 @@ div.iltlc-calendar-range-quick-selector>a {
     float: left;
     height: 226px;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 16px;
     border-right: 1px solid #e8e8e8;
 }
 
@@ -7935,7 +7935,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin-bottom: 20px;
     color: #bc01b0;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -7962,7 +7962,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 .iltlc-descriptions-item-label {
     color: #bc01b0;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     white-space: nowrap;
 }
@@ -7986,7 +7986,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 .iltlc-descriptions-item-content {
     display: table-cell;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -8058,7 +8058,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -8093,7 +8093,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 16px 0;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     white-space: nowrap;
     text-align: center;
     background: transparent;
@@ -8295,7 +8295,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 0;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 22px;
 }
 
@@ -8319,7 +8319,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     line-height: 56px;
     text-align: center;
@@ -8355,7 +8355,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 
 .iltlc-drawer-body {
     padding: 24px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
 }
@@ -8391,7 +8391,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -8489,17 +8489,17 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     padding: 5px 12px;
     color: rgba(0, 0, 0, 0.45);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.iltlc-dropdown-menu-item>.iltlc-icon:first-child,
-.iltlc-dropdown-menu-submenu-title>.iltlc-icon:first-child,
-.iltlc-dropdown-menu-item>span>.iltlc-icon:first-child,
-.iltlc-dropdown-menu-submenu-title>span>.iltlc-icon:first-child {
+.iltlc-dropdown-menu-item>.anticon:first-child,
+.iltlc-dropdown-menu-submenu-title>.anticon:first-child,
+.iltlc-dropdown-menu-item>span>.anticon:first-child,
+.iltlc-dropdown-menu-submenu-title>span>.anticon:first-child {
     min-width: 12px;
     margin-right: 8px;
     font-size: 16px;
@@ -8700,7 +8700,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 
 .iltlc-empty {
     margin: 0 8px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
@@ -8750,7 +8750,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -8763,14 +8763,14 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin-bottom: 20px;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 24px;
+    font-size: 18px;
     line-height: inherit;
     border: 0;
     border-bottom: 1px solid #893765;
 }
 
 .iltlc-form label {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-form input[type='search'] {
@@ -8808,7 +8808,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     display: block;
     padding-top: 15px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -8816,7 +8816,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     display: inline-block;
     margin-right: 4px;
     color: #f5222d;
-    font-size: 22px;
+    font-size: 16px;
     font-family: SimSun, sans-serif;
     line-height: 1;
     content: '*';
@@ -8846,7 +8846,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -8860,7 +8860,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 }
 
 .iltlc-form-item label>.iltlc-icon {
-    font-size: 22px;
+    font-size: 16px;
     vertical-align: top;
 }
 
@@ -8895,7 +8895,7 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 }
 
 .iltlc-form-item-with-help {
-    margin-bottom: 0;
+    margin-bottom: 2px;
 }
 
 .iltlc-form-item-label {
@@ -8918,10 +8918,10 @@ li.iltlc-calendar-time-picker-select-option-disabled:hover {
 .iltlc-form-explain,
 .iltlc-form-extra {
     clear: both;
-    min-height: 34px;
+    min-height: 25px;
     margin-top: -2px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -9214,7 +9214,7 @@ form .iltlc-input-group-wrapper {
     width: 32px;
     height: 20px;
     margin-top: -10px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 20px;
     text-align: center;
     visibility: visible;
@@ -9523,7 +9523,7 @@ form .iltlc-input-group-wrapper {
 }
 
 .iltlc-advanced-search-form .iltlc-form-item-with-help {
-    margin-bottom: -7px;
+    margin-bottom: 2px;
 }
 
 .show-help-enter,
@@ -13928,7 +13928,7 @@ form .iltlc-input-group-wrapper {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -14002,7 +14002,7 @@ textarea.iltlc-input {
 .iltlc-input-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-input-sm {
@@ -14015,7 +14015,7 @@ textarea.iltlc-input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -14086,7 +14086,7 @@ textarea.iltlc-input {
     padding: 0 11px;
     color: rgba(0, 0, 0, 0.45);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
     background-color: #fafafa;
     border: 1px solid #893765;
@@ -14165,7 +14165,7 @@ textarea.iltlc-input {
 .iltlc-input-group-lg>.iltlc-input-group-addon {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-input-group-sm .iltlc-input,
@@ -14315,7 +14315,7 @@ textarea.iltlc-input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -14348,12 +14348,12 @@ textarea.iltlc-input {
     transform: translateY(-50%);
 }
 
-.iltlc-input-affix-wrapper .iltlc-input-prefix :not(.iltlc-icon),
-.iltlc-input-affix-wrapper .iltlc-input-suffix :not(.iltlc-icon) {
+.iltlc-input-affix-wrapper .iltlc-input-prefix :not(.anticon),
+.iltlc-input-affix-wrapper .iltlc-input-suffix :not(.anticon) {
     line-height: 1.5;
 }
 
-.iltlc-input-affix-wrapper .iltlc-input-disabled~.iltlc-input-suffix .iltlc-icon {
+.iltlc-input-affix-wrapper .iltlc-input-disabled~.iltlc-input-suffix .anticon {
     color: rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
 }
@@ -14475,7 +14475,7 @@ textarea.iltlc-input {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -14553,7 +14553,7 @@ textarea.iltlc-input-number {
 .iltlc-input-number-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-input-number-sm {
@@ -14697,7 +14697,7 @@ textarea.iltlc-input-number {
 
 .iltlc-input-number-lg {
     padding: 0;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-input-number-lg input {
@@ -14829,7 +14829,7 @@ textarea.iltlc-input-number {
 .iltlc-layout-footer {
     padding: 24px 50px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     background: #f0f2f5;
 }
 
@@ -14923,7 +14923,7 @@ textarea.iltlc-input-number {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -14958,7 +14958,7 @@ textarea.iltlc-input-number {
 .iltlc-list-empty-text {
     padding: 16px;
     color: rgba(0, 0, 0, 0.25);
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -14996,7 +14996,7 @@ textarea.iltlc-input-number {
 .iltlc-list-item-meta-title {
     margin-bottom: 4px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -15011,7 +15011,7 @@ textarea.iltlc-input-number {
 
 .iltlc-list-item-meta-description {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -15028,7 +15028,7 @@ textarea.iltlc-input-number {
     display: inline-block;
     padding: 0 8px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
     cursor: pointer;
@@ -15119,7 +15119,7 @@ textarea.iltlc-input-number {
 .iltlc-list-vertical .iltlc-list-item-meta-title {
     margin-bottom: 12px;
     color: #bc01b0;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -15230,7 +15230,7 @@ textarea.iltlc-input-number {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -15248,7 +15248,7 @@ textarea.iltlc-input-number {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     background-color: #fff;
     background-image: none;
     border: 1px solid #893765;
@@ -15326,7 +15326,7 @@ textarea.iltlc-mentions-wrapper .iltlc-mentions-editor {
 .iltlc-mentions-wrapper .iltlc-mentions-editor-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-mentions-wrapper .iltlc-mentions-editor-sm {
@@ -15383,7 +15383,7 @@ textarea.iltlc-mentions-wrapper .iltlc-mentions-editor {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -15476,7 +15476,7 @@ textarea.iltlc-mentions-wrapper .iltlc-mentions-editor {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     background-color: #fff;
     background-image: none;
     border: 1px solid #893765;
@@ -15557,7 +15557,7 @@ textarea.iltlc-mentions {
 .iltlc-mentions-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-mentions-sm {
@@ -15667,7 +15667,7 @@ textarea.iltlc-mentions {
     left: -9999px;
     z-index: 1050;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 16px;
     font-variant: initial;
     background-color: #fff;
     border-radius: 0;
@@ -15740,7 +15740,7 @@ textarea.iltlc-mentions {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     font-feature-settings: 'tnum';
@@ -15790,7 +15790,7 @@ textarea.iltlc-mentions {
 .iltlc-menu-item-group-title {
     padding: 8px 16px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     transition: all 0.3s;
 }
@@ -15933,7 +15933,7 @@ textarea.iltlc-mentions {
 .iltlc-menu-submenu-title .iltlc-icon {
     min-width: 14px;
     margin-right: 10px;
-    font-size: 22px;
+    font-size: 16px;
     transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -16158,7 +16158,7 @@ textarea.iltlc-mentions {
     margin-bottom: 4px;
     padding: 0 16px;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 40px;
     text-overflow: ellipsis;
 }
@@ -16218,7 +16218,7 @@ textarea.iltlc-mentions {
 .iltlc-menu-inline-collapsed>.iltlc-menu-item-group>.iltlc-menu-item-group-list>.iltlc-menu-submenu>.iltlc-menu-submenu-title,
 .iltlc-menu-inline-collapsed>.iltlc-menu-submenu>.iltlc-menu-submenu-title {
     left: 0;
-    padding: 0 28px !important;
+    padding: 0 31px !important;
     text-overflow: clip;
 }
 
@@ -16234,7 +16234,7 @@ textarea.iltlc-mentions {
 .iltlc-menu-inline-collapsed>.iltlc-menu-item-group>.iltlc-menu-item-group-list>.iltlc-menu-submenu>.iltlc-menu-submenu-title .iltlc-icon,
 .iltlc-menu-inline-collapsed>.iltlc-menu-submenu>.iltlc-menu-submenu-title .iltlc-icon {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 40px;
 }
 
@@ -16525,7 +16525,7 @@ textarea.iltlc-mentions {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -16577,7 +16577,7 @@ textarea.iltlc-mentions {
     position: relative;
     top: 1px;
     margin-right: 8px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-message-notice.move-up-leave.move-up-leave-active {
@@ -16605,7 +16605,7 @@ textarea.iltlc-mentions {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -16634,7 +16634,7 @@ textarea.iltlc-mentions {
     margin: 0;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 22px;
     word-wrap: break-word;
 }
@@ -16670,7 +16670,7 @@ textarea.iltlc-mentions {
     display: block;
     width: 56px;
     height: 56px;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     line-height: 56px;
     text-align: center;
@@ -16694,7 +16694,7 @@ textarea.iltlc-mentions {
 
 .iltlc-modal-body {
     padding: 24px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
 }
@@ -16811,14 +16811,14 @@ textarea.iltlc-mentions {
     overflow: hidden;
     color: #bc01b0;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
 .iltlc-modal-confirm-body .iltlc-modal-confirm-content {
     margin-top: 8px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-modal-confirm-body>.iltlc-icon {
@@ -16863,7 +16863,7 @@ textarea.iltlc-mentions {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -16889,7 +16889,7 @@ textarea.iltlc-mentions {
 }
 
 .iltlc-notification-close-icon {
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -16908,7 +16908,7 @@ textarea.iltlc-mentions {
     display: inline-block;
     margin-bottom: 8px;
     color: #bc01b0;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -16926,7 +16926,7 @@ textarea.iltlc-mentions {
 }
 
 .iltlc-notification-notice-description {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-notification-notice-closable .iltlc-notification-notice-message {
@@ -16936,12 +16936,12 @@ textarea.iltlc-mentions {
 .iltlc-notification-notice-with-icon .iltlc-notification-notice-message {
     margin-bottom: 4px;
     margin-left: 48px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-notification-notice-with-icon .iltlc-notification-notice-description {
     margin-left: 48px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-notification-notice-icon {
@@ -17065,7 +17065,7 @@ textarea.iltlc-mentions {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -17135,7 +17135,7 @@ textarea.iltlc-mentions {
     padding-right: 12px;
     color: #bc01b0;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 39px;
     line-height: 32px;
 }
 
@@ -17204,7 +17204,7 @@ textarea.iltlc-mentions {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -17470,7 +17470,7 @@ textarea.iltlc-mentions {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -17546,7 +17546,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
 .iltlc-pagination-options-quick-jumper input-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-pagination-options-quick-jumper input-sm {
@@ -17724,7 +17724,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -17812,18 +17812,18 @@ textarea.iltlc-pagination-options-quick-jumper input {
     position: relative;
     padding: 4px 0 12px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-popover-message>.iltlc-icon {
     position: absolute;
     top: 8px;
     color: #faad14;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-popover-message-title {
-    padding-left: 30px;
+    padding-left: 24px;
 }
 
 .iltlc-popover-buttons {
@@ -17947,7 +17947,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -17958,7 +17958,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
 .iltlc-progress-line {
     position: relative;
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-progress-small.iltlc-progress-line,
@@ -18029,7 +18029,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
 }
 
 .iltlc-progress-text .iltlc-icon {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-progress-status-active .iltlc-progress-bg::before {
@@ -18123,7 +18123,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -18137,7 +18137,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -18154,7 +18154,7 @@ textarea.iltlc-pagination-options-quick-jumper input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -18303,7 +18303,7 @@ span.iltlc-radio+* {
 
 .iltlc-radio-group-large .iltlc-radio-button-wrapper {
     height: 40px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 38px;
 }
 
@@ -18457,7 +18457,7 @@ span.iltlc-radio+* {
 .iltlc-rate {
     box-sizing: border-box;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     font-feature-settings: 'tnum';
@@ -18537,26 +18537,26 @@ span.iltlc-radio+* {
 .iltlc-rate-text {
     display: inline-block;
     margin-left: 8px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-result {
     padding: 48px 32px;
 }
 
-.iltlc-result-success .iltlc-result-icon>.iltlc-icon {
+.iltlc-result-success .iltlc-result-icon>.anticon {
     color: #52c41a;
 }
 
-.iltlc-result-error .iltlc-result-icon>.iltlc-icon {
+.iltlc-result-error .iltlc-result-icon>.anticon {
     color: #f5222d;
 }
 
-.iltlc-result-info .iltlc-result-icon>.iltlc-icon {
+.iltlc-result-info .iltlc-result-icon>.anticon {
     color: #1890ff;
 }
 
-.iltlc-result-warning .iltlc-result-icon>.iltlc-icon {
+.iltlc-result-warning .iltlc-result-icon>.anticon {
     color: #faad14;
 }
 
@@ -18571,7 +18571,7 @@ span.iltlc-radio+* {
     text-align: center;
 }
 
-.iltlc-result-icon>.iltlc-icon {
+.iltlc-result-icon>.anticon {
     font-size: 72px;
 }
 
@@ -18613,7 +18613,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -18811,7 +18811,7 @@ span.iltlc-radio+* {
 }
 
 .iltlc-select-lg {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-select-lg .iltlc-select-selection--single {
@@ -19130,7 +19130,7 @@ span.iltlc-radio+* {
     left: -9999px;
     z-index: 1050;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 16px;
     font-variant: initial;
     background-color: #fff;
     border-radius: 0;
@@ -19400,7 +19400,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -19518,7 +19518,7 @@ span.iltlc-radio+* {
     top: 14px;
     left: 0;
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-slider-mark-text {
@@ -19591,7 +19591,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -19637,7 +19637,7 @@ span.iltlc-radio+* {
     position: absolute;
     top: 50%;
     width: 100%;
-    padding-top: 1px;
+    padding-top: 4px;
     text-shadow: 0 1px 2px #fff;
 }
 
@@ -19650,7 +19650,7 @@ span.iltlc-radio+* {
 }
 
 .iltlc-spin-nested-loading>div>.iltlc-spin-sm .iltlc-spin-text {
-    padding-top: -2px;
+    padding-top: 1px;
 }
 
 .iltlc-spin-nested-loading>div>.iltlc-spin-sm.iltlc-spin-show-text .iltlc-spin-dot {
@@ -19662,7 +19662,7 @@ span.iltlc-radio+* {
 }
 
 .iltlc-spin-nested-loading>div>.iltlc-spin-lg .iltlc-spin-text {
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
 .iltlc-spin-nested-loading>div>.iltlc-spin-lg.iltlc-spin-show-text .iltlc-spin-dot {
@@ -19806,7 +19806,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -19816,7 +19816,7 @@ span.iltlc-radio+* {
 .iltlc-statistic-title {
     margin-bottom: 4px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-statistic-content {
@@ -19848,7 +19848,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -19889,7 +19889,7 @@ span.iltlc-radio+* {
     width: 32px;
     height: 32px;
     margin-right: 8px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     line-height: 32px;
     text-align: center;
@@ -19928,7 +19928,7 @@ span.iltlc-radio+* {
     display: inline-block;
     padding-right: 16px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
 }
 
@@ -19948,12 +19948,12 @@ span.iltlc-radio+* {
     margin-left: 8px;
     color: rgba(0, 0, 0, 0.45);
     font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-steps-item-description {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-steps-item-wait .iltlc-steps-item-icon {
@@ -20176,7 +20176,7 @@ span.iltlc-radio+* {
 
 .iltlc-steps-small .iltlc-steps-item-title {
     padding-right: 12px;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -20186,7 +20186,7 @@ span.iltlc-radio+* {
 
 .iltlc-steps-small .iltlc-steps-item-description {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-steps-small .iltlc-steps-item-tail {
@@ -20592,7 +20592,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -20798,7 +20798,7 @@ span.iltlc-radio+* {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -21212,7 +21212,7 @@ span.iltlc-radio+* {
     margin-top: -1px;
     padding: 16px 16px;
     color: rgba(0, 0, 0, 0.25);
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
     background: #fff;
     border-top: 1px solid #e8e8e8;
@@ -21807,7 +21807,6 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 .iltlc-tabs.iltlc-tabs-card .iltlc-tabs-card-bar .iltlc-tabs-tab .iltlc-tabs-close-x {
     width: 16px;
     height: 16px;
-    height: 22px;
     margin-right: -5px;
     margin-left: 3px;
     overflow: hidden;
@@ -21836,7 +21835,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 }
 
 .iltlc-tabs-extra-content {
-    line-height: 57px;
+    line-height: 48px;
 }
 
 .iltlc-tabs-extra-content .iltlc-tabs-new-tab {
@@ -21868,11 +21867,11 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 }
 
 .iltlc-tabs.iltlc-tabs-large .iltlc-tabs-extra-content {
-    line-height: 68px;
+    line-height: 59px;
 }
 
 .iltlc-tabs.iltlc-tabs-small .iltlc-tabs-extra-content {
-    line-height: 49px;
+    line-height: 40px;
 }
 
 .iltlc-tabs.iltlc-tabs-card .iltlc-tabs-extra-content {
@@ -21953,7 +21952,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -22006,7 +22005,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
     box-sizing: border-box;
     margin-bottom: -1px;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     white-space: nowrap;
     transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -22216,7 +22215,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 }
 
 .iltlc-tabs .iltlc-tabs-large-bar .iltlc-tabs-nav-container {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-tabs .iltlc-tabs-large-bar .iltlc-tabs-tab {
@@ -22224,7 +22223,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 }
 
 .iltlc-tabs .iltlc-tabs-small-bar .iltlc-tabs-nav-container {
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-tabs .iltlc-tabs-small-bar .iltlc-tabs-tab {
@@ -22472,7 +22471,6 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -22727,7 +22725,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -22740,7 +22738,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
 .iltlc-time-picker-panel-inner {
     position: relative;
     left: -2px;
-    font-size: 22px;
+    font-size: 16px;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -22798,7 +22796,7 @@ tr.iltlc-table-expanded-row td>.iltlc-table-wrapper {
     width: 56px;
     max-height: 192px;
     overflow: hidden;
-    font-size: 22px;
+    font-size: 16px;
     border-left: 1px solid #e8e8e8;
 }
 
@@ -22925,7 +22923,7 @@ li.iltlc-time-picker-panel-select-option-disabled:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -22945,7 +22943,7 @@ li.iltlc-time-picker-panel-select-option-disabled:hover {
     height: 32px;
     padding: 4px 11px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -23019,7 +23017,7 @@ textarea.iltlc-time-picker-input {
 .iltlc-time-picker-input-lg {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-time-picker-input-sm {
@@ -23084,7 +23082,7 @@ textarea.iltlc-time-picker-input {
 .iltlc-time-picker-large .iltlc-time-picker-input {
     height: 40px;
     padding: 6px 11px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-time-picker-small .iltlc-time-picker-input {
@@ -23108,7 +23106,7 @@ textarea.iltlc-time-picker-input {
 .iltlc-timeline {
     box-sizing: border-box;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     font-feature-settings: 'tnum';
@@ -23121,7 +23119,7 @@ textarea.iltlc-time-picker-input {
     position: relative;
     margin: 0;
     padding: 0 0 20px;
-    font-size: 22px;
+    font-size: 16px;
     list-style: none;
 }
 
@@ -23188,7 +23186,7 @@ textarea.iltlc-time-picker-input {
 
 .iltlc-timeline-item-content {
     position: relative;
-    top: -10px;
+    top: -7px;
     margin: 0 0 0 18px;
     word-break: break-word;
 }
@@ -23270,7 +23268,7 @@ textarea.iltlc-time-picker-input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -23507,7 +23505,7 @@ textarea.iltlc-time-picker-input {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -23567,7 +23565,7 @@ span.iltlc-transfer-list-search-action {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2px 12px 3px;
+    padding: 6.5px 12px 7.5px;
     overflow: hidden;
     color: rgba(0, 0, 0, 0.45);
     background: #fff;
@@ -23587,7 +23585,7 @@ span.iltlc-transfer-list-search-action {
 .iltlc-transfer-list-body {
     position: relative;
     height: 100%;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-transfer-list-body-search-wrapper {
@@ -23787,7 +23785,7 @@ span.iltlc-transfer-list-search-action {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -23926,7 +23924,7 @@ span.iltlc-transfer-list-search-action {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -23954,7 +23952,7 @@ span.iltlc-transfer-list-search-action {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24001,7 +23999,7 @@ span.iltlc-transfer-list-search-action {
     /* see https://github.com/ant-design/ant-design/issues/16259 */
     box-sizing: border-box;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24303,7 +24301,7 @@ li.iltlc-tree-treenode-disabled>.iltlc-tree-node-content-wrapper:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24442,7 +24440,7 @@ li.iltlc-tree-treenode-disabled>.iltlc-tree-node-content-wrapper:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24470,7 +24468,7 @@ li.iltlc-tree-treenode-disabled>.iltlc-tree-node-content-wrapper:hover {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24517,7 +24515,7 @@ li.iltlc-tree-treenode-disabled>.iltlc-tree-node-content-wrapper:hover {
     box-sizing: border-box;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24714,7 +24712,7 @@ li.iltlc-select-tree-treenode-disabled>.iltlc-select-tree-node-content-wrapper:h
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -24783,7 +24781,7 @@ div.iltlc-typography,
 
 h1.iltlc-typography,
 .iltlc-typography h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     color: #bc01b0;
     font-weight: 900;
     font-size: 60px;
@@ -24792,28 +24790,28 @@ h1.iltlc-typography,
 
 h2.iltlc-typography,
 .iltlc-typography h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     color: #bc01b0;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 51px;
     line-height: 1.35;
 }
 
 h3.iltlc-typography,
 .iltlc-typography h3 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     color: #bc01b0;
     font-weight: 900;
-    font-size: 38px;
+    font-size: 44px;
     line-height: 1.35;
 }
 
 h4.iltlc-typography,
 .iltlc-typography h4 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
     color: #bc01b0;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 39px;
     line-height: 1.4;
 }
 
@@ -24821,7 +24819,7 @@ h4.iltlc-typography,
 .iltlc-typography+h2.iltlc-typography,
 .iltlc-typography+h3.iltlc-typography,
 .iltlc-typography+h4.iltlc-typography {
-    margin-top: 1.2em;
+    margin-top: 0;
 }
 
 .iltlc-typography div+h1,
@@ -24856,7 +24854,7 @@ h4.iltlc-typography,
 .iltlc-typography h2+h4,
 .iltlc-typography h3+h4,
 .iltlc-typography h4+h4 {
-    margin-top: 1.2em;
+    margin-top: 0;
 }
 
 span.iltlc-typography-ellipsis {
@@ -25013,7 +25011,7 @@ div.iltlc-typography-edit-content {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -25122,12 +25120,12 @@ div.iltlc-typography-edit-content {
 .iltlc-upload.iltlc-upload-drag p.iltlc-upload-text {
     margin: 0 0 4px;
     color: #bc01b0;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .iltlc-upload.iltlc-upload-drag p.iltlc-upload-hint {
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-upload.iltlc-upload-drag .iltlc-icon-plus {
@@ -25175,7 +25173,7 @@ div.iltlc-typography-edit-content {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
     font-variant: tabular-nums;
     line-height: 1.5;
     list-style: none;
@@ -25215,13 +25213,13 @@ div.iltlc-typography-edit-content {
     position: relative;
     height: 22px;
     margin-top: 8px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-upload-list-item-name {
     display: inline-block;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 24px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -25243,7 +25241,7 @@ div.iltlc-typography-edit-content {
     opacity: 1;
 }
 
-.iltlc-upload-list-item-card-actions .iltlc-icon {
+.iltlc-upload-list-item-card-actions .anticon {
     padding-right: 5px;
     color: rgba(0, 0, 0, 0.45);
 }
@@ -25263,9 +25261,9 @@ div.iltlc-typography-edit-content {
 .iltlc-upload-list-item-info .iltlc-icon-loading,
 .iltlc-upload-list-item-info .iltlc-icon-paper-clip {
     position: absolute;
-    top: 9px;
+    top: 6px;
     color: rgba(0, 0, 0, 0.45);
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .iltlc-upload-list-item .iltlc-icon-close {
@@ -25313,7 +25311,7 @@ div.iltlc-typography-edit-content {
     opacity: 1;
 }
 
-.iltlc-upload-list-item-error .iltlc-upload-list-item-card-actions .iltlc-icon {
+.iltlc-upload-list-item-error .iltlc-upload-list-item-card-actions .anticon {
     padding-right: 5px;
     color: #f5222d;
 }
@@ -25322,8 +25320,8 @@ div.iltlc-typography-edit-content {
     position: absolute;
     bottom: -12px;
     width: 100%;
-    padding-left: 34px;
-    font-size: 22px;
+    padding-left: 28px;
+    font-size: 16px;
     line-height: 0;
 }
 
@@ -25526,7 +25524,7 @@ div.iltlc-typography-edit-content {
     text-align: center;
 }
 
-.iltlc-upload-list-picture-card .iltlc-icon-picture+.iltlc-upload-list-item-name {
+.iltlc-upload-list-picture-card .anticon-picture+.iltlc-upload-list-item-name {
     display: block;
 }
 
@@ -25629,18 +25627,20 @@ div.iltlc-typography-edit-content {
 @border-radius-base: 0;
 @border-radius-sm: 0;
 @border-color-base: #893765;
-@font-size-base: 22px;
+@font-size-base: 16px;
 @font-size-lg: @font-size-base + 2px;
-@font-size-sm: 16px;
-@heading-1-size: ceil(@font-size-base * 2.71);
-@heading-2-size: ceil(@font-size-base * 2.14);
-@heading-3-size: ceil(@font-size-base * 1.71);
-@heading-4-size: ceil(@font-size-base * 1.42);
+@font-size-sm: @font-size-base;
+@heading-1-size: ceil(@font-size-base * 3.71);
+@heading-2-size: ceil(@font-size-base * 3.14);
+@heading-3-size: ceil(@font-size-base * 2.71);
+@heading-4-size: ceil(@font-size-base * 2.42);
 @line-height-base: 1.5;
 @text-color: rgba(0, 0, 0, 0.45);
 @typography-title-font-weight: 900;
-@typography-title-margin-top: 1.2em;
-@typography-title-margin-bottom: 0.5em;
+@typography-title-margin-top: 0;
+@typography-title-margin-bottom: 0.2em;
 @icon-color: #bc01b0;
 @icon-color-hover: #893765;
-@heading-color: #bc01b0; */
+@heading-color: #bc01b0;
+@btn-font-size-lg: 1.5em;
+@btn-font-size-sm: 1.2em; */

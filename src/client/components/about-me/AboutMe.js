@@ -14,8 +14,8 @@ const AboutMe = ({
 }) => {
     const { Title, Paragraph } = Typography
     return (
-        <Row gutter={{ xs: 0, xl: 24 }} className="row-with-padding about-me">
-            <Col xs={24} xl={14}>
+        <Row gutter={{ xs: 0, sm: 24 }} className="row-with-padding about-me">
+            <Col xs={24} sm={14} md={15} xl={17}>
                 <div className="about-me__content">
                     <Title className="about-me__header" level={3}>
                         {subtitle}
@@ -39,7 +39,7 @@ const AboutMe = ({
                     </Link>
                 </div>
             </Col>
-            <Col xs={24} xl={10}>
+            <Col xs={24} sm={10} md={9} xl={7}>
                 <div className="about-me__img">
                     <img src={image} alt="intro-img" />
                 </div>

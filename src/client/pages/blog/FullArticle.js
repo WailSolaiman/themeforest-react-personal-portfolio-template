@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typography, Icon } from 'antd'
-import { getArticles } from '../../components/_componentsData'
+import { getArticles } from '../../components/utils/_componentsData'
 import './scss/full-article.scss'
 
 const FullArticle = () => {

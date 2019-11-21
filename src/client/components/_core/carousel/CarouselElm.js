@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel, Button } from 'antd'
-import useWindowWidth from '../_coreUtils'
+import useWindowWidth from '../utils/_coreUtils'
 import './carouselElm.scss'
 
 const CarouselElm = ({ items = [] }) => {
@@ -16,8 +16,7 @@ const CarouselElm = ({ items = [] }) => {
                     return (
                         <div
                             className="carousel-content"
-                            key={`key-nr-${item.id}`}
-                        >
+                            key={`key-nr-${item.id}`}>
                             <div
                                 className="carousel-content__backgroundImage"
                                 style={{ backgroundImage: `url(${imageUrl})` }}

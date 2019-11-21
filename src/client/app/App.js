@@ -8,7 +8,7 @@ import BlogPage from '../pages/blog/BlogPage'
 import FullArticle from '../pages/blog/FullArticle'
 import FixedNavbar from '../components/_core/navbar/FixedNavbar'
 import Footer from '../components/_core/footer/Footer'
-import { getNavbarStyle } from '../components/_componentsData'
+import { getNavbarStyle } from '../components/utils/_componentsData'
 import './app.scss'
 
 const App = () => {

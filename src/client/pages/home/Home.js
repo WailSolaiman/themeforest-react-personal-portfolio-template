@@ -1,5 +1,5 @@
-import React from 'react'
-import { Row, Col } from 'antd'
+import React, { useState, useEffect } from 'react'
+import { Row, Col, Spin } from 'antd'
 import Header from '../../components/_core/header/Header'
 import AboutMe from '../../components/about-me/AboutMe'
 import MyServices from '../../components/my-services/MyServices'
@@ -21,9 +21,10 @@ import {
     getPortfolios,
     getPortfoliosText,
     getClients,
-} from '../../components/_componentsData'
+} from '../../components/utils/_componentsData'
 
 const Home = () => {
+    const [renderPage, setPageRendering] = useState(false)
     const heroImage = getHomeHeroImage()
     const carousel = getCarouselImages()
     const aboutMeData = getAboutMeData()
@@ -34,6 +35,14 @@ const Home = () => {
     const portfolios = getPortfolios()
     const portfoliosText = getPortfoliosText()
     const clients = getClients()
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setPageRendering(true)
+        }, 1000)
+        return () => {
+            clearTimeout(timeout)
+        }
+    }, [])
     return (
         <div className="home">
             <Header
@@ -41,93 +50,109 @@ const Home = () => {
                 carousel={carousel}
                 selected="heroImage"
             />
-            <div className="container">
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <AboutMe
-                            subtitle={aboutMeData.subtitle}
-                            title={aboutMeData.title}
-                            firstParagraph={aboutMeData.firstParagraph}
-                            secondParagraph={aboutMeData.secondParagraph}
-                            thirdParagraph={aboutMeData.thirdParagraph}
-                            btnText={aboutMeData.btnText}
-                            image={aboutMeData.image}
-                        />
-                    </Col>
-                </Row>
-            </div>
-            <Row className="row-with-margin-bottom bg-color">
-                <Col xs={24}>
+            {renderPage ? (
+                <>
                     <div className="container">
-                        <MyServices
-                            title="Services"
-                            services={myServicesData}
-                        />
+                        <Row className="row-with-margin-bottom">
+                            <Col xs={24}>
+                                <AboutMe
+                                    subtitle={aboutMeData.subtitle}
+                                    title={aboutMeData.title}
+                                    firstParagraph={aboutMeData.firstParagraph}
+                                    secondParagraph={
+                                        aboutMeData.secondParagraph
+                                    }
+                                    thirdParagraph={aboutMeData.thirdParagraph}
+                                    btnText={aboutMeData.btnText}
+                                    image={aboutMeData.image}
+                                />
+                            </Col>
+                        </Row>
                     </div>
-                </Col>
-            </Row>
-            <div className="container">
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <Projects title="Projects" projects={projectsData} />
-                    </Col>
-                </Row>
-            </div>
-            <Row className="row-no-margin bg-color-black">
-                <Col xs={24}>
+                    <Row className="row-with-margin-bottom bg-color">
+                        <Col xs={24}>
+                            <div className="container">
+                                <MyServices
+                                    title="Services"
+                                    services={myServicesData}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                     <div className="container">
-                        <Quote
-                            subtitle="i. l. t. l. c"
-                            title="i love templates, layouts and components"
-                        />
+                        <Row className="row-with-margin-bottom">
+                            <Col xs={24}>
+                                <Projects
+                                    title="Projects"
+                                    projects={projectsData}
+                                />
+                            </Col>
+                        </Row>
                     </div>
-                </Col>
-            </Row>
-            <Row className="row-with-margin-bottom bg-color">
-                <Col xs={24}>
+                    <Row className="row-no-margin bg-color-black">
+                        <Col xs={24}>
+                            <div className="container">
+                                <Quote
+                                    subtitle="i. l. t. l. c"
+                                    title="i love templates, layouts and components"
+                                />
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="row-with-margin-bottom bg-color">
+                        <Col xs={24}>
+                            <div className="container">
+                                <Testimonials
+                                    title="Testimonials"
+                                    testimonials={testimonials}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                     <div className="container">
-                        <Testimonials
-                            title="Testimonials"
-                            testimonials={testimonials}
-                        />
+                        <Row className="row-with-margin-bottom">
+                            <Col xs={24}>
+                                <Parallax parallax={parallax} />
+                            </Col>
+                        </Row>
+                        <Row className="row-with-margin-bottom">
+                            <Col xs={24}>
+                                <Portfolio
+                                    title="Portfolio"
+                                    text={portfoliosText}
+                                    portfolios={portfolios}
+                                />
+                            </Col>
+                        </Row>
                     </div>
-                </Col>
-            </Row>
-            <div className="container">
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <Parallax parallax={parallax} />
-                    </Col>
-                </Row>
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <Portfolio
-                            title="Portfolio"
-                            text={portfoliosText}
-                            portfolios={portfolios}
-                        />
-                    </Col>
-                </Row>
-            </div>
-            <Row className="row-with-margin-bottom bg-color">
-                <Col xs={24}>
+                    <Row className="row-with-margin-bottom bg-color">
+                        <Col xs={24}>
+                            <div className="container">
+                                <Clients
+                                    title="Our Clients"
+                                    clients={clients}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
                     <div className="container">
-                        <Clients title="Our Clients" clients={clients} />
+                        <Row className="row-with-margin-bottom">
+                            <Col xs={24}>
+                                <PreFooter
+                                    title="Do you have any questions left?"
+                                    text="Don't hesitate to contact us regarding Trakken, the products & services."
+                                    btnText="Contact"
+                                    btnLink="/contact"
+                                />
+                            </Col>
+                        </Row>
                     </div>
-                </Col>
-            </Row>
-            <div className="container">
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24}>
-                        <PreFooter
-                            title="Do you have any questions left?"
-                            text="Don't hesitate to contact us regarding Trakken, the products & services."
-                            btnText="Contact"
-                            btnLink="/contact"
-                        />
-                    </Col>
-                </Row>
-            </div>
+                </>
+            ) : (
+                <div className="loading-spinner">
+                    <Spin />
+                </div>
+            )}
         </div>
     )
 }

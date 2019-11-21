@@ -24,7 +24,7 @@ const GetNavbarStyle = (navbarStyle, selected) => {
                     secondaryMenu: 'none',
                     secondaryMenuFloat: 'none',
                 })
-            } else if (item.navbar === 'two-menues') {
+            } else if (item.navbar === 'two-menus') {
                 setNavStyle({
                     mainMenu: 'block',
                     mainMenuFloat: 'left',

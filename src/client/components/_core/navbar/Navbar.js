@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Row, Col, Drawer, Button } from 'antd'
-import MainMenu from './MainMenu'
-import SecondaryMenu from './SecondaryMenu'
-import { UseWindowWidth, GetNavbarStyle } from './_navbarUtils'
+import MainMenu from './sub-menus/MainMenu'
+import SecondaryMenu from './sub-menus/SecondaryMenu'
+import { UseWindowWidth, GetNavbarStyle } from './utils/_navbarUtils'
 import './scss/navbar.scss'
 
 const Navbar = ({ navbarStyle = [], selected }) => {

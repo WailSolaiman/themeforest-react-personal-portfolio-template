@@ -1,23 +1,6 @@
 import React from 'react'
-import { Row, Col, Slider, Typography } from 'antd'
+import { Row, Col, Typography, Progress } from 'antd'
 import './scss/skills.scss'
-
-const marks = {
-    0: '0',
-    25: '25%',
-    50: '50%',
-    75: '75%',
-    100: {
-        style: {
-            color: '#bc01b0',
-        },
-        label: <strong>100%</strong>,
-    },
-}
-
-const formatter = value => {
-    return `${value}%`
-}
 
 const Skills = ({ title = 'Skills', skills = [] }) => {
     const { Title } = Typography
@@ -32,11 +15,13 @@ const Skills = ({ title = 'Skills', skills = [] }) => {
                                 <h6 className="skills__subtitle">
                                     {skill.name}
                                 </h6>
-                                <Slider
-                                    marks={marks}
-                                    defaultValue={skill.value}
-                                    tipFormatter={formatter}
-                                    disabled
+                                <Progress
+                                    strokeColor={{
+                                        '0%': '#ffc8fc',
+                                        '100%': '#32ff0c',
+                                    }}
+                                    percent={skill.value}
+                                    status="active"
                                 />
                             </Col>
                         )

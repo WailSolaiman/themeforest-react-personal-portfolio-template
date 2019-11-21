@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typography } from 'antd'
-import useWindowWidth from '../_coreUtils'
+import useWindowWidth from '../utils/_coreUtils'
 import './heroImageElm.scss'
 
 const HeroImageElm = ({ item = {} }) => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu } from 'antd'
-import { UseWindowWidth } from './_navbarUtils'
+import { UseWindowWidth } from '../utils/_navbarUtils'
 
 const MainMenu = ({ clickedLink = () => {} }) => {
     const mode = UseWindowWidth() >= 576 ? 'horizontal' : 'inline'

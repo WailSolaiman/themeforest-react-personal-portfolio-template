@@ -1,31 +1,31 @@
 import uuidv4 from 'uuid/v4'
-import CarouselImgFirstDesktop from '../assets/carousel/carousel-1-desktop.jpg'
-import CarouselImgFirstMobile from '../assets/carousel/carousel-1-mobile.jpg'
-import CarouselImgSecondDesktop from '../assets/carousel/carousel-2-desktop.jpg'
-import CarouselImgSecondMobile from '../assets/carousel/carousel-2-mobile.jpg'
-import CarouselImgThirdDesktop from '../assets/carousel/carousel-3-desktop.jpg'
-import CarouselImgThirdMobile from '../assets/carousel/carousel-3-mobile.jpg'
-import HeroImageDesktop from '../assets/heroimage/heroimage-desktop.jpg'
-import HeroImageMobile from '../assets/heroimage/heroimage-mobile.jpg'
-import Aida from '../assets/clients/aida.png'
-import AirBerlin from '../assets/clients/airberlin.png'
-import Akad from '../assets/clients/akad.png'
-import FoodPanda from '../assets/clients/foodpanda.png'
-import Gamigo from '../assets/clients/gamigo.png'
-import Gj from '../assets/clients/gj.png'
-import Jimdo from '../assets/clients/jimdo.png'
-import Mobil from '../assets/clients/mobil.png'
-import Otto from '../assets/clients/otto.png'
-import TOnline from '../assets/clients/t-online.png'
-import Travel from '../assets/clients/travel.png'
-import Zalando from '../assets/clients/zalando.png'
+import CarouselImgFirstDesktop from '../../assets/carousel/carousel-1-desktop.jpg'
+import CarouselImgFirstMobile from '../../assets/carousel/carousel-1-mobile.jpg'
+import CarouselImgSecondDesktop from '../../assets/carousel/carousel-2-desktop.jpg'
+import CarouselImgSecondMobile from '../../assets/carousel/carousel-2-mobile.jpg'
+import CarouselImgThirdDesktop from '../../assets/carousel/carousel-3-desktop.jpg'
+import CarouselImgThirdMobile from '../../assets/carousel/carousel-3-mobile.jpg'
+import HeroImageDesktop from '../../assets/heroimage/heroimage-desktop.jpg'
+import HeroImageMobile from '../../assets/heroimage/heroimage-mobile.jpg'
+import Aida from '../../assets/clients/aida.png'
+import AirBerlin from '../../assets/clients/airberlin.png'
+import Akad from '../../assets/clients/akad.png'
+import FoodPanda from '../../assets/clients/foodpanda.png'
+import Gamigo from '../../assets/clients/gamigo.png'
+import Gj from '../../assets/clients/gj.png'
+import Jimdo from '../../assets/clients/jimdo.png'
+import Mobil from '../../assets/clients/mobil.png'
+import Otto from '../../assets/clients/otto.png'
+import TOnline from '../../assets/clients/t-online.png'
+import Travel from '../../assets/clients/travel.png'
+import Zalando from '../../assets/clients/zalando.png'
 
 const navbarStyle = [
     {
         navbar: 'one-menu',
     },
     {
-        navbar: 'two-menues',
+        navbar: 'two-menus',
     },
 ]
 
@@ -353,7 +353,7 @@ const skills = [
     {
         id: uuidv4(),
         name: 'CSS3',
-        value: 80,
+        value: 100,
     },
     {
         id: uuidv4(),

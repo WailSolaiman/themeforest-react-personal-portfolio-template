@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Typography, Icon } from 'antd'
-import { getArticles } from '../../components/utils/_componentsData'
+import { getOneArticle } from '../../components/utils/_componentsData'
 import './scss/full-article.scss'
 
-const FullArticle = () => {
-    const article = getArticles()[0]
+const ArticleTemplate = () => {
     const { Title, Paragraph } = Typography
+    const { id } = useParams()
+    const article = getOneArticle(id)
     return (
         <div className="full-article">
             <div className="container">
@@ -32,4 +33,4 @@ const FullArticle = () => {
     )
 }
 
-export default FullArticle
+export default ArticleTemplate

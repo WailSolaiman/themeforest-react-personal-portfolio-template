@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from 'antd'
-import './page-title.scss'
+import './scss/page-title.scss'
 
 const PageTitle = ({ title, subtitle }) => {
     const { Title } = Typography

@@ -61,7 +61,11 @@
 
 // Row
 .row-with-margin-bottom {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+    }
 }
 
 .row-no-margin {

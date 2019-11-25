@@ -21,12 +21,16 @@ const HeroImageElm = ({ item = {} }) => {
                 <Title className="hero-content-absolute__header">
                     {item.header}
                 </Title>
-                <Link
-                    className="iltlc-btn"
-                    to={item.btnLink}
-                    style={{ margin: '0 auto' }}>
-                    {item.btnText}
-                </Link>
+                {item.btnText !== '' ? (
+                    <Link
+                        className="iltlc-btn"
+                        to={item.btnLink}
+                        style={{ margin: '0 auto' }}>
+                        {item.btnText}
+                    </Link>
+                ) : (
+                    <span />
+                )}
             </div>
         </div>
     )

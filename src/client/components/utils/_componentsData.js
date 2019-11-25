@@ -19,6 +19,9 @@ import Otto from '../../assets/clients/otto.png'
 import TOnline from '../../assets/clients/t-online.png'
 import Travel from '../../assets/clients/travel.png'
 import Zalando from '../../assets/clients/zalando.png'
+import PortfolioMobileClientName from '../../assets/portfolio/client_name_1/portfolio-mobile-client_name.png'
+import PortfolioTabletClientName from '../../assets/portfolio/client_name_1/portfolio-tablet-client_name.png'
+import PortfolioDesktopClientName from '../../assets/portfolio/client_name_1/portfolio-desktop-client_name.png'
 
 const navbarStyle = [
     {
@@ -84,6 +87,16 @@ const blogHeroImage = {
     header: 'More than just a web design.',
     btnText: 'Explore Now',
     btnLink: '/contact',
+}
+
+const portfolioHeroImage = {
+    id: uuidv4(),
+    desktopImage: HeroImageDesktop,
+    mobileImage: HeroImageMobile,
+    subheader: 'Portfolio',
+    header: 'More than just a Portfolio.',
+    btnText: '',
+    btnLink: '',
 }
 
 const aboutMeData = {
@@ -198,41 +211,93 @@ const portfolios = [
         id: uuidv4(),
         header: 'Design',
         src: HeroImageDesktop,
+        client: 'Aida',
+        logo: Aida,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
     },
     {
         id: uuidv4(),
         header: 'Web Development',
         src: HeroImageDesktop,
+        client: 'AirBerlin',
+        logo: AirBerlin,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
     },
     {
         id: uuidv4(),
-        header: 'Web Design',
+        header: 'Logo Design',
         src: HeroImageDesktop,
-    },
-    {
-        id: uuidv4(),
-        header: 'Logo',
-        src: HeroImageDesktop,
-    },
-    {
-        id: uuidv4(),
-        header: 'Development Tools',
-        src: HeroImageDesktop,
-    },
-    {
-        id: uuidv4(),
-        header: 'Photoshop',
-        src: HeroImageDesktop,
-    },
-    {
-        id: uuidv4(),
-        header: 'Web Development',
-        src: HeroImageDesktop,
+        client: 'Akad',
+        logo: Akad,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
     },
     {
         id: uuidv4(),
         header: 'Design',
         src: HeroImageDesktop,
+        client: 'FoodPanda',
+        logo: FoodPanda,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
     },
 ]
 
@@ -498,6 +563,10 @@ const getBlogHeroImage = () => {
     return blogHeroImage
 }
 
+const getPortfolioHeroImage = () => {
+    return portfolioHeroImage
+}
+
 const getAboutMeData = () => {
     return aboutMeData
 }
@@ -546,12 +615,20 @@ const getArticles = () => {
     return articles
 }
 
+const getOneArticle = id => {
+    return articles.find(article => article.id === id)
+}
+
 const getPortfolios = () => {
     return portfolios
 }
 
 const getPortfoliosText = () => {
     return portfoliosText
+}
+
+const getOnePortfolio = id => {
+    return portfolios.find(portfolio => portfolio.id === id)
 }
 
 const getClients = () => {
@@ -564,6 +641,7 @@ export {
     getContactHeroImage,
     getBlogHeroImage,
     getCarouselImages,
+    getPortfolioHeroImage,
     getAboutMeData,
     getMyServicesData,
     getProjects,
@@ -576,7 +654,9 @@ export {
     getSkills,
     getContactData,
     getArticles,
+    getOneArticle,
     getPortfolios,
     getPortfoliosText,
+    getOnePortfolio,
     getClients,
 }

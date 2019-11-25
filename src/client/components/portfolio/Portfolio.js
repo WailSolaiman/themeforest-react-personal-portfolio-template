@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
 import SocialMedia from '../_core/social-media/SocialMedia'
-import './portfolio.scss'
+import './scss/portfolio.scss'
 
 const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
     const { Title, Paragraph } = Typography
@@ -15,20 +16,22 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
                     portfolios.map(portfolio => {
                         return (
                             <Col xs={24} md={12} lg={6} key={portfolio.id}>
-                                <div className="portfolio__content">
-                                    <img
-                                        className="portfolio__image"
-                                        src={portfolio.src}
-                                        alt={portfolio.header}
-                                    />
-                                    <div className="portfolio__header-container">
-                                        <Title
-                                            className="portfolio__header"
-                                            level={4}>
-                                            {portfolio.header}
-                                        </Title>
+                                <Link to={`/portfolio/${portfolio.id}`}>
+                                    <div className="portfolio__content">
+                                        <img
+                                            className="portfolio__image"
+                                            src={portfolio.src}
+                                            alt={portfolio.header}
+                                        />
+                                        <div className="portfolio__header-container">
+                                            <Title
+                                                className="portfolio__header"
+                                                level={4}>
+                                                {portfolio.header}
+                                            </Title>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </Col>
                         )
                     })}

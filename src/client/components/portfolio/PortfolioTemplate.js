@@ -2,13 +2,15 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
 import PageTitleLarge from '../_core/page-title/PageTitleLarge'
-import { getOnePortfolio } from '../utils/_componentsData'
+import CarouselElm from '../_core/carousel/CarouselElm'
+import { getOnePortfolio, getCarouselImages } from '../utils/_componentsData'
 import './scss/portfolio-template.scss'
 
 const PortfolioTemplate = () => {
     const { Title, Paragraph } = Typography
     const { id } = useParams()
     const portfolio = getOnePortfolio(id)
+    const carousel = getCarouselImages()
 
     return (
         <div className="portfolio-template">
@@ -105,6 +107,7 @@ const PortfolioTemplate = () => {
                     </a>
                 </div>
             </div>
+            <CarouselElm items={carousel} />
         </div>
     )
 }

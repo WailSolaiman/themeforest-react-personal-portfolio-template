@@ -24,11 +24,10 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
                                             alt={portfolio.header}
                                         />
                                         <div className="portfolio__header-container">
-                                            <Title
-                                                className="portfolio__header"
-                                                level={4}>
-                                                {portfolio.header}
-                                            </Title>
+                                            <Paragraph className="portfolio__header">
+                                                <span>{portfolio.header}</span>
+                                                <span>{portfolio.client}</span>
+                                            </Paragraph>
                                         </div>
                                     </div>
                                 </Link>

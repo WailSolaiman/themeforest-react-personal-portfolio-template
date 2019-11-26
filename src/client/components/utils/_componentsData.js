@@ -40,6 +40,7 @@ const carouselElements = [
         subheader: 'Digital design studio',
         header: 'An application that will change your way of thinking.',
         btnText: 'Click Here',
+        btnLink: '/',
     },
     {
         id: uuidv4(),
@@ -48,6 +49,7 @@ const carouselElements = [
         subheader: 'Digital design studio',
         header: 'More than just a web design.',
         btnText: 'Explore Now',
+        btnLink: '/',
     },
     {
         id: uuidv4(),
@@ -56,6 +58,7 @@ const carouselElements = [
         subheader: 'Digital design studio',
         header: 'An application that will change your way of thinking.',
         btnText: 'Click Here',
+        btnLink: '/',
     },
 ]
 
@@ -282,6 +285,190 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'FoodPanda',
         logo: FoodPanda,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Gamigo',
+        logo: Gamigo,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Gj',
+        logo: Gj,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Jimdo',
+        logo: Jimdo,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Mobil',
+        logo: Mobil,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Otto',
+        logo: Otto,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'TOnline',
+        logo: TOnline,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Travel',
+        logo: Travel,
+        description:
+            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        services: {
+            online:
+                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
+            offline:
+                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
+            others:
+                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+        },
+        image: {
+            desktop: PortfolioDesktopClientName,
+            tablet: PortfolioTabletClientName,
+            mobile: PortfolioMobileClientName,
+        },
+        webpage: 'https://google.com',
+    },
+    {
+        id: uuidv4(),
+        header: 'Design',
+        src: HeroImageDesktop,
+        client: 'Zalando',
+        logo: Zalando,
         description:
             'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
         services: {

@@ -2,6 +2,8 @@
 
 .portfolio {
     text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     &__text {
         width: 100%;
@@ -43,13 +45,22 @@
 
     &__header {
         margin-bottom: 0 !important;
-        color: $tertiary-color !important;
-        font-weight: 900;
-        text-transform: uppercase;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-decoration: underline;
+
+        >span:first-child {
+            color: $tertiary-color !important;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        >span:last-child {
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
     }
 }

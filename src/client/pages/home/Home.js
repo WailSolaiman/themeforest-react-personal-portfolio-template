@@ -20,7 +20,6 @@ import {
     getParallax,
     getPortfolios,
     getPortfoliosText,
-    getClients,
 } from '../../components/utils/_componentsData'
 
 const Home = () => {
@@ -34,7 +33,7 @@ const Home = () => {
     const parallax = getParallax()
     const portfolios = getPortfolios()
     const portfoliosText = getPortfoliosText()
-    const clients = getClients()
+    // const clients = getClients()
     useEffect(() => {
         const timeout = setTimeout(() => {
             setPageRendering(true)
@@ -128,10 +127,7 @@ const Home = () => {
                     <Row className="row-with-margin-bottom bg-color">
                         <Col xs={24}>
                             <div className="container">
-                                <Clients
-                                    title="Our Clients"
-                                    clients={clients}
-                                />
+                                <Clients />
                             </div>
                         </Col>
                     </Row>

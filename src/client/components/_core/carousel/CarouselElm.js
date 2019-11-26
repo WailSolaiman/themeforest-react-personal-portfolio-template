@@ -1,10 +1,12 @@
 import React from 'react'
-import { Carousel, Button } from 'antd'
+import { Link } from 'react-router-dom'
+import { Carousel, Button, Typography } from 'antd'
 import useWindowWidth from '../utils/_coreUtils'
 import './carouselElm.scss'
 
 const CarouselElm = ({ items = [] }) => {
     const windowWidth = useWindowWidth()
+    const { Title } = Typography
     return (
         <Carousel effect="fade" autoplay>
             {items &&
@@ -22,13 +24,24 @@ const CarouselElm = ({ items = [] }) => {
                                 style={{ backgroundImage: `url(${imageUrl})` }}
                             />
                             <div className="carousel-content-absolute">
-                                <h3 className="carousel-content-absolute__subheader">
+                                <Title className="carousel-content-absolute__subheader">
                                     {item.subheader}
-                                </h3>
-                                <h1 className="carousel-content-absolute__header">
+                                </Title>
+                                <Title
+                                    className="carousel-content-absolute__header"
+                                    level={3}>
                                     {item.header}
-                                </h1>
-                                <Button>{item.btnText}</Button>
+                                </Title>
+                                {item.btnText !== '' ? (
+                                    <Link
+                                        className="iltlc-btn"
+                                        to={item.btnLink}
+                                        style={{ margin: '0 auto' }}>
+                                        {item.btnText}
+                                    </Link>
+                                ) : (
+                                    <span />
+                                )}
                             </div>
                         </div>
                     )

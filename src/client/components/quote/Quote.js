@@ -2,8 +2,9 @@ import React from 'react'
 import { Typography } from 'antd'
 import './quote.scss'
 
-const Quote = ({ subtitle = '', title = '' }) => {
+const Quote = ({ data = {} }) => {
     const { Title } = Typography
+    const { title, subtitle } = data
     return (
         <div className="quote">
             <Title className="quote__subtitle" level={4}>

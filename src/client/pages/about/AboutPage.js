@@ -10,6 +10,7 @@ import Skills from '../../components/about-me/Skills'
 import {
     getContactHeroImage,
     getCarouselImages,
+    getAboutMePageTitle,
     getExperiences,
     getprofileImage,
     getPersonalData,
@@ -20,13 +21,6 @@ import {
 const AboutPage = () => {
     const [renderPage, setPageRendering] = useState(false)
     const { Title } = Typography
-    const heroImage = getContactHeroImage()
-    const carousel = getCarouselImages()
-    const experiences = getExperiences()
-    const profileImage = getprofileImage()
-    const personalData = getPersonalData()
-    const educations = getEducations()
-    const skills = getSkills()
     useEffect(() => {
         const timeout = setTimeout(() => {
             setPageRendering(true)
@@ -38,18 +32,15 @@ const AboutPage = () => {
     return (
         <div className="about-page">
             <Header
-                heroImage={heroImage}
-                carousel={carousel}
+                heroImage={getContactHeroImage()}
+                carousel={getCarouselImages()}
                 selected="heroImage"
             />
             {renderPage ? (
                 <div className="container">
                     <Row className="row-with-margin-bottom">
                         <Col xs={24}>
-                            <PageTitle
-                                title="About Me"
-                                subtitle="I design and code beautiful things, and I love what I do."
-                            />
+                            <PageTitle data={getAboutMePageTitle()} />
                         </Col>
                     </Row>
                     <Row
@@ -59,21 +50,21 @@ const AboutPage = () => {
                             <Title level={2}>Personal Infos.</Title>
                         </Col>
                         <Col xs={24} md={9} lg={6} xl={5}>
-                            <ProfileImage profileImage={profileImage} />
+                            <ProfileImage profileImage={getprofileImage()} />
                         </Col>
                         <Col xs={24} md={15} lg={18} xl={19}>
-                            <PersonalData personalData={personalData} />
+                            <PersonalData personalData={getPersonalData()} />
                         </Col>
                     </Row>
                     <Row gutter={{ xs: 0, lg: 24 }}>
                         <Col xs={24} lg={12}>
-                            <Experience experiences={experiences} />
+                            <Experience experiences={getExperiences()} />
                         </Col>
                         <Col xs={24} lg={12}>
-                            <Education educations={educations} />
+                            <Education educations={getEducations()} />
                         </Col>
                         <Col xs={24}>
-                            <Skills skills={skills} />
+                            <Skills skills={getSkills()} />
                         </Col>
                     </Row>
                 </div>

@@ -7,6 +7,7 @@ import {
     getPortfolioHeroImage,
 } from './_dataHeroImage'
 import {
+    getAboutMePageTitle,
     getAboutMeData,
     getprofileImage,
     getPersonalData,
@@ -15,8 +16,9 @@ import {
     getSkills,
     getContactData,
 } from './_dataAboutMe'
-import getMyServicesData from './_dataServices'
+import getServices from './_dataServices'
 import { getProjects, getOneProject } from './_dataProjects'
+import getQuote from './_dataQuote'
 import getTestimonials from './_dataTestimonial'
 import {
     getPortfolios,
@@ -24,8 +26,15 @@ import {
     getOnePortfolio,
 } from './_dataPortfolios'
 import getParallax from './_dataParallax'
+import getBlogPageTitle from './_dataBlog'
 import { getArticles, getOneArticle } from './_dataArticles'
-import getClients from './_dataClients'
+import {
+    getClients,
+    getClientsHeader,
+    getClientsDescription,
+} from './_dataClients'
+import getContactPageTitle from './_dataContact'
+import getPreFooter from './_dataPreFooter'
 
 export {
     getNavbarStyle,
@@ -34,10 +43,12 @@ export {
     getBlogHeroImage,
     getCarouselImages,
     getPortfolioHeroImage,
+    getAboutMePageTitle,
     getAboutMeData,
-    getMyServicesData,
+    getServices,
     getProjects,
     getOneProject,
+    getQuote,
     getTestimonials,
     getParallax,
     getprofileImage,
@@ -46,10 +57,15 @@ export {
     getEducations,
     getSkills,
     getContactData,
+    getBlogPageTitle,
     getArticles,
     getOneArticle,
     getPortfolios,
     getPortfoliosText,
     getOnePortfolio,
     getClients,
+    getClientsHeader,
+    getClientsDescription,
+    getContactPageTitle,
+    getPreFooter,
 }

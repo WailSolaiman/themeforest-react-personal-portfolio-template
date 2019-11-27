@@ -3,13 +3,9 @@ import { Link } from 'react-router-dom'
 import { Typography } from 'antd'
 import './pre-footer.scss'
 
-const PreFooter = ({
-    title = '',
-    text = '',
-    btnText = '',
-    btnLink = '/contact',
-}) => {
+const PreFooter = ({ data = {} }) => {
     const { Title, Paragraph } = Typography
+    const { title, text, btnText, btnLink } = data
     return (
         <div className="pre-footer">
             <Title level={4}>{title}</Title>

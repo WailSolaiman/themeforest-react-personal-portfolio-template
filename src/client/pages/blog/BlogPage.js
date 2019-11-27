@@ -6,14 +6,12 @@ import Articles from './Articles'
 import {
     getBlogHeroImage,
     getCarouselImages,
+    getBlogPageTitle,
     getArticles,
 } from '../../components/utils/_componentsData'
 
 const BlogPage = () => {
     const [renderPage, setPageRendering] = useState(false)
-    const heroImage = getBlogHeroImage()
-    const carousel = getCarouselImages()
-    const articles = getArticles()
     useEffect(() => {
         const timeout = setTimeout(() => {
             setPageRendering(true)
@@ -25,23 +23,20 @@ const BlogPage = () => {
     return (
         <div className="blog-page">
             <Header
-                heroImage={heroImage}
-                carousel={carousel}
+                heroImage={getBlogHeroImage()}
+                carousel={getCarouselImages()}
                 selected="heroImage"
             />
             {renderPage ? (
                 <div className="container">
                     <Row className="row-with-margin-bottom">
                         <Col xs={24}>
-                            <PageTitle
-                                title="Latest Posts"
-                                subtitle="Tips, Insights, And Best Practices About Web Design And Developpment"
-                            />
+                            <PageTitle data={getBlogPageTitle()} />
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={24}>
-                            <Articles articles={articles} />
+                            <Articles articles={getArticles()} />
                         </Col>
                     </Row>
                 </div>

@@ -15,68 +15,84 @@ import Zalando from '../../assets/clients/zalando.png'
 const clients = [
     {
         id: uuidv4(),
-        src: Aida,
+        logo: Aida,
         name: 'Aida',
     },
     {
         id: uuidv4(),
-        src: AirBerlin,
+        logo: AirBerlin,
         name: 'Air-Berlin',
     },
     {
         id: uuidv4(),
-        src: Akad,
+        logo: Akad,
         name: 'Akad',
     },
     {
         id: uuidv4(),
-        src: FoodPanda,
+        logo: FoodPanda,
         name: 'Food-Panda',
     },
     {
         id: uuidv4(),
-        src: Gamigo,
+        logo: Gamigo,
         name: 'Gamigo',
     },
     {
         id: uuidv4(),
-        src: Gj,
+        logo: Gj,
         name: 'GJ',
     },
     {
         id: uuidv4(),
-        src: Jimdo,
+        logo: Jimdo,
         name: 'Jimdo',
     },
     {
         id: uuidv4(),
-        src: Mobil,
+        logo: Mobil,
         name: 'Mobil',
     },
     {
         id: uuidv4(),
-        src: Otto,
+        logo: Otto,
         name: 'Otto',
     },
     {
         id: uuidv4(),
-        src: TOnline,
+        logo: TOnline,
         name: 'T-Online',
     },
     {
         id: uuidv4(),
-        src: Travel,
+        logo: Travel,
         name: 'Travel',
     },
     {
         id: uuidv4(),
-        src: Zalando,
+        logo: Zalando,
         name: 'Zalando',
     },
 ]
+
+const clientsHeader = 'Customers for whom we are lucky enough to work'
+
+const clientsDescription = `There is no standard solution for everything and
+                        everyone. Finding the right approach when working with
+                        the customer is our concern. With more than 13 years of
+                        business experience, we are ready to face the challenges
+                        ahead and expect the things to come.`
 
 const getClients = () => {
     return clients
 }
 
-export { getClients as default }
+const getClientsHeader = () => {
+    return clientsHeader
+}
+
+const getClientsDescription = () => {
+    return clientsDescription
+}
+
+export { getClients, getClientsHeader, getClientsDescription }

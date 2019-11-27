@@ -1,7 +1,7 @@
 import uuidv4 from 'uuid/v4'
 import HeroImageMobile from '../../assets/heroimage/heroimage-mobile.jpg'
 
-const myServicesData = [
+const services = [
     {
         id: uuidv4(),
         name: 'Web Design',
@@ -16,14 +16,14 @@ const myServicesData = [
     },
     {
         id: uuidv4(),
-        name: 'Management',
+        name: 'Logo Design',
         img: HeroImageMobile,
         paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere nobis ad dignissimos.`,
     },
 ]
 
-const getMyServicesData = () => {
-    return myServicesData
+const getServices = () => {
+    return services
 }
 
-export { getMyServicesData as default }
+export { getServices as default }

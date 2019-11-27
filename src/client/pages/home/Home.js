@@ -14,26 +14,21 @@ import {
     getHomeHeroImage,
     getCarouselImages,
     getAboutMeData,
-    getMyServicesData,
+    getServices,
     getProjects,
+    getQuote,
     getTestimonials,
     getParallax,
     getPortfolios,
     getPortfoliosText,
+    getClients,
+    getClientsHeader,
+    getClientsDescription,
+    getPreFooter,
 } from '../../components/utils/_componentsData'
 
 const Home = () => {
     const [renderPage, setPageRendering] = useState(false)
-    const heroImage = getHomeHeroImage()
-    const carousel = getCarouselImages()
-    const aboutMeData = getAboutMeData()
-    const myServicesData = getMyServicesData()
-    const projectsData = getProjects()
-    const testimonials = getTestimonials()
-    const parallax = getParallax()
-    const portfolios = getPortfolios()
-    const portfoliosText = getPortfoliosText()
-    // const clients = getClients()
     useEffect(() => {
         const timeout = setTimeout(() => {
             setPageRendering(true)
@@ -45,8 +40,8 @@ const Home = () => {
     return (
         <div className="home">
             <Header
-                heroImage={heroImage}
-                carousel={carousel}
+                heroImage={getHomeHeroImage()}
+                carousel={getCarouselImages()}
                 selected="heroImage"
             />
             {renderPage ? (
@@ -54,17 +49,7 @@ const Home = () => {
                     <div className="container">
                         <Row className="row-with-margin-bottom">
                             <Col xs={24}>
-                                <AboutMe
-                                    subtitle={aboutMeData.subtitle}
-                                    title={aboutMeData.title}
-                                    firstParagraph={aboutMeData.firstParagraph}
-                                    secondParagraph={
-                                        aboutMeData.secondParagraph
-                                    }
-                                    thirdParagraph={aboutMeData.thirdParagraph}
-                                    btnText={aboutMeData.btnText}
-                                    image={aboutMeData.image}
-                                />
+                                <AboutMe data={getAboutMeData()} />
                             </Col>
                         </Row>
                     </div>
@@ -73,7 +58,7 @@ const Home = () => {
                             <div className="container">
                                 <MyServices
                                     title="Services"
-                                    services={myServicesData}
+                                    services={getServices()}
                                 />
                             </div>
                         </Col>
@@ -83,7 +68,7 @@ const Home = () => {
                             <Col xs={24}>
                                 <Projects
                                     title="Projects"
-                                    projects={projectsData}
+                                    projects={getProjects()}
                                 />
                             </Col>
                         </Row>
@@ -91,10 +76,7 @@ const Home = () => {
                     <Row className="row-no-margin bg-color-black">
                         <Col xs={24}>
                             <div className="container">
-                                <Quote
-                                    subtitle="i. l. t. l. c"
-                                    title="i love templates, layouts and components"
-                                />
+                                <Quote data={getQuote()} />
                             </div>
                         </Col>
                     </Row>
@@ -103,7 +85,7 @@ const Home = () => {
                             <div className="container">
                                 <Testimonials
                                     title="Testimonials"
-                                    testimonials={testimonials}
+                                    testimonials={getTestimonials()}
                                 />
                             </div>
                         </Col>
@@ -111,15 +93,15 @@ const Home = () => {
                     <div className="container">
                         <Row className="row-with-margin-bottom">
                             <Col xs={24}>
-                                <Parallax parallax={parallax} />
+                                <Parallax parallax={getParallax()} />
                             </Col>
                         </Row>
                         <Row className="row-with-margin-bottom">
                             <Col xs={24}>
                                 <Portfolio
                                     title="Portfolio"
-                                    text={portfoliosText}
-                                    portfolios={portfolios}
+                                    text={getPortfoliosText()}
+                                    portfolios={getPortfolios()}
                                 />
                             </Col>
                         </Row>
@@ -127,19 +109,18 @@ const Home = () => {
                     <Row className="row-with-margin-bottom bg-color">
                         <Col xs={24}>
                             <div className="container">
-                                <Clients />
+                                <Clients
+                                    clients={getClients()}
+                                    header={getClientsHeader()}
+                                    description={getClientsDescription()}
+                                />
                             </div>
                         </Col>
                     </Row>
                     <div className="container">
                         <Row className="row-with-margin-bottom">
                             <Col xs={24}>
-                                <PreFooter
-                                    title="Do you have any questions left?"
-                                    text="Don't hesitate to contact us regarding Trakken, the products & services."
-                                    btnText="Contact"
-                                    btnLink="/contact"
-                                />
+                                <PreFooter data={getPreFooter()} />
                             </Col>
                         </Row>
                     </div>

@@ -3,6 +3,11 @@ import HeroImageMobile from '../../assets/heroimage/heroimage-mobile.jpg'
 
 const profileImage = HeroImageMobile
 
+const aboutMePageTitle = {
+    title: 'About Me',
+    subtitle: 'I design and code beautiful things, and I love what I do.',
+}
+
 const aboutMeData = {
     subtitle: 'About Me',
     title: 'Lorem ipsum dolor',
@@ -169,6 +174,10 @@ const contactData = [
     },
 ]
 
+const getAboutMePageTitle = () => {
+    return aboutMePageTitle
+}
+
 const getAboutMeData = () => {
     return aboutMeData
 }
@@ -198,6 +207,7 @@ const getContactData = () => {
 }
 
 export {
+    getAboutMePageTitle,
     getAboutMeData,
     getprofileImage,
     getPersonalData,

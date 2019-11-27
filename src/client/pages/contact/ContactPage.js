@@ -7,12 +7,11 @@ import GoogleMap from '../../components/_core/map/Map'
 import {
     getContactHeroImage,
     getCarouselImages,
+    getContactPageTitle,
 } from '../../components/utils/_componentsData'
 
 const ContactPage = () => {
     const [renderPage, setPageRendering] = useState(false)
-    const heroImage = getContactHeroImage()
-    const carousel = getCarouselImages()
     const WrappedContact = Form.create()(Contact)
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -25,18 +24,15 @@ const ContactPage = () => {
     return (
         <div className="contact-page">
             <Header
-                heroImage={heroImage}
-                carousel={carousel}
+                heroImage={getContactHeroImage()}
+                carousel={getCarouselImages()}
                 selected="heroImage"
             />
             {renderPage ? (
                 <div className="container">
                     <Row>
                         <Col xs={24}>
-                            <PageTitle
-                                title="Contact"
-                                subtitle="I’m always open to discussing product design work or partnerships."
-                            />
+                            <PageTitle data={getContactPageTitle()} />
                         </Col>
                     </Row>
                     <Row>

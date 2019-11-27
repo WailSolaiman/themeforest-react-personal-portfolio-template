@@ -17,8 +17,8 @@ const Skills = ({ title = 'Skills', skills = [] }) => {
                                 </h6>
                                 <Progress
                                     strokeColor={{
-                                        '0%': '#ffc8fc',
-                                        '100%': '#32ff0c',
+                                        '0%': '#fcc260',
+                                        '100%': '#ff91f9',
                                     }}
                                     percent={skill.value}
                                     status="active"

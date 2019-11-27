@@ -33,6 +33,14 @@ const PortfolioTemplate = () => {
                 </Row>
                 <Row className="row-with-margin-bottom">
                     <Col xs={24} md={8}>
+                        <Title level={2}>Logo</Title>
+                    </Col>
+                    <Col xs={24} md={16}>
+                        <img src={portfolio.logo} alt={portfolio.client} />
+                    </Col>
+                </Row>
+                <Row className="row-with-margin-bottom">
+                    <Col xs={24} md={8}>
                         <Title level={2}>Services</Title>
                     </Col>
                     <Col xs={24} md={16}>
@@ -93,6 +101,7 @@ const PortfolioTemplate = () => {
                     />
                 </div>
             </div>
+            <CarouselElm items={carousel} />
             <div className="container">
                 <div className="portfolio-template__buttons-container">
                     <Link className="iltlc-btn btn-secondary" to="/">
@@ -107,7 +116,6 @@ const PortfolioTemplate = () => {
                     </a>
                 </div>
             </div>
-            <CarouselElm items={carousel} />
         </div>
     )
 }

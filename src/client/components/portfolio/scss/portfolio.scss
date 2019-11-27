@@ -28,7 +28,7 @@
 
     &__image {
         opacity: 1;
-        width: 100%;
+        width: 90%;
         transition: opacity .3s ease-in-out;
     }
 
@@ -62,5 +62,10 @@
             font-weight: 400;
             text-transform: uppercase;
         }
+    }
+
+    &__btn {
+        margin: 0 auto;
+        margin-top: 2rem;
     }
 }

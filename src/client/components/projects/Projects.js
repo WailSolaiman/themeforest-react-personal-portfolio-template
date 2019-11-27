@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col, Card, Typography } from 'antd'
-import './projects.scss'
+import './scss/projects.scss'
 
 const Projects = ({ title = '', projects = [] }) => {
     const { Meta } = Card
@@ -17,17 +18,21 @@ const Projects = ({ title = '', projects = [] }) => {
                             <div className="projects__content">
                                 <Card
                                     className="card"
-                                    title={project.name}
-                                    extra={<a href="/">More</a>}
+                                    title={project.tech}
+                                    extra={
+                                        <Link to={`/projects/${project.id}`}>
+                                            More
+                                        </Link>
+                                    }
                                     cover={
                                         <img
-                                            alt={project.name}
+                                            alt={project.title}
                                             src={project.img}
                                         />
                                     }>
                                     <Meta
                                         title={project.title}
-                                        description={project.paragraph}
+                                        description={project.excerpt}
                                     />
                                 </Card>
                             </div>

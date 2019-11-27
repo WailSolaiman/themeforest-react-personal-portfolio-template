@@ -143,45 +143,147 @@ const myServicesData = [
 const projects = [
     {
         id: uuidv4(),
-        name: 'Javascript',
+        tech: 'Javascript',
         img: HeroImageDesktop,
-        title: 'Dolor sit Amet',
-        paragraph: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        title: 'From dirt to Kings',
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
     {
         id: uuidv4(),
-        name: 'PHP',
+        tech: 'PHP',
         img: HeroImageDesktop,
         title: 'Dignissimos',
-        paragraph: `Voluptas nobis tempore accu samus ad dignissimos necessitatibus.`,
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
     {
         id: uuidv4(),
-        name: 'Wordpress',
+        tech: 'Wordpress',
         img: HeroImageDesktop,
         title: 'Distinctio Sfwit',
-        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere.`,
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
     {
         id: uuidv4(),
-        name: 'HTML5 & CSS3',
+        tech: 'HTML5 & CSS3',
         img: HeroImageDesktop,
         title: 'Earum nihid',
-        paragraph: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
     {
         id: uuidv4(),
-        name: 'Contao',
+        tech: 'Contao',
         img: HeroImageDesktop,
         title: 'Dolor sit Amet',
-        paragraph: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
     {
         id: uuidv4(),
-        name: 'Node.js',
+        tech: 'Node.js',
         img: HeroImageDesktop,
         title: 'Dignissimos',
-        paragraph: `Voluptas nobis tempore accu samus ad dignissimos necessitatibus.`,
+        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
+        paragraph: `Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        secondParagraph: `Deleniti eligendi eum hic
+                    inventore officiis? Accusamus culpa deleniti est
+                    eum fuga laborum molestias necessitatibus
+                    reiciendis repellendus soluta, totam unde
+                    voluptate voluptatibus!Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Blanditiis
+                    consequuntur ex quam tempore.`,
+        services: 'Research, UX design, UI Design',
+        platforms: 'Web',
     },
 ]
 
@@ -766,6 +868,10 @@ const getProjects = () => {
     return projects
 }
 
+const getOneProject = id => {
+    return projects.find(project => project.id === id)
+}
+
 const getTestimonials = () => {
     return testimonials
 }
@@ -832,6 +938,7 @@ export {
     getAboutMeData,
     getMyServicesData,
     getProjects,
+    getOneProject,
     getTestimonials,
     getParallax,
     getprofileImage,

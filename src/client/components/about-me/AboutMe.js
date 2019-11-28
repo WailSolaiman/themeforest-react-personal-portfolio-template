@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
+import useWindowWidth from '../_core/utils/_coreUtils'
 import './scss/about-me.scss'
 
 const AboutMe = ({ data = {} }) => {
     const { Title, Paragraph } = Typography
+    const windowWidth = useWindowWidth()
     const {
         title,
         subtitle,
@@ -17,8 +19,10 @@ const AboutMe = ({ data = {} }) => {
     return (
         <div className="about-me">
             <Row gutter={{ xs: 0, sm: 24 }}>
-                <Col xs={24} sm={14} md={15} xl={17}>
-                    <div className="about-me__content">
+                <Col xs={24} md={14} xl={17}>
+                    <div
+                        className="about-me__content"
+                        data-aos={windowWidth > 768 ? 'fade-right' : 'fade-up'}>
                         <Title className="about-me__header" level={3}>
                             {subtitle}
                         </Title>
@@ -41,8 +45,10 @@ const AboutMe = ({ data = {} }) => {
                         </Link>
                     </div>
                 </Col>
-                <Col xs={24} sm={10} md={9} xl={7}>
-                    <div className="about-me__img">
+                <Col xs={24} md={10} xl={7}>
+                    <div
+                        className="about-me__img"
+                        data-aos={windowWidth > 768 ? 'fade-left' : 'fade-up'}>
                         <img src={image} alt="intro-img" />
                     </div>
                 </Col>

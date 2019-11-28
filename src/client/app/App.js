@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-// import AOS from 'aos'
+import AOS from 'aos'
 import ScrollToTop from './ScrollToTop'
 import FixedNavbar from '../components/_core/navbar/FixedNavbar'
 import Home from '../pages/home/Home'
@@ -13,22 +13,19 @@ import ProjectsTemplate from '../components/projects/ProjectsTemplate'
 import NotFound from '../components/_core/not-found/NotFound'
 import Footer from '../components/_core/footer/Footer'
 import { getNavbarStyle } from '../components/utils/_componentsData'
-// import useWindowWidth from '../components/_core/utils/_coreUtils'
+import useWindowWidth from '../components/_core/utils/_coreUtils'
 import './app.scss'
 
 const App = () => {
-    // const windowWidth = useWindowWidth()
-    // useEffect(() => {
-    //     AOS.init({
-    //         disable: () => {
-    //             const maxWidth = 768
-    //             return window.innerWidth < maxWidth
-    //         },
-    //     })
-    // }, [])
-    // useEffect(() => {
-    //     AOS.refresh()
-    // }, [windowWidth])
+    const windowWidth = useWindowWidth()
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        })
+    }, [])
+    useEffect(() => {
+        AOS.refresh()
+    }, [windowWidth])
     return (
         <Router>
             <FixedNavbar navbarStyle={getNavbarStyle()} selected="one-menu" />

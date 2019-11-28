@@ -1,6 +1,11 @@
 .about-me {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 
     &__content {
         text-align: center;

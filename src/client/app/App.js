@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import AOS from 'aos'
 import ScrollToTop from './ScrollToTop'
 import FixedNavbar from '../components/_core/navbar/FixedNavbar'

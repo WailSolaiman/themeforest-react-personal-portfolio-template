@@ -1,9 +1,12 @@
 import React from 'react'
 import { Row, Col, Typography } from 'antd'
+import useWindowWidth from '../_core/utils/_coreUtils'
 import './clients.scss'
 
 const Clients = ({ clients = [], header = '', description = '' }) => {
     const { Title, Paragraph } = Typography
+    const windowWidth = useWindowWidth()
+    let aosDelayCounter = 0
     return (
         <div className="clients">
             <Row gutter={24}>
@@ -18,20 +21,31 @@ const Clients = ({ clients = [], header = '', description = '' }) => {
                 <Col xs={24} lg={17}>
                     <Row gutter={24}>
                         {clients &&
-                            clients.map(client => {
+                            clients.map((client, index) => {
+                                const counter =
+                                    index > 0 ? (aosDelayCounter += 50) : 0
                                 return (
                                     <Col
                                         className="clients__col"
-                                        xs={24}
-                                        sm={12}
+                                        xs={12}
+                                        sm={6}
                                         lg={6}
                                         key={client.id}>
                                         <div className="clients__content">
-                                            <img
-                                                className="clients__image"
-                                                src={client.logo}
-                                                alt={client.name}
-                                            />
+                                            <div
+                                                className="clients__image-container"
+                                                data-aos={
+                                                    windowWidth > 768
+                                                        ? 'fade'
+                                                        : 'fade-up'
+                                                }
+                                                data-aos-delay={counter}>
+                                                <img
+                                                    className="clients__image"
+                                                    src={client.logo.src}
+                                                    alt={client.logo.name}
+                                                />
+                                            </div>
                                         </div>
                                     </Col>
                                 )

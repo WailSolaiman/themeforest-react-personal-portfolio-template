@@ -10,68 +10,92 @@ import Mobil from '../../assets/clients/mobil.png'
 import Otto from '../../assets/clients/otto.png'
 import TOnline from '../../assets/clients/t-online.png'
 import Travel from '../../assets/clients/travel.png'
-import Zalando from '../../assets/clients/zalando.png'
+import Ltur from '../../assets/clients/ltur.png'
 
 const clients = [
     {
         id: uuidv4(),
-        logo: Aida,
-        name: 'Aida',
+        logo: {
+            src: Aida,
+            name: 'Aida',
+        },
     },
     {
         id: uuidv4(),
-        logo: AirBerlin,
-        name: 'Air-Berlin',
+        logo: {
+            src: AirBerlin,
+            name: 'Air-Berlin',
+        },
     },
     {
         id: uuidv4(),
-        logo: Akad,
-        name: 'Akad',
+        logo: {
+            src: Akad,
+            name: 'Akad',
+        },
     },
     {
         id: uuidv4(),
-        logo: FoodPanda,
-        name: 'Food-Panda',
+        logo: {
+            src: FoodPanda,
+            name: 'Food-Panda',
+        },
     },
     {
         id: uuidv4(),
-        logo: Gamigo,
-        name: 'Gamigo',
+        logo: {
+            src: Gamigo,
+            name: 'Gamigo',
+        },
     },
     {
         id: uuidv4(),
-        logo: Gj,
-        name: 'GJ',
+        logo: {
+            src: Gj,
+            name: 'GJ',
+        },
     },
     {
         id: uuidv4(),
-        logo: Jimdo,
-        name: 'Jimdo',
+        logo: {
+            src: Jimdo,
+            name: 'Jimdo',
+        },
     },
     {
         id: uuidv4(),
-        logo: Mobil,
-        name: 'Mobil',
+        logo: {
+            src: Mobil,
+            name: 'Mobil',
+        },
     },
     {
         id: uuidv4(),
-        logo: Otto,
-        name: 'Otto',
+        logo: {
+            src: Otto,
+            name: 'Otto',
+        },
     },
     {
         id: uuidv4(),
-        logo: TOnline,
-        name: 'T-Online',
+        logo: {
+            src: TOnline,
+            name: 'T-Online',
+        },
     },
     {
         id: uuidv4(),
-        logo: Travel,
-        name: 'Travel',
+        logo: {
+            src: Travel,
+            name: 'Travel',
+        },
     },
     {
         id: uuidv4(),
-        logo: Zalando,
-        name: 'Zalando',
+        logo: {
+            src: Ltur,
+            name: 'Ltur',
+        },
     },
 ]
 

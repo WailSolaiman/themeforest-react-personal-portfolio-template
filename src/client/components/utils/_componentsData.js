@@ -35,6 +35,7 @@ import {
 } from './_dataClients'
 import getContactPageTitle from './_dataContact'
 import getPreFooter from './_dataPreFooter'
+import getFooter from './_dataFooter'
 
 export {
     getNavbarStyle,
@@ -68,4 +69,5 @@ export {
     getClientsDescription,
     getContactPageTitle,
     getPreFooter,
+    getFooter,
 }

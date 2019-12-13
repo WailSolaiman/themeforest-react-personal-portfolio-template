@@ -4,75 +4,74 @@ import { Row, Col, Typography } from 'antd'
 import SocialMedia from '../social-media/SocialMedia'
 import './footer.scss'
 
-const Footer = () => {
+const Footer = ({ data = {} }) => {
     const { Title, Paragraph } = Typography
+    const { text, header1, header2, header3, copyright, footerNav } = data
+    const { mail, tel, fax, address, postcode, city, country } = data.contact
     return (
         <div className="footer">
             <div className="container">
-                <Row gutter={24}>
+                <Row className="footer__row-first" gutter={24}>
                     <Col xs={24} md={10} xl={10}>
                         <div className="footer__first-section">
                             <Title level={2}>ILTLC</Title>
                             <Paragraph className="footer__paragraph">
-                                Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam
+                                {text}
                             </Paragraph>
                         </div>
                     </Col>
                     <Col xs={24} md={7} xl={7}>
                         <div className="footer__second-section">
                             <Title className="footer__title" level={4}>
-                                Get in Touch
+                                {header1}
                             </Title>
                             <Paragraph className="footer__paragraph footer__paragraph--second">
-                                E-Mail:{' '}
-                                <a href="mailto: info@iltlc.com">
-                                    info@iltlc.com
-                                </a>
+                                E-Mail: <a href={`mailto: ${mail}`}>{mail}</a>
                             </Paragraph>
                             <Paragraph className="footer__paragraph footer__paragraph--second">
-                                Tel.: +49 00 - 123 53 - 6700
+                                Tel.: {tel}
                             </Paragraph>
                             <Paragraph className="footer__paragraph footer__paragraph--second">
-                                Fax: +49 00 - 554 53 - 6799
+                                Fax: {fax}
                             </Paragraph>
-                            <Title className="footer__title" level={4}>
-                                Social Media
-                            </Title>
-                            <SocialMedia
-                                containerWidth="200px"
-                                containerMargin="unset"
-                                containerJustifyContent="center"
-                                IconMarginRight="15px"
-                                IconColor="white"
-                            />
+                            <Paragraph className="footer__paragraph footer__paragraph--second">
+                                Address:
+                            </Paragraph>
+                            <Paragraph className="footer__paragraph footer__paragraph--second">
+                                {address}
+                            </Paragraph>
+                            <Paragraph className="footer__paragraph footer__paragraph--second">
+                                {postcode} {city}. {country}
+                            </Paragraph>
                         </div>
                     </Col>
                     <Col xs={24} md={7} xl={7}>
                         <div className="footer__third-section">
                             <Title className="footer__title" level={4}>
-                                Menu
+                                {header2}
+                            </Title>
+                            <SocialMedia
+                                containerWidth="100%"
+                                containerJustifyContent="baseline"
+                                IconMarginRight="15px"
+                                IconColor="white"
+                            />
+                            <Title className="footer__title" level={4}>
+                                {header3}
                             </Title>
                             <ul className="footer__list">
-                                <li className="footer__list-item">
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li className="footer__list-item">
-                                    <Link to="/blog">Blog</Link>
-                                </li>
-                                <li className="footer__list-item">
-                                    <Link to="/about">About</Link>
-                                </li>
-                                <li className="footer__list-item">
-                                    <Link to="/contact">Contact</Link>
-                                </li>
-                                <li className="footer__list-item">
-                                    <Link to="/">imprint</Link>
-                                </li>
-                                <li className="footer__list-item">
-                                    <Link to="/">Data Privacy</Link>
-                                </li>
+                                {footerNav &&
+                                    footerNav.map(nav => {
+                                        return (
+                                            <li
+                                                className="footer__list-item"
+                                                key={nav.id}>
+                                                <Link to={nav.link}>
+                                                    {nav.page}
+                                                </Link>
+                                            </li>
+                                        )
+                                    })}
                             </ul>
                         </div>
                     </Col>
@@ -80,7 +79,7 @@ const Footer = () => {
                 <Row>
                     <Col xs={24}>
                         <Paragraph className="footer__copyright">
-                            © ILTLC. 2020 | All Rights Reserved
+                            {copyright}
                         </Paragraph>
                     </Col>
                 </Row>

@@ -4,7 +4,7 @@ import './social-media.scss'
 
 const SocialMedia = ({
     containerWidth = '300px',
-    containerMargin = '0 auto 2rem',
+    containerMargin = '0 auto 1rem',
     containerJustifyContent = 'space-between',
     IconMarginRight = '0',
     IconColor = '#343434',

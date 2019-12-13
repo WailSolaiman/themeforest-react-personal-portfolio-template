@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
-import SocialMedia from '../_core/social-media/SocialMedia'
 import './scss/portfolio.scss'
 
 const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
@@ -35,8 +34,9 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
         <div className="portfolio">
             <Title level={2}>{title}</Title>
             <Paragraph className="portfolio__text">{text}</Paragraph>
-            <SocialMedia />
-            <Row>{renderPortfolios()}</Row>
+            <div className="portfolio__container">
+                <Row>{renderPortfolios()}</Row>
+            </div>
             <Row>
                 <Col xs={24}>
                     <button

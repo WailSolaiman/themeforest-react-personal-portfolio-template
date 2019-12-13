@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Row, Col, Spin } from 'antd'
 import Header from '../../components/_core/header/Header'
 import AboutMe from '../../components/about-me/AboutMe'
-import MyServices from '../../components/my-services/MyServices'
+import Services from '../../components/my-services/Services'
 import Projects from '../../components/projects/Projects'
 import Quote from '../../components/quote/Quote'
 import Testimonials from '../../components/testimonials/Testimonials'
@@ -56,7 +56,7 @@ const Home = () => {
                     <Row className="row-with-margin-bottom bg-color">
                         <Col xs={24}>
                             <div className="container">
-                                <MyServices
+                                <Services
                                     title="Services"
                                     services={getServices()}
                                 />

@@ -12,16 +12,14 @@ import PortfolioTemplate from '../components/portfolio/PortfolioTemplate'
 import ProjectsTemplate from '../components/projects/ProjectsTemplate'
 import NotFound from '../components/_core/not-found/NotFound'
 import Footer from '../components/_core/footer/Footer'
-import { getNavbarStyle } from '../components/utils/_componentsData'
+import { getNavbarStyle, getFooter } from '../components/utils/_componentsData'
 import useWindowWidth from '../components/_core/utils/_coreUtils'
 import './app.scss'
 
 const App = () => {
     const windowWidth = useWindowWidth()
     useEffect(() => {
-        AOS.init({
-            once: true,
-        })
+        AOS.init()
     }, [])
     useEffect(() => {
         AOS.refresh()
@@ -47,7 +45,7 @@ const App = () => {
                     <Route component={NotFound} />
                 </Switch>
             </ScrollToTop>
-            <Footer />
+            <Footer data={getFooter()} />
         </Router>
     )
 }

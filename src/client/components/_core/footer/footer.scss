@@ -7,6 +7,10 @@
         margin-top: 5rem;
     }
 
+    &__row-first {
+        padding-bottom: 1rem;
+    }
+
     &__first-section {
         margin-bottom: 2rem;
     }
@@ -44,19 +48,13 @@
         flex-wrap: wrap;
 
         @media (min-width: 768px) {
-            display: block;
-            flex-direction: unset;
-            flex-wrap: unset;
+            flex-direction: row;
         }
     }
 
     &__list-item {
         margin-right: 15px;
         transition: color .2s ease-in-out;
-
-        @media (min-width: 768px) {
-            margin-right: 0;
-        }
 
         a:hover {
             color: white;
@@ -67,7 +65,7 @@
         color: white !important;
         text-align: center;
         margin: 0 !important;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         border-top: 1px dashed white;
     }
 }

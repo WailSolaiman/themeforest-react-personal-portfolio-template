@@ -21,33 +21,43 @@
         padding: 0 !important;
 
         @media (min-width: 992px) {
-
             &:nth-child(4n) {
                 .clients__content {
                     border-right: 1px dashed;
                 }
             }
+        }
 
-            &:nth-last-child(-n+4) {
+        @media (min-width: 768px) {
+            &:nth-last-child(-n + 4) {
                 .clients__content {
-                    padding-bottom: 1rem;
+                    padding-bottom: 2rem;
                 }
             }
         }
     }
 
     &__content {
-        padding-bottom: 3rem;
+        display: flex;
+        padding-bottom: 8rem;
         margin-bottom: 1px;
+        position: relative;
 
         @media (min-width: 992px) {
-            padding-bottom: 5rem;
             border-left: 1px dashed;
         }
     }
 
+    &__image-container {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.85s all;
+    }
+
     &__image {
-        max-height: 90px;
+        max-height: 75px;
         width: auto;
         display: block;
         margin: 0 auto;

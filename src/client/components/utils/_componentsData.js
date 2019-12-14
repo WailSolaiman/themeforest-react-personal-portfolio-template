@@ -2,7 +2,6 @@ import getNavbarStyle from './_dataNavbar'
 import {
     getHomeHeroImage,
     getContactHeroImage,
-    getBlogHeroImage,
     getCarouselImages,
     getPortfolioHeroImage,
 } from './_dataHeroImage'
@@ -26,8 +25,6 @@ import {
     getOnePortfolio,
 } from './_dataPortfolios'
 import getParallax from './_dataParallax'
-import getBlogPageTitle from './_dataBlog'
-import { getArticles, getOneArticle } from './_dataArticles'
 import {
     getClients,
     getClientsHeader,
@@ -41,7 +38,6 @@ export {
     getNavbarStyle,
     getHomeHeroImage,
     getContactHeroImage,
-    getBlogHeroImage,
     getCarouselImages,
     getPortfolioHeroImage,
     getAboutMePageTitle,
@@ -58,9 +54,6 @@ export {
     getEducations,
     getSkills,
     getContactData,
-    getBlogPageTitle,
-    getArticles,
-    getOneArticle,
     getPortfolios,
     getPortfoliosText,
     getOnePortfolio,

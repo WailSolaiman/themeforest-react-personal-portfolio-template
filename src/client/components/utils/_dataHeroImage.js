@@ -58,16 +58,6 @@ const contactHeroImage = {
     btnLink: '/',
 }
 
-const blogHeroImage = {
-    id: uuidv4(),
-    desktopImage: HeroImageDesktop,
-    mobileImage: HeroImageMobile,
-    subheader: 'Digital design studio',
-    header: 'More than just a web design.',
-    btnText: 'Explore Now',
-    btnLink: '/contact',
-}
-
 const portfolioHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
@@ -90,10 +80,6 @@ const getContactHeroImage = () => {
     return contactHeroImage
 }
 
-const getBlogHeroImage = () => {
-    return blogHeroImage
-}
-
 const getPortfolioHeroImage = () => {
     return portfolioHeroImage
 }
@@ -101,7 +87,6 @@ const getPortfolioHeroImage = () => {
 export {
     getHomeHeroImage,
     getContactHeroImage,
-    getBlogHeroImage,
     getCarouselImages,
     getPortfolioHeroImage,
 }

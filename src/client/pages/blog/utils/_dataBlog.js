@@ -1,6 +1,7 @@
 const BlogPageTitle = {
     title: 'Blog',
-    subtitle: 'My Latest Blog in IT field.',
+    subtitle:
+        'Froogno Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad.',
 }
 
 const getBlogPageTitle = () => {

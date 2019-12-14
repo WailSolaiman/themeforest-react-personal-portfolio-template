@@ -7,7 +7,7 @@ import Home from '../pages/home/Home'
 import ContactPage from '../pages/contact/ContactPage'
 import AboutPage from '../pages/about/AboutPage'
 import BlogPage from '../pages/blog/BlogPage'
-import ArticleTemplate from '../pages/blog/ArticleTemplate'
+import PostTemplate from '../pages/blog/PostTemplate'
 import PortfolioTemplate from '../components/portfolio/PortfolioTemplate'
 import ProjectsTemplate from '../components/projects/ProjectsTemplate'
 import NotFound from '../components/_core/not-found/NotFound'
@@ -33,7 +33,7 @@ const App = () => {
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/blog/posts/:id">
-                        <ArticleTemplate />
+                        <PostTemplate />
                     </Route>
                     <Route path="/blog" component={BlogPage} />
                     <Route path="/portfolio/:id">

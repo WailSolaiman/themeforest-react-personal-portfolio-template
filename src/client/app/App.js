@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { BackTop } from 'antd'
 import AOS from 'aos'
 import ScrollToTop from './ScrollToTop'
 import FixedNavbar from '../components/_core/navbar/FixedNavbar'
@@ -28,6 +29,7 @@ const App = () => {
         <Router>
             <FixedNavbar navbarStyle={getNavbarStyle()} selected="one-menu" />
             <ScrollToTop>
+                <BackTop />
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={ContactPage} />

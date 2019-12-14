@@ -194,7 +194,6 @@
 
 // Link
 a.iltlc-btn {
-
     span {
         display: flex;
         justify-content: center;
@@ -213,4 +212,9 @@ a.iltlc-btn {
 .loading-spinner {
     text-align: center;
     padding: 5rem 0 4rem;
+}
+
+// Back to Top
+.iltlc-back-top-content {
+    background-color: $primary-color !important;
 }

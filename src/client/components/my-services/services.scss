@@ -18,12 +18,6 @@
         padding: 30px 10px;
         border: 1px dotted $primary-color;
         transition: all 0.2s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 0 20px 2px $tertiary-color;
-        }
 
         @media (min-width: 1200px) {
             margin-bottom: 0;

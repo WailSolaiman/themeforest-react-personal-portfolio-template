@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Typography, Spin } from 'antd'
+import { Row, Col, Spin } from 'antd'
 import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
 import ProfileImage from '../../components/about-me/ProfileImage'
@@ -17,10 +17,11 @@ import {
     getEducations,
     getSkills,
 } from '../../components/utils/_componentsData'
+import useWindowWidth from '../../components/_core/utils/_coreUtils'
 
 const AboutPage = () => {
     const [renderPage, setPageRendering] = useState(false)
-    const { Title } = Typography
+    const windowWidth = useWindowWidth()
     useEffect(() => {
         const timeout = setTimeout(() => {
             setPageRendering(true)
@@ -46,25 +47,51 @@ const AboutPage = () => {
                     <Row
                         className="row-with-margin-bottom"
                         gutter={{ xs: 0, md: 24 }}>
-                        <Col xs={24}>
-                            <Title level={2}>Personal Infos.</Title>
+                        <Col xs={24} md={9} lg={6} xl={6}>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-right' : 'fade-up'
+                                }>
+                                <ProfileImage
+                                    profileImage={getprofileImage()}
+                                />
+                            </div>
                         </Col>
-                        <Col xs={24} md={9} lg={6} xl={5}>
-                            <ProfileImage profileImage={getprofileImage()} />
-                        </Col>
-                        <Col xs={24} md={15} lg={18} xl={19}>
-                            <PersonalData personalData={getPersonalData()} />
+                        <Col xs={24} md={15} lg={18} xl={18}>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-left' : 'fade-up'
+                                }>
+                                <PersonalData
+                                    personalData={getPersonalData()}
+                                />
+                            </div>
                         </Col>
                     </Row>
                     <Row gutter={{ xs: 0, lg: 24 }}>
                         <Col xs={24} lg={12}>
-                            <Experience experiences={getExperiences()} />
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-right' : 'fade-up'
+                                }>
+                                <Experience experiences={getExperiences()} />
+                            </div>
                         </Col>
                         <Col xs={24} lg={12}>
-                            <Education educations={getEducations()} />
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-left' : 'fade-up'
+                                }>
+                                <Education educations={getEducations()} />
+                            </div>
                         </Col>
                         <Col xs={24}>
-                            <Skills skills={getSkills()} />
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                                data-aos-offset="300">
+                                <Skills skills={getSkills()} />
+                            </div>
                         </Col>
                     </Row>
                 </div>

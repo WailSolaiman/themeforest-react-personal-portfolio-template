@@ -37,12 +37,19 @@ const ContactPage = () => {
                     </Row>
                     <Row>
                         <Col xs={24}>
-                            <GoogleMap />
+                            <div data-aos="fade-up">
+                                <GoogleMap />
+                            </div>
                         </Col>
                     </Row>
                     <Row>
                         <Col xs={24}>
-                            <WrappedContact />
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                                data-aos-offset="300">
+                                <WrappedContact />
+                            </div>
                         </Col>
                     </Row>
                 </div>

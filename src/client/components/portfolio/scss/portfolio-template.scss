@@ -115,6 +115,10 @@
         height: auto;
     }
 
+    &__header {
+        text-align: center;
+    }
+
     &__buttons-container {
         display: flex;
         justify-content: center;

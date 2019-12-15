@@ -9,19 +9,20 @@ const Portfolio = ({ title = 'Portfolio', text = '', portfolios = [] }) => {
     const onLoadMore = () => setLimit(limit + 4)
     const renderPortfolios = () => {
         return portfolios.slice(0, limit).map(portfolio => {
+            const { id, header, src, client } = portfolio
             return (
-                <Col xs={24} md={12} lg={6} key={portfolio.id}>
-                    <Link to={`/portfolio/${portfolio.id}`}>
+                <Col xs={24} md={12} lg={6} key={id}>
+                    <Link to={`/portfolio/${id}`}>
                         <div className="portfolio__content">
                             <img
                                 className="portfolio__image"
-                                src={portfolio.src}
-                                alt={portfolio.header}
+                                src={src}
+                                alt={header}
                             />
                             <div className="portfolio__header-container">
                                 <Paragraph className="portfolio__header">
-                                    <span>{portfolio.header}</span>
-                                    <span>{portfolio.client}</span>
+                                    <span>{header}</span>
+                                    <span>{client}</span>
                                 </Paragraph>
                             </div>
                         </div>

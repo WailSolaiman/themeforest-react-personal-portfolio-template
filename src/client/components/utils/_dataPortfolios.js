@@ -15,6 +15,7 @@ import Zalando from '../../assets/clients/zalando.png'
 import PortfolioMobileClientName from '../../assets/portfolio/client_name_1/portfolio-mobile-client_name.png'
 import PortfolioTabletClientName from '../../assets/portfolio/client_name_1/portfolio-tablet-client_name.png'
 import PortfolioDesktopClientName from '../../assets/portfolio/client_name_1/portfolio-desktop-client_name.png'
+import firstProjectImage1 from '../../assets/portfolio/client_name_1/lorem.jpg'
 
 const portfoliosText = `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut 
 porro delectus, voluptatem Earum voluptatem.`
@@ -42,6 +43,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -65,6 +80,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -88,6 +117,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -111,6 +154,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -134,6 +191,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -157,6 +228,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -180,6 +265,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -203,6 +302,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -226,6 +339,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -249,6 +376,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -272,6 +413,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
     {
         id: uuidv4(),
@@ -295,6 +450,20 @@ const portfolios = [
             mobile: PortfolioMobileClientName,
         },
         webpage: 'https://google.com',
+        gallery: [
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+            {
+                id: uuidv4(),
+                src: firstProjectImage1,
+            },
+        ],
     },
 ]
 

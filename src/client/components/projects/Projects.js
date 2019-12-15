@@ -15,8 +15,14 @@ const Projects = ({ title = '', projects = [] }) => {
             {projects &&
                 projects.map((project, index) => {
                     const counter = index > 0 ? (aosDelayCounter += 50) : 0
+                    const {
+                        id,
+                        desktopImage,
+                        excerpt,
+                        tech,
+                    } = project
                     return (
-                        <Col xs={24} md={12} lg={8} key={project.id}>
+                        <Col xs={24} md={12} lg={8} key={id}>
                             <div
                                 className="projects__content"
                                 data-aos="fade"
@@ -24,21 +30,21 @@ const Projects = ({ title = '', projects = [] }) => {
                                 data-aos-delay={counter}>
                                 <Card
                                     className="card"
-                                    title={project.tech}
+                                    title={tech}
                                     extra={
-                                        <Link to={`/projects/${project.id}`}>
+                                        <Link to={`/projects/${id}`}>
                                             More
                                         </Link>
                                     }
                                     cover={
                                         <img
-                                            alt={project.title}
-                                            src={project.img}
+                                            alt={title}
+                                            src={desktopImage}
                                         />
                                     }>
                                     <Meta
-                                        title={project.title}
-                                        description={project.excerpt}
+                                        title={title}
+                                        description={excerpt}
                                     />
                                 </Card>
                             </div>

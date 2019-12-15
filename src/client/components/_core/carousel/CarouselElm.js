@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Carousel, Button, Typography } from 'antd'
+import { Carousel, Typography } from 'antd'
 import useWindowWidth from '../utils/_coreUtils'
-import './carouselElm.scss'
+import './carousel-elm.scss'
 
 const CarouselElm = ({ items = [] }) => {
     const windowWidth = useWindowWidth()
@@ -11,33 +11,38 @@ const CarouselElm = ({ items = [] }) => {
         <Carousel effect="fade" autoplay>
             {items &&
                 items.map(item => {
+                    const {
+                        id,
+                        header = '',
+                        subheader = '',
+                        btnText = '',
+                        btnLink = '',
+                        desktopImage,
+                        mobileImage,
+                    } = item
                     const imageUrl =
-                        windowWidth >= 576
-                            ? item.desktopImage
-                            : item.mobileImage
+                        windowWidth >= 576 ? desktopImage : mobileImage
                     return (
-                        <div
-                            className="carousel-content"
-                            key={`key-nr-${item.id}`}>
+                        <div className="carousel-content" key={`key-nr-${id}`}>
                             <div
                                 className="carousel-content__backgroundImage"
                                 style={{ backgroundImage: `url(${imageUrl})` }}
                             />
                             <div className="carousel-content-absolute">
                                 <Title className="carousel-content-absolute__subheader">
-                                    {item.subheader}
+                                    {subheader}
                                 </Title>
                                 <Title
                                     className="carousel-content-absolute__header"
                                     level={3}>
-                                    {item.header}
+                                    {header}
                                 </Title>
-                                {item.btnText !== '' ? (
+                                {btnText !== '' ? (
                                     <Link
                                         className="iltlc-btn"
-                                        to={item.btnLink}
+                                        to={btnLink}
                                         style={{ margin: '0 auto' }}>
-                                        {item.btnText}
+                                        {btnText}
                                     </Link>
                                 ) : (
                                     <span />

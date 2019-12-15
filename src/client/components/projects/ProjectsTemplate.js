@@ -2,60 +2,78 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
 import HeroImageElm from '../_core/heroimage/HeroImageElm'
-import CarouselElm from '../_core/carousel/CarouselElm'
-import {
-    getHomeHeroImage,
-    getCarouselImages,
-    getOneProject,
-} from '../utils/_componentsData'
+import SwiperElm from '../_core/swiper/SwiperElm'
+import { getOneProject } from '../utils/_componentsData'
+import useWindowWidth from '../_core/utils/_coreUtils'
 import './scss/projects-template.scss'
 
 const ProjectsTemplate = () => {
     const { Title, Paragraph, Text } = Typography
-    const heroImage = getHomeHeroImage()
-    const carousel = getCarouselImages()
     const { id } = useParams()
     const project = getOneProject(id)
+    const windowWidth = useWindowWidth()
     const {
-        title,
+        header,
+        subheader,
         paragraph,
         secondParagraph,
+        thirdParagraph,
         services,
         platforms,
-        img,
+        desktopImage,
+        mobileImage,
+        gallery,
         tech,
     } = project
-
+    const imageUrl = useWindowWidth() >= 576 ? desktopImage : mobileImage
     return (
         <div className="projects-template">
-            <HeroImageElm item={heroImage} />
+            <HeroImageElm
+                item={{ header, subheader, desktopImage, mobileImage }}
+            />
             <div className="container">
                 <div className="projects-template__container">
                     <Row gutter={24}>
                         <Col xs={24} lg={10}>
-                            <Title className="projects-template__header">
-                                {title}
-                            </Title>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-right' : 'fade-up'
+                                }>
+                                <Title className="projects-template__header">
+                                    {header}
+                                </Title>
+                            </div>
                         </Col>
                         <Col xs={24} lg={14}>
-                            <Text strong className="projects-template__text">
-                                Project description
-                            </Text>
-                            <Paragraph className="projects-template__paragraph">
-                                {paragraph}
-                            </Paragraph>
-                            <Text strong className="projects-template__text">
-                                Services
-                            </Text>
-                            <Paragraph className="projects-template__paragraph">
-                                {services}
-                            </Paragraph>
-                            <Text strong className="projects-template__text">
-                                Platforms
-                            </Text>
-                            <Paragraph className="projects-template__paragraph">
-                                {platforms}
-                            </Paragraph>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-left' : 'fade-up'
+                                }>
+                                <Text
+                                    strong
+                                    className="projects-template__text">
+                                    Project description
+                                </Text>
+                                <Paragraph className="projects-template__paragraph">
+                                    {paragraph}
+                                </Paragraph>
+                                <Text
+                                    strong
+                                    className="projects-template__text">
+                                    Services
+                                </Text>
+                                <Paragraph className="projects-template__paragraph">
+                                    {services}
+                                </Paragraph>
+                                <Text
+                                    strong
+                                    className="projects-template__text">
+                                    Platforms
+                                </Text>
+                                <Paragraph className="projects-template__paragraph">
+                                    {platforms}
+                                </Paragraph>
+                            </div>
                         </Col>
                     </Row>
                 </div>
@@ -63,22 +81,44 @@ const ProjectsTemplate = () => {
             <div className="projects-template__container bg-color">
                 <div className="container">
                     <Row gutter={24}>
-                        <Col xs={24} lg={18}>
-                            <img
-                                className="projects-template__image"
-                                src={img}
-                                alt={title}
-                            />
+                        <Col xs={24} lg={14}>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-right' : 'fade-up'
+                                }
+                                data-aos-delay="300"
+                                data-aos-offset="300">
+                                <img
+                                    className="projects-template__image"
+                                    src={imageUrl}
+                                    alt={header}
+                                />
+                            </div>
                         </Col>
-                        <Col xs={24} lg={6}>
-                            <Title
-                                className="projects-template__header"
-                                level={2}>
-                                {tech}
-                            </Title>
-                            <Paragraph className="projects-template__paragraph">
-                                {secondParagraph}
-                            </Paragraph>
+                        <Col xs={24} lg={10}>
+                            <div
+                                data-aos={
+                                    windowWidth > 768 ? 'fade-left' : 'fade-up'
+                                }
+                                data-aos-delay="300"
+                                data-aos-offset="300">
+                                <Title
+                                    className="projects-template__header"
+                                    level={2}>
+                                    {tech}
+                                </Title>
+                                <Paragraph className="projects-template__paragraph">
+                                    {secondParagraph}
+                                </Paragraph>
+                                <Title
+                                    className="projects-template__header"
+                                    level={4}>
+                                    {subheader}
+                                </Title>
+                                <Paragraph className="projects-template__paragraph">
+                                    {thirdParagraph}
+                                </Paragraph>
+                            </div>
                         </Col>
                     </Row>
                 </div>
@@ -87,17 +127,22 @@ const ProjectsTemplate = () => {
                 <div className="projects-template__container projects-template__container--last">
                     <Row gutter={24}>
                         <Col xs={24}>
-                            <Title
-                                className="projects-template__header projects-template__header--center"
-                                level={2}>
-                                More Images
-                            </Title>
-                            <CarouselElm items={carousel} />
-                            <Link
-                                className="iltlc-btn btn-secondary projects-template__btn"
-                                to="/">
-                                Go Back
-                            </Link>
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                                data-aos-offset="400">
+                                <Title
+                                    className="projects-template__header projects-template__header--center"
+                                    level={2}>
+                                    Project Images
+                                </Title>
+                                <SwiperElm items={gallery} />
+                                <Link
+                                    className="iltlc-btn btn-secondary projects-template__btn"
+                                    to="/">
+                                    Go Back
+                                </Link>
+                            </div>
                         </Col>
                     </Row>
                 </div>

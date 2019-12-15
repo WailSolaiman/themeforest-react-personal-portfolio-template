@@ -3,7 +3,6 @@ import {
     getHomeHeroImage,
     getContactHeroImage,
     getCarouselImages,
-    getPortfolioHeroImage,
 } from './_dataHeroImage'
 import {
     getAboutMePageTitle,
@@ -39,7 +38,6 @@ export {
     getHomeHeroImage,
     getContactHeroImage,
     getCarouselImages,
-    getPortfolioHeroImage,
     getAboutMePageTitle,
     getAboutMeData,
     getServices,

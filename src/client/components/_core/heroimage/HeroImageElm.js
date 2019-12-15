@@ -2,12 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typography } from 'antd'
 import useWindowWidth from '../utils/_coreUtils'
-import './heroImageElm.scss'
+import './heroImage-elm.scss'
 
 const HeroImageElm = ({ item = {} }) => {
     const { Title } = Typography
-    const imageUrl =
-        useWindowWidth() >= 576 ? item.desktopImage : item.mobileImage
+    const {
+        header = '',
+        subheader = '',
+        btnText = '',
+        btnLink = '',
+        desktopImage,
+        mobileImage,
+    } = item
+    const imageUrl = useWindowWidth() >= 576 ? desktopImage : mobileImage
     return (
         <div className="hero-content">
             <div
@@ -16,17 +23,17 @@ const HeroImageElm = ({ item = {} }) => {
             />
             <div className="hero-content-absolute">
                 <Title className="hero-content-absolute__subheader" level={3}>
-                    {item.subheader}
+                    {subheader}
                 </Title>
                 <Title className="hero-content-absolute__header">
-                    {item.header}
+                    {header}
                 </Title>
-                {item.btnText !== '' ? (
+                {btnText !== '' ? (
                     <Link
                         className="iltlc-btn"
-                        to={item.btnLink}
+                        to={btnLink}
                         style={{ margin: '0 auto' }}>
-                        {item.btnText}
+                        {btnText}
                     </Link>
                 ) : (
                     <span />

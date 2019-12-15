@@ -58,16 +58,6 @@ const contactHeroImage = {
     btnLink: '/',
 }
 
-const portfolioHeroImage = {
-    id: uuidv4(),
-    desktopImage: HeroImageDesktop,
-    mobileImage: HeroImageMobile,
-    subheader: 'Portfolio',
-    header: 'More than just a Portfolio.',
-    btnText: '',
-    btnLink: '',
-}
-
 const getCarouselImages = () => {
     return carouselElements
 }
@@ -80,13 +70,8 @@ const getContactHeroImage = () => {
     return contactHeroImage
 }
 
-const getPortfolioHeroImage = () => {
-    return portfolioHeroImage
-}
-
 export {
     getHomeHeroImage,
     getContactHeroImage,
     getCarouselImages,
-    getPortfolioHeroImage,
 }

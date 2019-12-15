@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+
+.swiper-elm {
+    position: relative;
+
+    &__backgroundImage {
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-width: 768px) {
+            height: 600px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 700px;
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: $primary-color !important;
+}
+
+.swiper-pagination-progressbar-fill {
+    background: $primary-color !important;
+}

@@ -1,5 +1,5 @@
 const BlogPageTitle = {
-    title: 'Blog',
+    title: 'Simple Blog',
     subtitle:
         'Froogno Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad.',
 }

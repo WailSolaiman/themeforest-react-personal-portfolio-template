@@ -2,12 +2,12 @@ import React from 'react'
 import { List, Typography, Icon } from 'antd'
 import './scss/contact-data.scss'
 
-const ContactData = ({ title = 'Contact Infos.', contactData = [] }) => {
-    const { Title, Paragraph } = Typography
+const ContactData = ({ contactData = [] }) => {
+    const { Paragraph } = Typography
     return (
         <div className="contact-data">
-            <Title level={3}>{title}</Title>
             <List
+                className="contact-data__container"
                 itemLayout="horizontal"
                 dataSource={contactData}
                 renderItem={item => (

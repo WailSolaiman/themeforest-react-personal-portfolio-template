@@ -101,11 +101,9 @@ const clients = [
 
 const clientsHeader = 'Customers for whom we are lucky enough to work'
 
-const clientsDescription = `There is no standard solution for everything and
-                        everyone. Finding the right approach when working with
-                        the customer is our concern. With more than 13 years of
-                        business experience, we are ready to face the challenges
-                        ahead and expect the things to come.`
+const clientsDescription = `Bring to the table win-win survival strategies to ensure proactive domination. 
+    At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading 
+    towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.`
 
 const getClients = () => {
     return clients

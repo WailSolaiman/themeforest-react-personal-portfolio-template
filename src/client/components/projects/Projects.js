@@ -15,12 +15,7 @@ const Projects = ({ title = '', projects = [] }) => {
             {projects &&
                 projects.map((project, index) => {
                     const counter = index > 0 ? (aosDelayCounter += 50) : 0
-                    const {
-                        id,
-                        desktopImage,
-                        excerpt,
-                        tech,
-                    } = project
+                    const { id, desktopImage, excerpt, tech } = project
                     return (
                         <Col xs={24} md={12} lg={8} key={id}>
                             <div
@@ -32,20 +27,12 @@ const Projects = ({ title = '', projects = [] }) => {
                                     className="card"
                                     title={tech}
                                     extra={
-                                        <Link to={`/projects/${id}`}>
-                                            More
-                                        </Link>
+                                        <Link to={`/projects/${id}`}>More</Link>
                                     }
                                     cover={
-                                        <img
-                                            alt={title}
-                                            src={desktopImage}
-                                        />
+                                        <img alt={title} src={desktopImage} />
                                     }>
-                                    <Meta
-                                        title={title}
-                                        description={excerpt}
-                                    />
+                                    <Meta title={title} description={excerpt} />
                                 </Card>
                             </div>
                         </Col>

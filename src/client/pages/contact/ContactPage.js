@@ -4,10 +4,12 @@ import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
 import Contact from '../../components/contact/Contact'
 import GoogleMap from '../../components/_core/map/Map'
+import ContactData from '../../components/about-me/ContactData'
 import {
     getContactHeroImage,
     getCarouselImages,
     getContactPageTitle,
+    getContactData,
 } from '../../components/utils/_componentsData'
 
 const ContactPage = () => {
@@ -39,6 +41,11 @@ const ContactPage = () => {
                         <Col xs={24}>
                             <div data-aos="fade-up">
                                 <GoogleMap />
+                            </div>
+                        </Col>
+                        <Col xs={24}>
+                            <div data-aos="fade-up">
+                                <ContactData contactData={getContactData()} />
                             </div>
                         </Col>
                     </Row>

@@ -31,27 +31,18 @@ const projects = [
         ],
         header: 'Deleniti eligendi Eumhic',
         subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
-        paragraph: `Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus! Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        secondParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        thirdParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!`,
+        excerpt: `Uniquely deploy cross-unit benefits with wireless testing procedures. 
+            Collaboratively build backward-compatible relationships whereas tactical ...`,
+        paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
+            procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
+            convergence without revolutionary ROI. Efficiently unleash cross-media information without 
+            cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically 
+            maintain clicks-and-mortar solutions without functional solutions.`,
+        secondParagraph: `Deleniti eligendi eum hic inventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necess itatibus reiciendis repellendus soluta, totam unde voluptate voluptatibus! 
+            itamet, consectetur adipisicing elit. Blanditiis consequuntur ex quam tempore.`,
+        thirdParagraph: `Deleniti eligendi eum hicinventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necessitatibus reiciendis repellendus soluta, totam undevoluptate voluptatibus!`,
         services: 'Research, UX design, UI Design',
         platforms: 'Web',
     },
@@ -76,27 +67,18 @@ const projects = [
         ],
         header: 'Laborum mole ecessitatibus',
         subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
-        paragraph: `Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus! Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        secondParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        thirdParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!`,
+        excerpt: `Quickly incentivize impactful action items before tactical collaboration and idea-sharing. 
+            Monotonically engage market-capital through wireless ...`,
+        paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
+            procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
+            convergence without revolutionary ROI. Efficiently unleash cross-media information without 
+            cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically 
+            maintain clicks-and-mortar solutions without functional solutions.`,
+        secondParagraph: `Deleniti eligendi eum hic inventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necess itatibus reiciendis repellendus soluta, totam unde voluptate voluptatibus! 
+            itamet, consectetur adipisicing elit. Blanditiis consequuntur ex quam tempore.`,
+        thirdParagraph: `Deleniti eligendi eum hicinventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necessitatibus reiciendis repellendus soluta, totam undevoluptate voluptatibus!`,
         services: 'Research, UX design, UI Design, Mobile App.',
         platforms: 'Web',
     },
@@ -121,27 +103,18 @@ const projects = [
         ],
         header: 'Ctetur adipisicing Elit',
         subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Lorem ipsum dolor sit amet conse ctetur adipisicing elit.`,
-        paragraph: `Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus! Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        secondParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Blanditiis
-                    consequuntur ex quam tempore.`,
-        thirdParagraph: `Deleniti eligendi eum hic
-                    inventore officiis? Accusamus culpa deleniti est
-                    eum fuga laborum molestias necessitatibus
-                    reiciendis repellendus soluta, totam unde
-                    voluptate voluptatibus!`,
+        excerpt: `Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+            Iterative approaches to corporate strategy foster thinking to further the overall ...`,
+        paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
+            procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
+            convergence without revolutionary ROI. Efficiently unleash cross-media information without 
+            cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically 
+            maintain clicks-and-mortar solutions without functional solutions.`,
+        secondParagraph: `Deleniti eligendi eum hic inventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necess itatibus reiciendis repellendus soluta, totam unde voluptate voluptatibus! 
+            itamet, consectetur adipisicing elit. Blanditiis consequuntur ex quam tempore.`,
+        thirdParagraph: `Deleniti eligendi eum hicinventore officiis? Accusamus culpa deleniti esteum fuga 
+            laborum molestias necessitatibus reiciendis repellendus soluta, totam undevoluptate voluptatibus!`,
         services: 'Research, UX design, UI Design',
         platforms: 'Web',
     },

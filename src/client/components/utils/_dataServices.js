@@ -6,19 +6,22 @@ const services = [
         id: uuidv4(),
         name: 'Web Design',
         img: HeroImageMobile,
-        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere nobis ad dignissimos.`,
+        paragraph: `Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+            Iterative approaches to corporate strategy collaborative thinking.`,
     },
     {
         id: uuidv4(),
         name: 'Web Development',
         img: HeroImageMobile,
-        paragraph: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus tempore accusamus.`,
+        paragraph: `ring to the table win-win survival strategies to ensure proactive domination. 
+            At the end of the day, a new normal that has evolved from generation.`,
     },
     {
         id: uuidv4(),
         name: 'Logo Design',
         img: HeroImageMobile,
-        paragraph: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere nobis ad dignissimos.`,
+        paragraph: `Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. 
+            Override the digital divide with additional clickthroughs from DevOps.`,
     },
 ]
 

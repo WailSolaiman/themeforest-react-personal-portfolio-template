@@ -10,10 +10,6 @@
         .iltlc-card-body {
             height: auto;
             overflow: auto;
-
-            @media (min-width: 768px) {
-                height: 150px;
-            }
         }
     }
 }

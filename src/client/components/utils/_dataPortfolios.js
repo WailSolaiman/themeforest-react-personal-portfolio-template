@@ -17,8 +17,9 @@ import PortfolioTabletClientName from '../../assets/portfolio/client_name_1/port
 import PortfolioDesktopClientName from '../../assets/portfolio/client_name_1/portfolio-desktop-client_name.png'
 import firstProjectImage1 from '../../assets/portfolio/client_name_1/lorem.jpg'
 
-const portfoliosText = `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut 
-porro delectus, voluptatem Earum voluptatem.`
+const portfoliosText = `Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate 
+    integrated processes through technically sound intellectual capital. Holistically foster superior methodologies 
+    without market-driven best practices.`
 
 const portfolios = [
     {
@@ -27,15 +28,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Aida',
         logo: Aida,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -64,15 +64,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'AirBerlin',
         logo: AirBerlin,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -101,15 +100,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Akad',
         logo: Akad,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -138,15 +136,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'FoodPanda',
         logo: FoodPanda,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -175,15 +172,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Gamigo',
         logo: Gamigo,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -212,15 +208,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Gj',
         logo: Gj,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -249,15 +244,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Jimdo',
         logo: Jimdo,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -286,15 +280,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Mobil',
         logo: Mobil,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -323,15 +316,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Otto',
         logo: Otto,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -360,15 +352,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'TOnline',
         logo: TOnline,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -397,15 +388,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Travel',
         logo: Travel,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,
@@ -434,15 +424,14 @@ const portfolios = [
         src: HeroImageDesktop,
         client: 'Zalando',
         logo: Zalando,
-        description:
-            'Der CockayneGolf-Shop bietet Ihnen eine große Auswahl von Schlägern, Zubehör und Bekleidung für den Golfsport an. In der CockayneGolf-School im LTGK erwartet Sie die wahrscheinlich schönste Driving Range Deutschlands. Das SMG Golf Fitting Center bietet professionelles Schläger-Fitting und Optimierung an.',
+        description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+            to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
+            the holistic world view of disruptive innovation via workplace diversity and empowerment.`,
         services: {
-            online:
-                'Responsive Webseite unter Verwendung von PHP 7, jQuery, HTML5, CSS3 und SASS. Einbindung eines CMS-Moduls zur einfachen Pflege der Inhalte.',
-            offline:
-                'Logodesign, Anzeigen, diverse Printprodukte wie Flyer, Broschüren, Visitenkarten, Briefpaper, Umschläge und Mappen.',
-            others:
-                'Banner, Fahnen, Banden, Corporate Fashion, Fahrzeugverklebung',
+            online: `Organically grow the holistic world view of PHP 7, jQuery, HTML5, CSS3 und SASS. Bring to the table 
+                win-win to ensure proactive domination.`,
+            offline: `Logo design, advertisements, various print products such as flyers, brochures, business cards, stationery, envelopes and folders.`,
+            others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
             desktop: PortfolioDesktopClientName,

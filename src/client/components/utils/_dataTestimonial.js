@@ -4,22 +4,25 @@ import HeroImageMobile from '../../assets/heroimage/heroimage-mobile.jpg'
 const testimonials = [
     {
         id: uuidv4(),
-        title: 'Lorem ipsum 1',
+        title: 'Carrie Blackburn',
         avatar: HeroImageMobile,
-        description: `Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, 
-            voluptatem. Earum nihil sit itaque in ut porro delectus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+        description: `Rapaciously seize adaptive infomediaries and user-centric intellectual capital. 
+            Collaboratively unleash market-driven "outside the box" thinking for long-term high-impact solutions.`,
     },
     {
         id: uuidv4(),
-        title: 'Lorem ipsum 2',
+        title: 'Angela Hall (Angie)',
         avatar: HeroImageMobile,
-        description: `Temporibus distinctio sit, ipsum ex nam praesentium iste facere. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus.`,
+        description: `Appropriately empower dynamic leadership skills after business portals. Globally myocardinate 
+            interactive supply chains with distinctive quality vectors. 
+            Globally revolutionize global sources through interoperable services.`,
     },
     {
         id: uuidv4(),
-        title: 'Lorem ipsum 3',
+        title: 'William Mayer',
         avatar: HeroImageMobile,
-        description: `Voluptas nobis tempore accusamus ad dignissimos necessitatibus. Commodi, voluptatem. Earum nihil sit itaque in ut porro delectus. Temporibus distinctio sit, ipsum ex nam praesentium.`,
+        description: `Dynamically target high-payoff intellectual capital for customized technologies. 
+            Objectively integrate emerging core competencies before process-centric communities.`,
     },
 ]
 

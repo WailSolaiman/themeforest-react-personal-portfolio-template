@@ -1,8 +1,8 @@
 import uuidv4 from 'uuid/v4'
 
 const footer = {
-    text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam`,
+    text: `Podcasting operational change management inside of workflows to establish a framework. 
+        Taking seamless key performance indicators offline to maximise the long tail.`,
     header1: 'Get in Touch',
     header2: 'Social Media',
     header3: 'Menu',

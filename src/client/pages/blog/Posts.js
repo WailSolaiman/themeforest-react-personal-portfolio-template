@@ -14,7 +14,7 @@ const Posts = ({ posts = [] }) => {
                             <div
                                 data-aos="fade-up"
                                 data-aos-delay={counter}
-                                data-aos-offset="500">
+                                data-aos-offset="300">
                                 <Post post={post} />
                             </div>
                         </Col>

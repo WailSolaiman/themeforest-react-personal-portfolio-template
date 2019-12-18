@@ -6,8 +6,40 @@
         height: auto;
     }
 
-    &__title {
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+    &__calender {
+        display: flex;
+        flex-direction: row;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem !important;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__category-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    &__category {
+        margin-bottom: 5px !important;
+        margin-right: 8px !important;
+    }
+
+    &__btn {
+        margin-top: 2rem;
     }
 }

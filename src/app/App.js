@@ -24,7 +24,9 @@ import './app.scss'
 const App = () => {
     const windowWidth = useWindowWidth()
     useEffect(() => {
-        AOS.init()
+        AOS.init({
+            once: true,
+        })
     }, [])
     useEffect(() => {
         AOS.refresh()

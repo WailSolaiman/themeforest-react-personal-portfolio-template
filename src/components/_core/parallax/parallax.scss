@@ -1,0 +1,27 @@
+.parallax {
+
+    &__image {
+        position: relative;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    &__header {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 3rem !important;
+        line-height: 1;
+        text-transform: uppercase;
+
+        @media (min-width: 992px) {
+            font-size: 4rem !important;
+        }
+    }
+}

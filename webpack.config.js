@@ -8,7 +8,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const outputDirectory = 'dist'
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: './src/index.js',
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',

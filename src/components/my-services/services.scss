@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+
+.services {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__content {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 30px 10px;
+        border: 1px dotted $primary-color;
+        transition: all 0.2s ease-in-out;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+            width: 320px;
+        }
+    }
+
+    &__title {
+        color: $tertiary-color !important;
+    }
+
+    &__image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+    }
+
+    &__text {
+        margin-bottom: 0 !important;
+    }
+}

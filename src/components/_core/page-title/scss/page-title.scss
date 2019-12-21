@@ -1,0 +1,15 @@
+@import '../../../../scss/variables';
+
+.page-title {
+    text-align: center;
+
+    &__header {
+        margin-bottom: 0 !important;
+    }
+
+    &__subheader {
+        color: $tertiary-color !important;
+        margin-top: 1rem !important;
+        text-transform: capitalize;
+    }
+}

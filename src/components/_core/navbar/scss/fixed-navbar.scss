@@ -1,0 +1,15 @@
+@import '../../../../scss/variables';
+
+.fixed-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: -1px;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px dotted $primary-color;
+    box-shadow: 0 8px 11px 0px $background-nav-color;
+}

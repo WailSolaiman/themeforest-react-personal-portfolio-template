@@ -1,0 +1,76 @@
+@import "../../scss/variables";
+
+.testimonials {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    .iltlc-card {
+        width: 99% !important;
+        display: block !important;
+        margin: 0 auto;
+        border: none;
+
+        .iltlc-card-meta-title {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .iltlc-card-body {
+            width: 100%;
+            margin: 0 auto;
+            background-color: $background-div-color;
+            padding: 15px;
+
+            @media (min-width: 768px) {
+                padding: 24px;
+            }
+        }
+
+        .iltlc-avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        .iltlc-card-meta-avatar {
+            padding-right: 0;
+
+            @media (min-width: 768px) {
+                padding-right: 16px;
+            }
+        }
+
+        .iltlc-card-meta {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .iltlc-card-meta-description {
+            font-weight: inherit;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .slick-dots {
+        li {
+            button {
+                background: $secondary-color !important;
+            }
+
+            &.slick-active button {
+                background: $primary-color !important;
+            }
+        }
+    }
+}

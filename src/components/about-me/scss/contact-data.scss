@@ -1,0 +1,38 @@
+@import '../../../scss/variables';
+
+.contact-data {
+    margin-bottom: 2rem;
+
+    &__container ul {
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        flex-direction: column;
+        align-items: baseline !important;
+        border: none !important;
+    }
+
+    &__title {
+        font-size: 1.2rem !important;
+    }
+
+    &__paragraph {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0 !important;
+        color: $tertiary-color !important;
+    }
+
+    &__icon {
+        color: $primary-color !important;
+        margin-right: 15px;
+    }
+}

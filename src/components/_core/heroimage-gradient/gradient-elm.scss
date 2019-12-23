@@ -1,3 +1,5 @@
+@import "../../../scss/variables";
+
 .hero-content {
     position: relative;
 
@@ -6,7 +8,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+        background-image: $heroimage-gradient;
 
         @media (min-width: 1200px) {
             height: 600px;

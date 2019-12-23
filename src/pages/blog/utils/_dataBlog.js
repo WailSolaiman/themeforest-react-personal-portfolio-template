@@ -1,7 +1,6 @@
 const BlogPageTitle = {
     title: 'Simple Blog',
-    subtitle: `Iterative approaches to corporate strategy foster collaborative thinking 
-        to further the overall value proposition.`,
+    subtitle: `Iterative approaches to corporate strategy foster collaborative thinking.`,
 }
 
 const getBlogPageTitle = () => {

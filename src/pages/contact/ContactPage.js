@@ -3,13 +3,14 @@ import { Row, Col, Form, Spin } from 'antd'
 import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
 import Contact from '../../components/contact/Contact'
-import GoogleMap from '../../components/_core/map/Map'
+import GoogleMap from '../../components/_core/map/GoogleMap'
 import ContactData from '../../components/about-me/ContactData'
 import {
     getContactHeroImage,
     getCarouselImages,
     getContactPageTitle,
     getContactData,
+    getGoogleMapKey,
 } from '../../components/utils/_componentsData'
 
 const ContactPage = () => {
@@ -40,7 +41,7 @@ const ContactPage = () => {
                     <Row>
                         <Col xs={24}>
                             <div data-aos="fade-up">
-                                <GoogleMap />
+                                <GoogleMap googleMapKey={getGoogleMapKey()} />
                             </div>
                         </Col>
                         <Col xs={24}>

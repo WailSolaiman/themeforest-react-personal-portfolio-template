@@ -6,14 +6,17 @@ const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const outputDirectory = 'dist'
+const isDevelopment = process.env.Node_ENV === 'development'
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
-        path: path.resolve(__dirname, outputDirectory),
-        publicPath: '/',
+        path:
+            isDevelopment === 'development'
+                ? '/'
+                : path.resolve(__dirname, outputDirectory),
     },
     optimization: {
         minimizer: [
@@ -50,7 +53,7 @@ module.exports = {
                 use: [
                     {
                         loader:
-                            process.env.NODE_ENV === 'development'
+                            isDevelopment === 'development'
                                 ? 'style-loader'
                                 : MiniCssExtractPlugin.loader,
                     },

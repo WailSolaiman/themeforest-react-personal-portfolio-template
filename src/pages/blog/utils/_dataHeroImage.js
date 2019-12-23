@@ -6,10 +6,10 @@ const blogHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
-    subheader: 'Blog',
-    header: 'More than just a web design.',
-    btnText: 'Explore Now',
-    btnLink: '/contact',
+    subheader: 'Leverage agile frameworks',
+    header: `Iterative approaches to corporate strategy diversity and empowerment`,
+    btnText: '',
+    btnLink: '',
 }
 
 const getBlogHeroImage = () => {

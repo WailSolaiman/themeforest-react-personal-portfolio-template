@@ -1,7 +1,7 @@
 const BlogPageTitle = {
     title: 'Simple Blog',
-    subtitle:
-        'Froogno Lorem ipsum dolor informad text dfsa the froogno Lorem ipsum dolor informad.',
+    subtitle: `Iterative approaches to corporate strategy foster collaborative thinking 
+        to further the overall value proposition.`,
 }
 
 const getBlogPageTitle = () => {

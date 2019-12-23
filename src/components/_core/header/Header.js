@@ -1,18 +1,20 @@
 import React from 'react'
-import CarouselElm from '../carousel/CarouselElm'
-import HeroImage from '../heroimage/HeroImageElm'
+import HeroImageCarouselElm from '../heroimage-carousel/CarouselElm'
+import HeroImageGradientElm from '../heroimage-gradient/GradientElm'
+import HeroImageElm from '../heroimage/HeroImageElm'
 import './header.scss'
 
 const Header = ({ heroImage = {}, carousel = {}, selected = 'heroImage' }) => {
-    return (
-        <div className="header">
-            {selected === 'heroImage' ? (
-                <HeroImage item={heroImage} />
-            ) : (
-                <CarouselElm items={carousel} />
-            )}
-        </div>
-    )
+    const selectedHero = () => {
+        if (selected === 'heroImage') {
+            return <HeroImageElm item={heroImage} />
+        }
+        if (selected === 'carousel') {
+            return <HeroImageCarouselElm items={carousel} />
+        }
+        return <HeroImageGradientElm item={heroImage} />
+    }
+    return <div className="header">{selectedHero()}</div>
 }
 
 export default Header

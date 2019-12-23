@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Row, Col, Spin, Pagination } from 'antd'
 import Header from '../../components/_core/header/Header'
 import PageTitle from '../../components/_core/page-title/PageTitle'
-import Posts from './Posts'
+import Posts from './components/Posts'
 import getBlogHeroImage from './utils/_dataHeroImage'
 import getBlogPageTitle from './utils/_dataBlog'
 import { getPosts } from './utils/_dataPosts'
-import './scss/blog.scss'
+import './blog-page.scss'
 
 const BlogPage = () => {
     const [renderPage, setPageRendering] = useState(false)
@@ -26,8 +26,8 @@ const BlogPage = () => {
         }
     }, [])
     return (
-        <div className="blog">
-            <Header heroImage={getBlogHeroImage()} selected="heroImage" />
+        <div className="blog-page">
+            <Header heroImage={getBlogHeroImage()} selected="gradient" />
             {renderPage ? (
                 <div className="container">
                     <Row className="row-with-margin-bottom">
@@ -39,7 +39,7 @@ const BlogPage = () => {
                         <Col xs={24}>
                             <Posts posts={currentPosts} />
                             <Pagination
-                                className="blog__pagination"
+                                className="blog-page__pagination"
                                 showQuickJumper
                                 total={totalPosts}
                                 pageSize={postsPerPage}

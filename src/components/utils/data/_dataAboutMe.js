@@ -4,7 +4,7 @@ import HeroImageMobile from '../../../assets/heroimage/heroimage-mobile.jpg'
 const profileImage = HeroImageMobile
 
 const aboutMeData = {
-    subtitle: 'About Me',
+    subtitle: 'About Us',
     title: 'Capitalize on low hanging',
     firstParagraph: `Leverage agile frameworks to provide a robust synopsis for high level overviews. 
         Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. 

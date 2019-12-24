@@ -1,27 +1,29 @@
 import uuidv4 from 'uuid/v4'
-import HeroImageMobile from '../../../assets/heroimage/heroimage-mobile.jpg'
+import WebDevelopmentImg from '../../../assets/services/services-web-development.jpg'
+import WebDesignImg from '../../../assets/services/services-web-design.jpg'
+import LogoDesignImg from '../../../assets/services/services-logo-design.jpg'
 
 const services = [
     {
         id: uuidv4(),
         name: 'Web Design',
-        img: HeroImageMobile,
-        paragraph: `Leverage agile frameworks to provide a robust synopsis for high level overviews. 
-            Iterative approaches to corporate strategy collaborative thinking.`,
+        img: WebDesignImg,
+        paragraph: `Leverage agile frameworks to provide a 
+            robust synopsis for high level overviews iterative approaches.`,
     },
     {
         id: uuidv4(),
         name: 'Web Development',
-        img: HeroImageMobile,
-        paragraph: `ring to the table win-win survival strategies to ensure proactive domination. 
-            At the end of the day, a new normal that has evolved from generation.`,
+        img: WebDevelopmentImg,
+        paragraph: `Provide to the table win-win survival strategies to ensure 
+            the proactive domination.`,
     },
     {
         id: uuidv4(),
         name: 'Logo Design',
-        img: HeroImageMobile,
-        paragraph: `Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. 
-            Override the digital divide with additional clickthroughs from DevOps.`,
+        img: LogoDesignImg,
+        paragraph: `Capitalize on low hanging fruit to identify a ballpark value 
+            added activity to beta all tests.`,
     },
 ]
 

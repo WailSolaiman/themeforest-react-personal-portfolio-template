@@ -35,7 +35,7 @@ const AboutPage = () => {
             <Header
                 heroImage={getAboutHeroImage()}
                 carousel={getCarouselImages()}
-                selected="heroImage"
+                selected="gradient"
             />
             {renderPage ? (
                 <div className="container">

@@ -25,7 +25,7 @@ const ProjectsTemplate = () => {
         gallery,
         tech,
     } = project
-    const imageUrl = useWindowWidth() >= 576 ? desktopImage : mobileImage
+    const imageUrl = useWindowWidth() >= 768 ? desktopImage : mobileImage
     return (
         <div className="projects-template">
             <HeroImageElm
@@ -40,7 +40,7 @@ const ProjectsTemplate = () => {
                                     windowWidth > 768 ? 'fade-right' : 'fade-up'
                                 }>
                                 <Title className="projects-template__header">
-                                    {header}
+                                    {subheader}
                                 </Title>
                             </div>
                         </Col>
@@ -52,7 +52,7 @@ const ProjectsTemplate = () => {
                                 <Text
                                     strong
                                     className="projects-template__text">
-                                    Project description
+                                    Description
                                 </Text>
                                 <Paragraph className="projects-template__paragraph">
                                     {paragraph}
@@ -134,7 +134,7 @@ const ProjectsTemplate = () => {
                                 <Title
                                     className="projects-template__header projects-template__header--center"
                                     level={2}>
-                                    Project Images
+                                    {tech} Screenshots
                                 </Title>
                                 <SwiperElm items={gallery} />
                                 <Link

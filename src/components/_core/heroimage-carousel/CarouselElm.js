@@ -21,7 +21,7 @@ const CarouselElm = ({ items = [] }) => {
                         mobileImage,
                     } = item
                     const imageUrl =
-                        windowWidth >= 576 ? desktopImage : mobileImage
+                        windowWidth >= 768 ? desktopImage : mobileImage
                     return (
                         <div className="carousel-content" key={`key-nr-${id}`}>
                             <div

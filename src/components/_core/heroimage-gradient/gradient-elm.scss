@@ -1,9 +1,9 @@
 @import "../../../scss/variables";
 
-.hero-content {
+.hero-image-gradient {
     position: relative;
 
-    &__backgroundImage {
+    &__background {
         height: 400px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -15,7 +15,7 @@
         }
     }
 
-    .hero-content-absolute {
+    &__content {
         position: absolute;
         top: 55%;
         left: 50%;
@@ -31,16 +31,26 @@
         @media (min-width: 1200px) {
             width: 50%;
         }
+    }
 
-        &__subheader {
-            color: white;
-            text-transform: uppercase;
-            text-decoration: underline;
+    &__subheader {
+        color: white !important;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 2rem !important;
+
+        @media (min-width: 768px) {
+            font-size: 3rem !important;
         }
+    }
 
-        &__header {
-            color: white;
-            text-transform: capitalize;
+    &__header {
+        color: white !important;
+        text-transform: capitalize;
+        font-size: 2.5rem !important;
+
+        @media (min-width: 768px) {
+            font-size: 4rem !important;
         }
     }
 }

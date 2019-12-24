@@ -6,8 +6,8 @@ const blogHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
-    subheader: 'Leverage agile frameworks',
-    header: `Iterative approaches to corporate strategy diversity and empowerment`,
+    subheader: 'Stay up to date with',
+    header: `the latest web design, development and technology news...`,
     btnText: '',
     btnLink: '',
 }

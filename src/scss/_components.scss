@@ -77,28 +77,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $primary-color;
+    color: $primary-color-hover;
     width: 200px;
-    height: 60px;
+    height: 70px;
     font-size: 1.5rem;
     border-radius: 0;
-    border: 1px solid $primary-color;
+    border: 1px solid $primary-color-hover;
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     &:hover {
         color: white;
-        background-color: $primary-color;
+        background-color: $primary-color-hover;
     }
 }
 
 .btn-secondary {
     @extend .iltlc-btn;
     color: white;
-    background-color: $primary-color;
+    background-color: $primary-color-hover;
 
     &:hover {
-        color: $primary-color;
+        color: $primary-color-hover;
         background-color: white;
     }
 }

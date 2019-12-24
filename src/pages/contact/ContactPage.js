@@ -29,7 +29,7 @@ const ContactPage = () => {
             <Header
                 heroImage={getContactHeroImage()}
                 carousel={getCarouselImages()}
-                selected="heroImage"
+                selected="gradient"
             />
             {renderPage ? (
                 <div className="container">

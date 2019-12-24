@@ -14,30 +14,30 @@ const HeroImageElm = ({ item = {} }) => {
         desktopImage,
         mobileImage,
     } = item
-    const imageUrl = useWindowWidth() >= 576 ? desktopImage : mobileImage
+    const imageUrl = useWindowWidth() >= 768 ? desktopImage : mobileImage
     return (
-        <div className="hero-content">
+        <div className="hero-image">
             <div
-                className="hero-content__backgroundImage"
+                className="hero-image__backgroundImage"
                 style={{ backgroundImage: `url(${imageUrl})` }}
             />
-            <div className="hero-content-absolute">
-                <Title className="hero-content-absolute__subheader" level={3}>
-                    {subheader}
-                </Title>
-                <Title className="hero-content-absolute__header">
-                    {header}
-                </Title>
-                {btnText !== '' ? (
-                    <Link
-                        className="iltlc-btn"
-                        to={btnLink}
-                        style={{ margin: '0 auto' }}>
-                        {btnText}
-                    </Link>
-                ) : (
-                    <span />
-                )}
+            <div className="hero-image__overlay">
+                <div className="hero-image__content">
+                    <Title className="hero-image__subheader" level={3}>
+                        {subheader}
+                    </Title>
+                    <Title className="hero-image__header">{header}</Title>
+                    {btnText !== '' ? (
+                        <Link
+                            className="iltlc-btn"
+                            to={btnLink}
+                            style={{ margin: '0 auto' }}>
+                            {btnText}
+                        </Link>
+                    ) : (
+                        <span />
+                    )}
+                </div>
             </div>
         </div>
     )

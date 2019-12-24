@@ -21,6 +21,9 @@ const PostTemplate = () => {
     return (
         <div className="post-template">
             <div className="container">
+                <Title className="post-template__title" level={2}>
+                    {title}
+                </Title>
                 <img className="post-template__image" src={image} alt={title} />
                 <div className="post-template__container">
                     <div className="post-template__category-container">
@@ -40,9 +43,6 @@ const PostTemplate = () => {
                         <Icon type="calendar" /> {publishDate}
                     </Paragraph>
                 </div>
-                <Title className="post-template__title" level={2}>
-                    {title}
-                </Title>
                 <Paragraph>{firstParagraph}</Paragraph>
                 <Paragraph>{secondParagraph}</Paragraph>
                 <Paragraph>{thirdParagraph}</Paragraph>

@@ -1,38 +1,43 @@
 import uuidv4 from 'uuid/v4'
-import firstProjectImage1 from '../../../assets/projects/first-project/lorem.jpg'
-import firstProjectImage2 from '../../../assets/projects/first-project/ipsum.jpg'
-import firstProjectImage3 from '../../../assets/projects/first-project/dolor.jpg'
-import secondProjectImage1 from '../../../assets/projects/second-project/lorem.jpg'
-import secondProjectImage2 from '../../../assets/projects/second-project/ipsum.jpg'
-import secondProjectImage3 from '../../../assets/projects/second-project/dolor.jpg'
-import thirdProjectImage1 from '../../../assets/projects/third-project/lorem.jpg'
-import thirdProjectImage2 from '../../../assets/projects/third-project/ipsum.jpg'
-import thirdProjectImage3 from '../../../assets/projects/third-project/dolor.jpg'
+// import firstProjectImage1 from '../../../assets/projects/first-project/lorem.jpg'
+// import firstProjectImage2 from '../../../assets/projects/first-project/ipsum.jpg'
+// import firstProjectImage3 from '../../../assets/projects/first-project/dolor.jpg'
+// import secondProjectImage1 from '../../../assets/projects/second-project/lorem.jpg'
+// import secondProjectImage2 from '../../../assets/projects/second-project/ipsum.jpg'
+// import secondProjectImage3 from '../../../assets/projects/second-project/dolor.jpg'
+// import thirdProjectImage1 from '../../../assets/projects/third-project/lorem.jpg'
+// import thirdProjectImage2 from '../../../assets/projects/third-project/ipsum.jpg'
+// import thirdProjectImage3 from '../../../assets/projects/third-project/dolor.jpg'
+import JavascriptProjectsDesktopImg from '../../../assets/projects/javascripts-projects-desktop.jpg'
+import JavascriptProjectsMobileImg from '../../../assets/projects/javascripts-projects-mobile.jpg'
+import WordpressProjectsDesktopImg from '../../../assets/projects/wordpress-projects-desktop.jpg'
+import WordpressProjectsMobileImg from '../../../assets/projects/wordpress-projects-mobile.jpg'
+import MagentoProjectDesktopImg from '../../../assets/projects/magento-projects-desktop.jpg'
+import MagentoProjectMobileImg from '../../../assets/projects/magento-projects-mobile.jpg'
 
 const projects = [
     {
         id: uuidv4(),
-        tech: 'Javascript',
-        desktopImage: firstProjectImage1,
-        mobileImage: firstProjectImage1,
+        tech: 'Javascript Projects',
+        desktopImage: JavascriptProjectsDesktopImg,
+        mobileImage: JavascriptProjectsMobileImg,
         gallery: [
             {
                 id: uuidv4(),
-                src: firstProjectImage1,
+                src: JavascriptProjectsDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: firstProjectImage2,
+                src: JavascriptProjectsDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: firstProjectImage3,
+                src: JavascriptProjectsDesktopImg,
             },
         ],
-        header: 'Deleniti eligendi Eumhic',
-        subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Uniquely deploy cross-unit benefits with wireless testing procedures. 
-            Collaboratively build backward-compatible relationships whereas tactical ...`,
+        header: `Latest JavaScript Technologies such as ECMAScript 6 and JS Frameworks.`,
+        subheader: 'ECMAScript 6',
+        excerpt: `Latest JS Technologies such as ECMAScript 6 and JS Frameworks like React, Angular and Vue.`,
         paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
             procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
             convergence without revolutionary ROI. Efficiently unleash cross-media information without 
@@ -48,27 +53,26 @@ const projects = [
     },
     {
         id: uuidv4(),
-        tech: 'Wordpress & PHP 7.0',
-        desktopImage: firstProjectImage1,
-        mobileImage: firstProjectImage1,
+        tech: 'Wordpress Projects',
+        desktopImage: WordpressProjectsDesktopImg,
+        mobileImage: WordpressProjectsMobileImg,
         gallery: [
             {
                 id: uuidv4(),
-                src: secondProjectImage1,
+                src: WordpressProjectsDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: secondProjectImage2,
+                src: WordpressProjectsDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: secondProjectImage3,
+                src: WordpressProjectsDesktopImg,
             },
         ],
-        header: 'Laborum mole ecessitatibus',
-        subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Quickly incentivize impactful action items before tactical collaboration and idea-sharing. 
-            Monotonically engage market-capital through wireless ...`,
+        header: `Latest Wordpress 5.0 features. Themes, Plugins Development.`,
+        subheader: 'Wordpress 5.0',
+        excerpt: `Latest Wordpress 5.0 features. Themes, Plugins and Widgets Design and Development.`,
         paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
             procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
             convergence without revolutionary ROI. Efficiently unleash cross-media information without 
@@ -84,27 +88,26 @@ const projects = [
     },
     {
         id: uuidv4(),
-        tech: 'HTML5 & CSS3',
-        desktopImage: firstProjectImage1,
-        mobileImage: firstProjectImage1,
+        tech: 'Magento Projects',
+        desktopImage: MagentoProjectDesktopImg,
+        mobileImage: MagentoProjectMobileImg,
         gallery: [
             {
                 id: uuidv4(),
-                src: thirdProjectImage1,
+                src: MagentoProjectDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: thirdProjectImage2,
+                src: MagentoProjectDesktopImg,
             },
             {
                 id: uuidv4(),
-                src: thirdProjectImage3,
+                src: MagentoProjectDesktopImg,
             },
         ],
-        header: 'Ctetur adipisicing Elit',
-        subheader: 'Lorem ipsum Dolor amet.',
-        excerpt: `Leverage agile frameworks to provide a robust synopsis for high level overviews. 
-            Iterative approaches to corporate strategy foster thinking to further the overall ...`,
+        header: `Latest Magento 2.3 features to build full-scale e-Commerce Websites.`,
+        subheader: 'Magento 2.3.',
+        excerpt: `Latest Magento 2.3 features. Magento provides online merchants with a flexible shopping cart system.`,
         paragraph: `Collaboratively administrate empowered markets via plug-and-play networks. Dynamically 
             procrastinate B2C users after installed base benefits. Dramatically visualize customer directed 
             convergence without revolutionary ROI. Efficiently unleash cross-media information without 

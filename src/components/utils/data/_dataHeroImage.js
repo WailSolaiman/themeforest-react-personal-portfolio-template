@@ -42,30 +42,31 @@ const homeHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
-    subheader: 'Home',
-    header: 'More than just a web design.',
-    btnText: 'Explore Now',
-    btnLink: '/contact',
+    subheader: 'We make the world better',
+    header: `We offer web services 
+        from brochure sites to full-scale e-commerce sites.`,
+    btnText: '',
+    btnLink: '',
 }
 
 const aboutHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
-    subheader: 'About',
-    header: 'More than just a web design.',
-    btnText: 'Explore Now',
-    btnLink: '/contact',
+    subheader: 'Partner with us.',
+    header: `We're performs Professional Web Development & Web Design Work.`,
+    btnText: '',
+    btnLink: '',
 }
 
 const contactHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
     mobileImage: HeroImageMobile,
-    subheader: 'Contact',
-    header: 'More than just a web design.',
-    btnText: 'Explore Now',
-    btnLink: '/',
+    subheader: `Ready to get started? Let us chat`,
+    header: `Contact us. Your best website is just a click away!`,
+    btnText: '',
+    btnLink: '',
 }
 
 const getCarouselImages = () => carouselElements

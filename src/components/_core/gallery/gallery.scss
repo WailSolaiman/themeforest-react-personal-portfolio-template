@@ -1,11 +1,18 @@
+@import '../../../scss/variables';
+
 .gallery {
+    padding: 5px;
+    margin-bottom: 4rem;
+    background: $heroimage-gradient;
+
     &__img {
-        display: block;
-        height: 200px;
-        margin-right: 10px;
+        display: block !important;
+        width: auto !important;
+        height: 200px !important;
+        margin: 0 auto;
 
         @media screen and (min-width: 768px) {
-            height: 400px;
+            height: 600px !important;
         }
     }
 }

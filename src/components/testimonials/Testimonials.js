@@ -17,7 +17,7 @@ const Testimonials = ({ title = '', testimonials = [] }) => {
                             <Card key={testimonial.id}>
                                 <Meta
                                     avatar={<Avatar src={testimonial.avatar} />}
-                                    title={testimonial.title}
+                                    title={`${testimonial.name} ${testimonial.position}`}
                                     description={testimonial.description}
                                 />
                             </Card>

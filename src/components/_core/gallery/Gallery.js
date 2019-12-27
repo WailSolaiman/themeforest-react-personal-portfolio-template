@@ -1,14 +1,31 @@
 import React from 'react'
-import GridGallery from 'react-grid-gallery'
+import Slider from 'react-slick'
 import './gallery.scss'
 
 const Gallery = ({ items = [] }) => {
-    const images = items.map(item => ({
-        ...item,
-        thumbnailWidth: 250,
-        thumbnailHeight: 150,
-    }))
-    return <GridGallery images={images} backdropClosesModal />
+    return (
+        <Slider
+            className="gallery"
+            dots
+            fade
+            infinite
+            speed={500}
+            slidesToShow={1}
+            slidesToScroll={1}
+            arrows={false}>
+            {items &&
+                items.map(item => {
+                    return (
+                        <img
+                            className="gallery__img"
+                            key={item.id}
+                            src={item.photo}
+                            alt={item.client}
+                        />
+                    )
+                })}
+        </Slider>
+    )
 }
 
 export default Gallery

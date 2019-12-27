@@ -4,7 +4,7 @@ import { Typography } from 'antd'
 import useWindowWidth from '../utils/_coreUtils'
 import './heroImage-elm.scss'
 
-const HeroImageElm = ({ item = {} }) => {
+const HeroImageElm = ({ item = {}, isFixed = 'initial' }) => {
     const { Title } = Typography
     const {
         header = '',
@@ -19,7 +19,10 @@ const HeroImageElm = ({ item = {} }) => {
         <div className="hero-image">
             <div
                 className="hero-image__backgroundImage"
-                style={{ backgroundImage: `url(${imageUrl})` }}
+                style={{
+                    backgroundImage: `url(${imageUrl})`,
+                    backgroundAttachment: isFixed,
+                }}
             />
             <div className="hero-image__overlay">
                 <div className="hero-image__content">

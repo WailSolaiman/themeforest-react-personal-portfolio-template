@@ -1,24 +1,18 @@
 import React from 'react'
-import Flickity from 'react-flickity-component'
+import Slider from 'react-slick'
 import './swiper-elm.scss'
 
 const Gallery = ({ items = [] }) => {
-    const flickityOptions = {
-        freeScroll: true,
-        contain: true,
-        dragThreshold: 10,
-        fullscreen: true,
-        lazyLoad: 1,
-    }
-
     return (
-        <Flickity
+        <Slider
             className="swiper-elm"
-            elementType="div"
-            options={flickityOptions}
-            disableImagesLoaded={false}
-            reloadOnUpdate
-            static>
+            dots
+            infinite
+            centerMode
+            variableWidth
+            speed={300}
+            slidesToShow={1}
+            arrows={false}>
             {items &&
                 items.map(item => {
                     return (
@@ -26,12 +20,12 @@ const Gallery = ({ items = [] }) => {
                             <img
                                 className="swiper-elm__img"
                                 src={item.src}
-                                alt=""
+                                alt={item.client}
                             />
                         </div>
                     )
                 })}
-        </Flickity>
+        </Slider>
     )
 }
 

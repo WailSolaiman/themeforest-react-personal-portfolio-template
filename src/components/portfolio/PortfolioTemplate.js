@@ -12,7 +12,7 @@ const PortfolioTemplate = () => {
     const { id } = useParams()
     const windowWidth = useWindowWidth()
     const portfolio = getOnePortfolio(id)
-    const { header, client, logo, description, webpage, gallery } = portfolio
+    const { header, client, description, webpage, gallery } = portfolio
     const { online, offline, others } = portfolio.services
     const { desktop, tablet, mobile } = portfolio.image
     return (
@@ -34,22 +34,6 @@ const PortfolioTemplate = () => {
                     <Col xs={24} md={16}>
                         <div data-aos="fade" data-aos-delay="200">
                             <Paragraph>{description}</Paragraph>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="row-with-margin-bottom">
-                    <Col xs={24} md={8}>
-                        <div data-aos="fade" data-aos-delay="250">
-                            <Title level={2}>Logo</Title>
-                        </div>
-                    </Col>
-                    <Col xs={24} md={16}>
-                        <div data-aos="fade" data-aos-delay="300">
-                            <img
-                                className="portfolio-template__logo"
-                                src={logo}
-                                alt={client}
-                            />
                         </div>
                     </Col>
                 </Row>
@@ -82,6 +66,19 @@ const PortfolioTemplate = () => {
                         </Row>
                     </Col>
                 </Row>
+            </div>
+            <div className="portfolio-template__external-link bg-color">
+                <div className="container">
+                    <Paragraph className="portfolio-template__external-link--center">
+                        Genertate Images from:{' '}
+                        <a
+                            href="https://dimmy.club/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            https://dimmy.club/
+                        </a>
+                    </Paragraph>
+                </div>
             </div>
             <div className="portfolio-template__images-container bg-color">
                 <div
@@ -138,23 +135,23 @@ const PortfolioTemplate = () => {
                                 Project Images
                             </Title>
                             <Gallery items={gallery} />
-                            <div className="portfolio-template__buttons-container">
-                                <Link
-                                    className="iltlc-btn btn-secondary"
-                                    to="/">
-                                    Go Back
-                                </Link>
-                                <a
-                                    className="iltlc-btn btn-secondary"
-                                    href={webpage}
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    To Webpage
-                                </a>
-                            </div>
                         </div>
                     </Col>
                 </Row>
+            </div>
+            <div className="container">
+                <div className="portfolio-template__buttons-container">
+                    <Link className="iltlc-btn btn-secondary" to="/">
+                        Go Back
+                    </Link>
+                    <a
+                        className="iltlc-btn btn-secondary"
+                        href={webpage}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        To Webpage
+                    </a>
+                </div>
             </div>
         </div>
     )

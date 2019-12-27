@@ -16,7 +16,6 @@
 
         .iltlc-card-meta-title {
             font-size: 1.5rem;
-            text-transform: uppercase;
         }
 
         .iltlc-card-body {
@@ -72,5 +71,9 @@
                 background: $primary-color !important;
             }
         }
+    }
+
+    .slick-dots li button:before {
+        opacity: 0 !important;
     }
 }

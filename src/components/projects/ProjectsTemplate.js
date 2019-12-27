@@ -30,6 +30,7 @@ const ProjectsTemplate = () => {
         <div className="projects-template">
             <HeroImageElm
                 item={{ header, subheader, desktopImage, mobileImage }}
+                isFixed="fixed"
             />
             <div className="container">
                 <div className="projects-template__container">
@@ -110,11 +111,6 @@ const ProjectsTemplate = () => {
                                 <Paragraph className="projects-template__paragraph">
                                     {secondParagraph}
                                 </Paragraph>
-                                <Title
-                                    className="projects-template__header"
-                                    level={4}>
-                                    {subheader}
-                                </Title>
                                 <Paragraph className="projects-template__paragraph">
                                     {thirdParagraph}
                                 </Paragraph>

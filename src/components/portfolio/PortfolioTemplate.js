@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Row, Col, Typography } from 'antd'
 import PageTitleLarge from '../_core/page-title/PageTitleLarge'
-import Gallery from '../_core/gallery/Gallery'
+import SwiperElm from '../_core/swiper/SwiperElm'
 import { getOnePortfolio } from '../utils/_componentsData'
 import useWindowWidth from '../_core/utils/_coreUtils'
 import './scss/portfolio-template.scss'
@@ -122,24 +122,11 @@ const PortfolioTemplate = () => {
                     />
                 </div>
             </div>
-            <div className="container">
-                <Row gutter={24}>
-                    <Col xs={24}>
-                        <div
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            data-aos-offset="400">
-                            <Title
-                                level={2}
-                                className="portfolio-template__header">
-                                Project Images
-                            </Title>
-                            <Gallery items={gallery} />
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-            <div className="container">
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-offset="400">
+                <Title level={2} className="portfolio-template__header">
+                    Project Images
+                </Title>
+                <SwiperElm items={gallery} />
                 <div className="portfolio-template__buttons-container">
                     <Link className="iltlc-btn btn-secondary" to="/">
                         Go Back

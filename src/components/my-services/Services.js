@@ -16,7 +16,7 @@ const Services = ({ title = '', services = [] }) => {
                 services.map((service, index) => {
                     const counter = index > 0 ? (aosDelayCounter += 100) : 0
                     return (
-                        <Col xs={24} md={8} lg={12} xl={8} key={service.id}>
+                        <Col xs={24} md={12} xl={8} key={service.id}>
                             <div
                                 className="services__content"
                                 data-aos={

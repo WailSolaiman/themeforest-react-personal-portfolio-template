@@ -37,7 +37,6 @@ const carouselElements = [
         btnLink: '/',
     },
 ]
-
 const homeHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
@@ -48,7 +47,6 @@ const homeHeroImage = {
     btnText: '',
     btnLink: '',
 }
-
 const aboutHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,
@@ -58,7 +56,6 @@ const aboutHeroImage = {
     btnText: '',
     btnLink: '',
 }
-
 const contactHeroImage = {
     id: uuidv4(),
     desktopImage: HeroImageDesktop,

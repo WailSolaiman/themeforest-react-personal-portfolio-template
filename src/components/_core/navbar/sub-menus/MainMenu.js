@@ -5,7 +5,6 @@ import { UseWindowWidth } from '../utils/_navbarUtils'
 
 const MainMenu = ({ clickedLink = () => {} }) => {
     const mode = UseWindowWidth() >= 992 ? 'horizontal' : 'inline'
-
     return (
         <Menu mode={mode}>
             <Menu.Item key="home">
@@ -25,12 +24,12 @@ const MainMenu = ({ clickedLink = () => {} }) => {
                     Blog
                 </NavLink>
             </Menu.Item>
-            <Menu.Item key="about">
+            <Menu.Item key="about-us">
                 <NavLink
-                    to="/about"
+                    to="/about-us"
                     activeClassName="active"
                     onClick={() => clickedLink()}>
-                    About
+                    About Us
                 </NavLink>
             </Menu.Item>
             <Menu.Item key="contact">

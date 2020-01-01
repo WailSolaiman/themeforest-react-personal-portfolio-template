@@ -7,18 +7,23 @@ const Gallery = ({ items = [] }) => {
         <Slider
             className="swiper-elm"
             dots
+            fade
             infinite
-            centerMode
-            variableWidth
-            speed={300}
+            autoplay
+            autoplaySpeed={2000}
+            adaptiveHeight={false}
+            speed={500}
             slidesToShow={1}
+            slidesToScroll={1}
             arrows={false}>
             {items &&
                 items.map(item => {
                     return (
-                        <div key={item.id}>
+                        <div
+                            className="swiper-elm__image-container"
+                            key={item.id}>
                             <img
-                                className="swiper-elm__img"
+                                className="swiper-elm__image"
                                 src={item.src}
                                 alt={item.client}
                             />

@@ -1,18 +1,42 @@
-@import '../../../scss/variables';
-
 .gallery {
-    padding: 5px;
-    margin-bottom: 4rem;
-    background: $heroimage-gradient;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
-    &__img {
-        display: block !important;
-        width: auto !important;
-        height: 200px !important;
-        margin: 0 auto;
+    &__header {
+        text-align: center;
+    }
 
-        @media screen and (min-width: 768px) {
-            height: 600px !important;
+    &__masonry {
+        column-count: 1;
+        column-gap: 30px;
+        column-fill: initial;
+        transition: all .2s ease-in-out;
+
+        @media (min-width: 576px) and (max-width: 991px) {
+            column-count: 2;
+        }
+
+        @media (min-width: 992px) {
+            column-count: 3;
+        }
+
+        &--brick {
+            text-align: center;
+            margin-bottom: 15px;
+            display: inline-block;
+            vertical-align: top;
+            filter: grayscale(.9);
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                filter: initial;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+                backface-visibility: hidden;
+            }
         }
     }
 }

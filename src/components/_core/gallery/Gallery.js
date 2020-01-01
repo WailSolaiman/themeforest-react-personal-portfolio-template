@@ -1,30 +1,31 @@
 import React from 'react'
-import Slider from 'react-slick'
+import { Typography } from 'antd'
 import './gallery.scss'
 
-const Gallery = ({ items = [] }) => {
+const Gallery = ({ title = '', images = [] }) => {
+    const { Text, Title } = Typography
     return (
-        <Slider
-            className="gallery"
-            dots
-            fade
-            infinite
-            speed={500}
-            slidesToShow={1}
-            slidesToScroll={1}
-            arrows={false}>
-            {items &&
-                items.map(item => {
-                    return (
-                        <img
-                            className="gallery__img"
-                            key={item.id}
-                            src={item.photo}
-                            alt={item.client}
-                        />
-                    )
-                })}
-        </Slider>
+        <div className="gallery">
+            <Title className="gallery__header" level={2}>
+                {title}
+            </Title>
+            <div className="gallery__masonry">
+                {images &&
+                    images.map(item => {
+                        return (
+                            <div
+                                className="gallery__masonry--brick"
+                                key={item.id}
+                                xs={24}
+                                sm={12}
+                                md={8}>
+                                <img src={item.image} alt={item.name} />
+                                <Text strong>{item.name}</Text>
+                            </div>
+                        )
+                    })}
+            </div>
+        </div>
     )
 }
 

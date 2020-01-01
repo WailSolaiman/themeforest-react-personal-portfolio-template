@@ -1,16 +1,16 @@
 import uuidv4 from 'uuid/v4'
-import ClientBWPortfolioDesktop from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-desktop.jpg'
-import ClientBWPortfolioTablet from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-tablet.jpg'
-import ClientBWPortfolioMobile from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-mobile.jpg'
-import ClientBWPortfolioDesktop2 from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-desktop-surface.png'
-import ClientBWPortfolioTablet2 from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-tablet-iPad-Air-2.png'
-import ClientBWPortfolioMobile2 from '../../../assets/portfolio/client_black-white-portfolio-web/b-w-portfolio-mobile-iPhone-7.png'
-import ClientFashionDesktop from '../../../assets/portfolio/client_fashion-blog/fashion-desktop.jpg'
-import ClientFashionTablet from '../../../assets/portfolio/client_fashion-blog/fashion-tablet.jpg'
-import ClientFashionMobile from '../../../assets/portfolio/client_fashion-blog/fashion-mobile.jpg'
-import ClientFashionDesktop2 from '../../../assets/portfolio/client_fashion-blog/fashion-desktop-Surface.png'
-import ClientFashionTablet2 from '../../../assets/portfolio/client_fashion-blog/fashion-tablet-iPad-Air-2.png'
-import ClientFashionMobile2 from '../../../assets/portfolio/client_fashion-blog/fashion-mobile-iPhone-7.png'
+import ClientDesktop from '../../../assets/portfolio/client_my-art-web/my-art-desktop.jpg'
+import ClientTablet from '../../../assets/portfolio/client_my-art-web/my-art-tablet.jpg'
+import ClientMobile from '../../../assets/portfolio/client_my-art-web/my-art-mobile.jpg'
+import ClientDesktop2 from '../../../assets/portfolio/client_my-art-web/my-art-desktop-Surface-Book.png'
+import ClientTablet2 from '../../../assets/portfolio/client_my-art-web/my-art-tablet-iPad-Air-2.png'
+import ClientMobile2 from '../../../assets/portfolio/client_my-art-web/my-art-mobile-iPhone-7.png'
+import Client2Desktop from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-desktop.jpg'
+import Client2Tablet from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-tablet.jpg'
+import Client2Mobile from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-mobile.jpg'
+import Client2Desktop2 from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-desktop-Surface-Book.png'
+import Client2Tablet2 from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-tablet-iPad-Air-2.png'
+import Client2Mobile2 from '../../../assets/portfolio/client_people-portfolio-web/people-portfolio-mobile-iPhone-7.png'
 
 const portfoliosText = `Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate 
     integrated processes through technically sound intellectual capital. Holistically foster superior methodologies 
@@ -20,7 +20,7 @@ const portfolios = [
     {
         id: uuidv4(),
         header: 'Design',
-        src: ClientBWPortfolioDesktop,
+        src: ClientDesktop,
         client: 'Aida',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -32,33 +32,30 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientBWPortfolioDesktop2,
-            tablet: ClientBWPortfolioTablet2,
-            mobile: ClientBWPortfolioMobile2,
+            desktop: ClientDesktop2,
+            tablet: ClientTablet2,
+            mobile: ClientMobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioDesktop,
-                client: 'Aida',
+                src: ClientDesktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioTablet,
-                client: 'Aida',
+                src: ClientTablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioMobile,
-                client: 'Aida',
+                src: ClientMobile,
             },
         ],
     },
     {
         id: uuidv4(),
         header: 'Web Development',
-        src: ClientFashionDesktop,
+        src: Client2Desktop,
         client: 'AirBerlin',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -70,33 +67,30 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientFashionDesktop2,
-            tablet: ClientFashionTablet2,
-            mobile: ClientFashionMobile2,
+            desktop: Client2Desktop2,
+            tablet: Client2Tablet2,
+            mobile: Client2Mobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientFashionDesktop,
-                client: 'AirBerlin',
+                src: Client2Desktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionTablet,
-                client: 'AirBerlin',
+                src: Client2Tablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionMobile,
-                client: 'AirBerlin',
+                src: Client2Mobile,
             },
         ],
     },
     {
         id: uuidv4(),
         header: 'Design',
-        src: ClientBWPortfolioDesktop,
+        src: ClientDesktop,
         client: 'Aida',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -108,33 +102,30 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientBWPortfolioDesktop2,
-            tablet: ClientBWPortfolioTablet2,
-            mobile: ClientBWPortfolioMobile2,
+            desktop: ClientDesktop2,
+            tablet: ClientTablet2,
+            mobile: ClientMobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioDesktop,
-                client: 'Aida',
+                src: ClientDesktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioTablet,
-                client: 'Aida',
+                src: ClientTablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioMobile,
-                client: 'Aida',
+                src: ClientMobile,
             },
         ],
     },
     {
         id: uuidv4(),
         header: 'Web Development',
-        src: ClientFashionDesktop,
+        src: Client2Desktop,
         client: 'AirBerlin',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -146,33 +137,30 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientFashionDesktop2,
-            tablet: ClientFashionTablet2,
-            mobile: ClientFashionMobile2,
+            desktop: Client2Desktop2,
+            tablet: Client2Tablet2,
+            mobile: Client2Mobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientFashionDesktop,
-                client: 'AirBerlin',
+                src: Client2Desktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionTablet,
-                client: 'AirBerlin',
+                src: Client2Tablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionMobile,
-                client: 'AirBerlin',
+                src: Client2Mobile,
             },
         ],
     },
     {
         id: uuidv4(),
         header: 'Design',
-        src: ClientBWPortfolioDesktop,
+        src: ClientDesktop,
         client: 'Aida',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -184,33 +172,30 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientBWPortfolioDesktop2,
-            tablet: ClientBWPortfolioTablet2,
-            mobile: ClientBWPortfolioMobile2,
+            desktop: ClientDesktop2,
+            tablet: ClientTablet2,
+            mobile: ClientMobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioDesktop,
-                client: 'Aida',
+                src: ClientDesktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioTablet,
-                client: 'Aida',
+                src: ClientTablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientBWPortfolioMobile,
-                client: 'Aida',
+                src: ClientMobile,
             },
         ],
     },
     {
         id: uuidv4(),
         header: 'Web Development',
-        src: ClientFashionDesktop,
+        src: Client2Desktop,
         client: 'AirBerlin',
         description: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
             to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow 
@@ -222,26 +207,23 @@ const portfolios = [
             others: `Banners, flags, gangs, corporate fashion, vehicle wrapping`,
         },
         image: {
-            desktop: ClientFashionDesktop2,
-            tablet: ClientFashionTablet2,
-            mobile: ClientFashionMobile2,
+            desktop: Client2Desktop2,
+            tablet: Client2Tablet2,
+            mobile: Client2Mobile2,
         },
         webpage: 'https://google.com',
         gallery: [
             {
                 id: uuidv4(),
-                photo: ClientFashionDesktop,
-                client: 'AirBerlin',
+                src: Client2Desktop,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionTablet,
-                client: 'AirBerlin',
+                src: Client2Tablet,
             },
             {
                 id: uuidv4(),
-                photo: ClientFashionMobile,
-                client: 'AirBerlin',
+                src: Client2Mobile,
             },
         ],
     },

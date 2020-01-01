@@ -1,13 +1,31 @@
 .swiper-elm {
     margin-bottom: 4rem;
 
-    &__img {
-        display: block;
+    &__image-container {
+        display: flex !important;
+        justify-content: center;
         height: 200px;
-        margin-right: 10px;
 
-        @media screen and (min-width: 768px) {
+        @media (min-width: 768px) {
             height: 400px;
+        }
+
+        @media (min-width: 992px) {
+            height: 700px;
+        }
+    }
+
+    &__image {
+        margin: 0 auto;
+        width: auto;
+        height: 200px;
+
+        @media (min-width: 768px) {
+            height: 400px;
+        }
+
+        @media (min-width: 992px) {
+            height: 700px;
         }
     }
 }

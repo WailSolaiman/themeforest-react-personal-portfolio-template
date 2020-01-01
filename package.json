@@ -14,7 +14,6 @@
         "antd": "^3.26.3",
         "aos": "^2.3.4",
         "autoprefixer": "^9.7.3",
-        "classnames": "^2.2.6",
         "google-map-react": "^1.1.5",
         "normalize.css": "^8.0.1",
         "react": "^16.12.0",

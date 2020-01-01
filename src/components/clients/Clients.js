@@ -10,15 +10,15 @@ const Clients = ({ clients = [], header = '', description = '' }) => {
     return (
         <div className="clients">
             <Row gutter={24}>
-                <Col xs={24} lg={7}>
-                    <Title className="clients__header" level={4}>
+                <Col xs={24} xl={7}>
+                    <Title className="clients__header" level={2}>
                         {header}
                     </Title>
                     <Paragraph className="clients__text">
                         {description}
                     </Paragraph>
                 </Col>
-                <Col xs={24} lg={17}>
+                <Col xs={24} xl={17}>
                     <Row gutter={24}>
                         {clients &&
                             clients.map((client, index) => {
@@ -28,24 +28,21 @@ const Clients = ({ clients = [], header = '', description = '' }) => {
                                     <Col
                                         className="clients__col"
                                         xs={12}
-                                        sm={6}
+                                        md={8}
                                         lg={6}
                                         key={client.id}>
-                                        <div className="clients__content">
-                                            <div
-                                                className="clients__image-container"
-                                                data-aos={
-                                                    windowWidth > 768
-                                                        ? 'fade'
-                                                        : 'fade-up'
-                                                }
-                                                data-aos-delay={counter}>
-                                                <img
-                                                    className="clients__image"
-                                                    src={client.logo.src}
-                                                    alt={client.logo.name}
-                                                />
-                                            </div>
+                                        <div
+                                            data-aos={
+                                                windowWidth > 768
+                                                    ? 'fade'
+                                                    : 'fade-up'
+                                            }
+                                            data-aos-delay={counter}>
+                                            <img
+                                                className="clients__image"
+                                                src={client.logo.src}
+                                                alt={client.logo.name}
+                                            />
                                         </div>
                                     </Col>
                                 )

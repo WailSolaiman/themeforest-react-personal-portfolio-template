@@ -5,7 +5,11 @@ import './scss/personal-data.scss'
 const PersonalData = ({ personalData = [] }) => {
     return (
         <div className="personal-data">
-            <Descriptions layout="vertical" bordered size="small">
+            <Descriptions
+                layout="vertical"
+                bordered
+                column={{ xs: 1, md: 2 }}
+                size="small">
                 {personalData &&
                     personalData.map(item => {
                         return (

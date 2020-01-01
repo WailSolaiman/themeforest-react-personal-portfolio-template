@@ -21,12 +21,12 @@ const RelatedPosts = ({ currentPost = {}, posts = [] }) => {
             <Title className="related-posts__header" level={2}>
                 Related Posts
             </Title>
-            <Row gutter={{ xs: 0, xl: 24 }}>
+            <Row gutter={24}>
                 {relatedPosts &&
                     relatedPosts.map(post => {
                         const { id, title, image, excerpt } = post
                         return (
-                            <Col xs={24} md={8} key={id}>
+                            <Col xs={24} md={12} xl={8} key={id}>
                                 <Title
                                     className="related-posts__title"
                                     level={4}>

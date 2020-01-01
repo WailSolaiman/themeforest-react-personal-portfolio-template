@@ -1,0 +1,33 @@
+.team-member {
+    position: relative;
+    filter: grayscale(.9);
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        filter: initial;
+    }
+
+    &__text-content {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__name {
+        color: white !important;
+        font-size: 2rem !important;
+    }
+
+    &__position {
+        color: white !important;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}

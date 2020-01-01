@@ -6,7 +6,8 @@ import ScrollToTop from './ScrollToTop'
 import FixedNavbar from '../components/_core/navbar/FixedNavbar'
 import Home from '../pages/home/Home'
 import ContactPage from '../pages/contact/ContactPage'
-import AboutPage from '../pages/about/AboutPage'
+import AboutUsPage from '../pages/about/AboutUsPage'
+import AboutMePage from '../pages/about/AboutMePage'
 import BlogPage from '../pages/blog/BlogPage'
 import PostTemplate from '../pages/blog/components/PostTemplate'
 import PortfolioTemplate from '../components/portfolio/PortfolioTemplate'
@@ -42,7 +43,10 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={ContactPage} />
-                    <Route path="/about" component={AboutPage} />
+                    <Route path="/about-us" component={AboutUsPage} />
+                    <Route path="/about-me/:id">
+                        <AboutMePage />
+                    </Route>
                     <Route path="/blog/posts/:id">
                         <PostTemplate />
                     </Route>

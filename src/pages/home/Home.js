@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Spin } from 'antd'
 import Header from '../../components/_core/header/Header'
-import AboutMe from '../../components/about-me/AboutMe'
+import AboutUs from '../../components/about-us/AboutUs'
 import Services from '../../components/my-services/Services'
 import Projects from '../../components/projects/Projects'
 import Quote from '../../components/quote/Quote'
@@ -13,7 +13,7 @@ import PreFooter from '../../components/_core/pre-footer/PreFooter'
 import {
     getHomeHeroImage,
     getCarouselImages,
-    getAboutMeData,
+    getAboutUsData,
     getServices,
     getProjects,
     getQuote,
@@ -49,7 +49,7 @@ const Home = () => {
                     <div className="container">
                         <Row className="row-with-margin-bottom">
                             <Col xs={24}>
-                                <AboutMe data={getAboutMeData()} />
+                                <AboutUs data={getAboutUsData()} />
                             </Col>
                         </Row>
                     </div>

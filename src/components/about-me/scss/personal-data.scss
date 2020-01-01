@@ -5,4 +5,12 @@
         text-transform: uppercase;
         color: black !important;
     }
+
+    .iltlc-descriptions-item-content {
+        font-weight: 300 !important;
+
+        @media (min-width: 1200px) {
+            font-size: 20px !important;
+        }
+    }
 }

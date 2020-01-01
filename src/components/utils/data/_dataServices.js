@@ -15,15 +15,15 @@ const services = [
         id: uuidv4(),
         name: 'Web Development',
         img: WebDevelopmentImg,
-        paragraph: `Provide to the table win-win survival strategies to ensure 
-            the proactive domination.`,
+        paragraph: `Leverage agile frameworks to provide a 
+            robust synopsis for high level overviews iterative approaches.`,
     },
     {
         id: uuidv4(),
         name: 'Logo Design',
         img: LogoDesignImg,
-        paragraph: `Capitalize on low hanging fruit to identify a ballpark value 
-            added activity to beta all tests.`,
+        paragraph: `Leverage agile frameworks to provide a 
+            robust synopsis for high level overviews iterative approaches.`,
     },
 ]
 

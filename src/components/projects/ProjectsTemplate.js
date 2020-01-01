@@ -119,29 +119,22 @@ const ProjectsTemplate = () => {
                     </Row>
                 </div>
             </div>
-            <div className="container">
-                <div className="projects-template__container projects-template__container--last">
-                    <Row gutter={24}>
-                        <Col xs={24}>
-                            <div
-                                data-aos="fade-up"
-                                data-aos-delay="400"
-                                data-aos-offset="400">
-                                <Title
-                                    className="projects-template__header projects-template__header--center"
-                                    level={2}>
-                                    {tech} Screenshots
-                                </Title>
-                                <SwiperElm items={gallery} />
-                                <Link
-                                    className="iltlc-btn btn-secondary projects-template__btn"
-                                    to="/">
-                                    Go Back
-                                </Link>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
+            <div
+                className="projects-template__container projects-template__container--last"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-offset="400">
+                <Title
+                    className="projects-template__header projects-template__header--center"
+                    level={2}>
+                    {tech} Screenshots
+                </Title>
+                <SwiperElm items={gallery} />
+                <Link
+                    className="iltlc-btn btn-secondary projects-template__btn"
+                    to="/">
+                    Go Back
+                </Link>
             </div>
         </div>
     )

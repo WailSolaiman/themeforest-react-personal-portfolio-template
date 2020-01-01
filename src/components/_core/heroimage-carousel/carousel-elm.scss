@@ -8,12 +8,8 @@
             background-repeat: no-repeat;
             background-position: center;
 
-            @media (min-width: 768px) {
-                height: 600px;
-            }
-
             @media (min-width: 1200px) {
-                height: 700px;
+                height: 600px;
             }
         }
 
@@ -35,17 +31,32 @@
             }
 
             &__subheader {
-                color: white;
-                margin: 0;
+                color: white !important;
                 text-transform: uppercase;
                 text-decoration: underline;
-                text-shadow: 1px 1px 1px black;
+                font-size: 1.8rem !important;
+
+                @media (min-width: 768px) {
+                    font-size: 2rem !important;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 3rem !important;
+                }
             }
 
             &__header {
-                color: white;
+                color: white !important;
                 text-transform: capitalize;
-                text-shadow: 1px 1px 1px black;
+                font-size: 2rem !important;
+
+                @media (min-width: 768px) {
+                    font-size: 3rem !important;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 4rem !important;
+                }
             }
         }
     }
